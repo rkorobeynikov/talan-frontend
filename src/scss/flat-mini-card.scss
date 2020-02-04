@@ -1,0 +1,64 @@
+.flat-mini-card {
+  border-radius: $radius-medium;
+  box-shadow: $object-shadow;
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+
+.flat-mini-card__image {
+  width: 96px;
+  display: inline-block;
+}
+
+.flat-mini-card__img {
+  width: 100%;
+
+}
+
+.flat-mini-card__description {
+  margin-left: 28px;
+  flex: 1;
+}
+
+.flat-mini-card__price {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+.flat-mini-card__price-link {
+  text-decoration: none;
+  color: $color-black;
+}
+
+.flat-mini-card__list {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.flat-mini-card__list-item {
+  width: 50%;
+}
+
+.flat-mini-card__object {
+  font-size: 13px;
+  margin: 0;
+  color: #909DA8;
+}
+
+.flat-mini-card__fav {
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 16px;
+  background: url(../img/icon-like.svg) no-repeat;
+  cursor: pointer;
+}

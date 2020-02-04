@@ -1,0 +1,34 @@
+.filter-form {
+  box-shadow: $object-shadow;
+  border-radius: $radius-medium;
+  padding: 20px 20px 0;
+}
+
+.filter-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter-form__fieldset:first-child .filter-form__title {
+  margin-top: 0;
+}
+
+.filter-form__tabs-list {
+  margin-top: -4px;
+}
+
+.filter-form__title {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 26px 0 0;
+}
+
+.filter-form__summary {
+  border-top: 1px solid #E2E2E2;
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 36px -20px 0;
+}

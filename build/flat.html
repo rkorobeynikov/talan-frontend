@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+    <ol class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <span aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Квартиры в&nbsp;наличии</a>
+            <span aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumbs__item">
+            <span aria-current="page">3-комнатная квартира</span>
+        </li>
+    </ol>
+
+
+    <section class="flat-overview">
+        <header class="flat-overview__header">
+            <h1 class="flat-overview__title">3-комнатная квартира Евро+ с 2 гардеробными и мастер-спальней и теплой видовой лаундж-лоджией</h1>
+            <div class="flat-overview__progress">
+                <div class="radial-progress flat-overview__radial-progress">
+                    <div class="radial-progress__text">83%</div>
+                    <svg class="radial-progress__progress" width="50" height="50" viewBox="0 0 50 50">
+                        <circle class="radial-progress__meter" cx="25" cy="25" r="23"></circle>
+                        <circle class="radial-progress__value" cx="25" cy="25" r="23" stroke-dashoffset="24.56"></circle>
+                        <!-- stroke-dashoffset: 2 * 23 * Pi * (1 - 83 / 100)-->
+                    </svg>
+                </div>
+                <span class="flat-overview__progress-label">Октябрь 2020</span>
+            </div>
+        </header>
+        <main class="flat-overview__main">
+            <div class="flat-overview__pictures object-pictures">
+                <div class="tabs js-tabs">
+                    <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
+                        <li><a href="#tab1Panel1" class="tabs__control--selected js-tab-focus">Планировки</a></li>
+                        <li><a href="#tab1Panel2" class="js-tab-focus">Интерьеры</a></li>
+                    </ul>
+
+                    <div class="tabs__panels js-tabs__panels">
+                        <section id="tab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
+                            <div class="text-component">
+                                <h1>Panel 1</h1>
+                                <div class="slideshow js-slideshow " data-swipe="on">
+
+                                    <ul class="slideshow__content">
+
+                                        <li class="slideshow__item js-slideshow__item" style="">
+                                            <img src="img/content/flat-interior.jpg" alt="">
+                                        </li>
+
+                                        <li class="slideshow__item js-slideshow__item" style="">
+                                            <div class="container max-width-sm"><div class="text-component"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla expedita eius eos maiores consectetur autem ratione voluptatem sequi, id eveniet.</p></div><div class="margin-top-md"><div class="flex flex-wrap flex-center flex-gap-sm"><a href="#0" class="btn btn--primary">Download</a><a href="#0" class="color-inherit">Learn more</a></div></div></div>
+                                        </li>
+
+                                        <li class="slideshow__item js-slideshow__item" style="background-image: url('../../../app/assets/img/slideshow-img-1.jpg');">
+                                            <div class="container max-width-sm"><div class="text-component text-center"><h1>Slide Three</h1></div></div>
+                                        </li>
+
+                                        <li class="slideshow__item js-slideshow__item" style="">
+                                            <div class="container max-width-sm"><div class="text-component text-center"><h1>Slide Four</h1></div></div>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="slideshow__control js-slideshow__control">
+                                            <button class="reset slideshow__btn js-tab-focus">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"></path></svg>
+                                            </button>
+                                        </li>
+
+                                        <li class="slideshow__control js-slideshow__control">
+                                            <button class="reset slideshow__btn slideshow__btn--next js-tab-focus">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"></path></svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="tab1Panel2" class="tabs__panel js-tabs__panel">
+                            <div class="text-component">
+                                <h1>Panel 2</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, nobis! Vitae quis minus accusantium qui atque? Officiis sunt exercitationem natus, minus sapiente debitis eum animi porro. Ut cupiditate amet expedita!</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="flat-overview__description object-description">
+                <p class="object-description__bookmark">
+                    <a href="#" class="icon-btn icon-btn--like">Добавить в&nbsp;избранное</a>
+                    <span class="object-description__bookmark-label">32 человека добавили в&nbsp;избранное</span>
+                </p>
+                <table class="object-description__table">
+                    <tbody class="object-description__table-body">
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Комнат:</th>
+                            <td class="object-description__table-value">3</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Этаж:</th>
+                            <td class="object-description__table-value">14 из 17</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Общая площадь, м2:</th>
+                            <td class="object-description__table-value">46</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Жилая площадь, м2:</th>
+                            <td class="object-description__table-value">72</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Кухня, м2:</th>
+                            <td class="object-description__table-value">14</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Гостиная, м2:</th>
+                            <td class="object-description__table-value">20</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Спальня, м2:</th>
+                            <td class="object-description__table-value">17,2</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Ванная комната, м2:</th>
+                            <td class="object-description__table-value">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="object-description__price">
+                    <span class="object-description__price-value">2 305 800 ₽</span>
+                    <span class="object-description__price-square">52 468 ₽/м<sup>2</sup></span>
+                    <span class="object-description__mortgage-payment">20 380 ₽/месяц в ипотеку</span>
+                </p>
+
+                <div class="object-description__actions">
+                    <div class="object-description__action">
+                        <a href="#" class="button ">Добавить в&nbsp;корзину</a>
+                    </div>
+                    <div class="object-description__action">
+                        <a href="#" class="button button--white">Забронировать</a>
+                    </div>
+                </div>
+
+
+
+                <div class="object-description__text-content text-content">
+                    <h3>Подробнее о квартире</h3>
+                    <ul>
+                        <li>Просторная мастер-спальня 15 м<sup>2</sup> с собственной простороной гардеробной 2 м<sup>2</sup> и собственной теплой витражной лаундж-лоджией с французским балконом. Высаживайте любимые цветы, наслаждайтесь закатами и заряжайтесь хорошим настроением с самого утра.</li>
+                        <li>Удобное разделение на гостевую и приватную зоны – из коридора мы попадаем прямо в столовую</li>
+                        <li>Парадная гостиная-столовая 18 м<sup>2</sup> с двумя окнами и местом под большой шкаф или домашнюю библиотеку</li>
+                        <li>Просторная ванная комната 5,1 м<sup>2</sup></li>
+                        <li>2 отдельные гардеробные</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <div class="callback-promo">
+        <div class="callback-promo__inner">
+            <div class="callback-promo__description">
+                <h3 class="callback-promo__title">Нужна консультация?</h3>
+                <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
+            </div>
+            <form action="" class="callback-promo__form">
+                <label for="callback-form-name" class="visually-hidden">Имя</label>
+                <input type="text" id="callback-form-name" placeholder="Имя" class="input callback-promo__input">
+                <label for="callback-form-phone" class="visually-hidden">Телефон</label>
+                <input type="text" id="callback-form-phone" placeholder="Телефон" class="input callback-promo__input">
+                <button type="submit" class="button">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

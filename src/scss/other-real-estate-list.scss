@@ -1,0 +1,15 @@
+.other-real-estate-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.other-real-estate-list__item {
+  width: 33.33%;
+  margin-left: 40px;
+}
+
+.other-real-estate-list__item:nth-child(3n+1) {
+  margin-left: 0;
+}

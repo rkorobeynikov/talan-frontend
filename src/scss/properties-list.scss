@@ -1,0 +1,15 @@
+.properties-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.properties-list__item {
+  width: 33.33%;
+  margin-left: 40px;
+}
+
+.properties-list__item:nth-child(3n+1) {
+  margin-left: 0;
+}

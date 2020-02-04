@@ -1,0 +1,18 @@
+.breadcrumbs {
+  @include page-inner();
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  color: $color-gray;
+}
+
+.breadcrumbs__item {
+  padding-right: 15px;
+}
+
+.breadcrumbs__link {
+  color: $color-green;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 11px;
+}

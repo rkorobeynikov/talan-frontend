@@ -1,0 +1,16 @@
+.sticky-nav-container {
+  //@include page-inner()
+}
+
+.sticky-nav-container__inner {
+  @include page-inner();
+  //width: 22.79%;
+  box-sizing: border-box;
+  margin: 0;
+  position: sticky;
+  top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+
+}

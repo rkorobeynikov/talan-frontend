@@ -1,0 +1,13 @@
+.docs-section {
+  background: #F9F9F9;
+  padding-top: 24px;
+  padding-bottom: 51px;
+}
+
+.docs-section__inner {
+  @include page-inner();
+}
+
+.docs-section__title {
+  @include heading-3();
+}

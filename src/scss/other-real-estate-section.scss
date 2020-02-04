@@ -1,0 +1,11 @@
+.other-real-estate-section {
+
+}
+
+.other-real-estate-section__inner {
+  @include page-inner();
+}
+
+.other-real-estate-section__title {
+  @include heading-3();
+}

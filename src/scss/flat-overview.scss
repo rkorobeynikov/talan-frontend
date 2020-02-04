@@ -1,0 +1,48 @@
+.flat-overview {
+  @include page-inner();
+  padding-bottom: 60px;
+}
+
+.flat-overview__main {
+  display: flex;
+}
+
+.flat-overview__header {
+  display: flex;
+}
+
+.flat-overview__title {
+  @include heading-3();
+  font-size: 36px;
+}
+
+.flat-overview__progress {
+  width: 170px;
+  min-width: 170px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flat-overview__progress-label {
+  font-size: 14px;
+  line-height: 1.43em;
+  font-weight: 500;
+  color: $color-green;
+  width: 60px;
+  margin-left: 13px;
+}
+
+.flat-overview__radial-progress {
+
+}
+
+.flat-overview__pictures {
+  width: 48.53%;
+}
+
+.flat-overview__description {
+  width: 51.47%;
+  padding-left: 40px;
+  box-sizing: border-box;
+}

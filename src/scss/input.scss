@@ -1,0 +1,23 @@
+.input {
+  appearance: none;
+  background: $color-white;
+  height: 34px;
+  border-radius: 12px;
+  border: none;
+  padding: 0 0 0 12px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #B2C4A9;
+}
+
+.input--shadowed {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input--shadowed::placeholder {
+  color: #C4C4C4;
+}

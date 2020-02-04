@@ -1,0 +1,23 @@
+.flat-search {
+  @include page-inner();
+  padding-bottom: 40px;
+}
+
+.flat-search__title {
+  @include heading-2();
+  padding: 0 30px;
+}
+
+.flat-search__main {
+  display: flex;
+  margin: 48px 0 0;
+}
+
+.flat-search__filter {
+  width: 22.79%;
+}
+
+.flat-search__results {
+  flex: 1;
+  margin-left: 40px;
+}

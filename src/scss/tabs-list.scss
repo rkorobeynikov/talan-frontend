@@ -1,0 +1,12 @@
+.tabs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.tabs-list__item {
+  margin-right: 16px;
+  margin-top: 11px;
+}

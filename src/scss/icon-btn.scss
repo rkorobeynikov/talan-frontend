@@ -1,0 +1,20 @@
+.icon-btn {
+  @include allcaps();
+  font-size: 14px;
+  color: $color-green;
+  text-decoration: none;
+  position: relative;
+}
+
+.icon-btn--like {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(../img/icon-like-green.svg);
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+  }
+}

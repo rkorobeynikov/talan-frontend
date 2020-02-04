@@ -1,0 +1,36 @@
+.infrastructure-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #F9F9F9;
+}
+
+.infrastructure-section__inner {
+  @include page-inner();
+}
+
+.infrastructure-section__title {
+  @include heading-3();
+}
+
+.infrastructure-section__zoom-image {
+  margin-top: 30px;
+  width: 74.26%;
+  position: relative;
+}
+
+.infrastructure-section__zoom-img {
+  display: block;
+  width: 100%;
+  border-radius: $radius-medium;
+}
+
+.infrastructure-section__zoom-btn {
+  width: 64px;
+  height: 64px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: url(../img/icon-zoom.svg) center center no-repeat;
+  border: none;
+  cursor: pointer;
+}

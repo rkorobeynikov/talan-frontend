@@ -1,0 +1,30 @@
+.news-photos-card {
+  @include page-inner();
+}
+
+.news-photos-card__title {
+  @include heading-3();
+}
+
+.news-photos-card__tabs {
+  margin-top: 62px;
+}
+
+.news-photos-card__tab-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+}
+
+.news-photos-card__text {
+  width: 48.53%;
+}
+
+.news-photos-card__images {
+  width: 48.53%;
+}
+
+.news-photos-card__large-img {
+  display: block;
+  width: 100%;
+}

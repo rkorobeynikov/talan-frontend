@@ -1,0 +1,101 @@
+/* --------------------------------
+
+File#: _1_tabs
+Title: Tabs
+Descr: Tabs are multiple content sections (panels), accessible one at a time using control labels
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+
+.tabs {
+}
+
+.tabs__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block; //flex fallback
+    margin: 0 30px 0 0;
+  }
+
+  a {
+    display: inline-flex;
+    background-color: var(--color-contrast-low);
+    padding: var(--space-xs) var(--space-sm);
+    white-space: nowrap;
+    color: inherit;
+    border-radius: var(--tabs-control-radius);
+
+    &:hover {
+      background-color: var(--color-contrast-lower);
+    }
+  }
+}
+
+.tabs__panel {
+  margin-bottom: var(--space-md);
+}
+
+.js {
+  .tabs__controls {
+    a {
+      text-decoration: none;
+    }
+
+    .tabs__control--selected {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+
+  .tabs__panel {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .tabs__panel--selected {
+    display: block;
+  }
+
+    .tabs {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+    }
+
+    .tabs__controls {
+      margin-bottom: 0;
+
+      li {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      li:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        @include tab-btn();
+      }
+
+      .tabs__control--selected {
+        @include tab-btn-active();
+      }
+    }
+
+    .tabs__panels {
+      border: var(--tabs-border-width) solid var(--color-contrast-low);
+      border-radius: 0 var(--tabs-radius) var(--tabs-radius) var(--tabs-radius);
+      background-color: var(--color-bg);
+    }
+
+    .tabs__panel {
+      padding: var(--space-sm);
+    }
+
+}

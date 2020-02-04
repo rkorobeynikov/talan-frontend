@@ -1,0 +1,80 @@
+.progress-widget {
+  box-shadow: $object-shadow;
+  border-radius: $radius-medium;
+  padding: 35px 30px 24px;
+}
+
+.progress-widget__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-widget__title {
+  @include heading-4();
+  font-size: 24px;
+}
+
+.progress-widget__link {
+  color: $color-green;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.progress-widget__progress-wrapper {
+  margin-top: 27px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+.progress-widget__progress {
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 7px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.progress-widget__progress::-webkit-progress-bar {
+  background: rgb(235, 239, 235);
+  overflow: hidden;
+}
+
+
+.progress-widget__progress--actual,
+.progress-widget__progress--actual::-webkit-progress-value, {
+  color: #18A452;
+  background: #18A452;
+}
+
+.progress-widget__progress--planned,
+.progress-widget__progress--planned::-webkit-progress-value {
+  color: #0D75BD;
+  background: #0D75BD;
+}
+
+.progress-widget__status {
+  display: flex;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 9px;
+}
+
+.progress-widget__complete-label {
+  margin-left: auto;
+  color: #BDBDBD;
+}
+
+.progress-widget__status-actual {
+  color: #18A452;
+}
+
+.progress-widget__status-planned {
+  color: #0D75BD;
+  margin-left: 52px;
+}

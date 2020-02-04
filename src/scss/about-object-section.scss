@@ -1,0 +1,20 @@
+.about-object-section {
+
+}
+
+.about-object-section__inner {
+  @include page-inner();
+}
+
+.about-object-section__title {
+  @include heading-3();
+}
+
+.about-object-section__main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-object-section__grid {
+  width: 74.26%;
+}

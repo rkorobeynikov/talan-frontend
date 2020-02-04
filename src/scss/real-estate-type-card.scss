@@ -1,0 +1,14 @@
+.real-estate-type-card {
+  border-radius: $radius-medium;
+  box-shadow: $object-shadow;
+}
+
+.real-estate-type-card__title {
+  @include heading-4();
+}
+
+.real-estate-type-card__description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}

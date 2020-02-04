@@ -1,0 +1,18 @@
+.sticky-nav-list {
+  border-radius: $radius-medium;
+  box-shadow: $object-shadow;
+  background: $color-white;
+  list-style: none;
+  padding: 24px 30px;
+  margin: 0;
+  width: 22.79%;
+}
+
+.sticky-nav-list__link {
+  color: $color-green;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $heading-font;
+  letter-spacing: 0.14em;
+}

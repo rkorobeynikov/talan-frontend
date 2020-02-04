@@ -1,0 +1,15 @@
+.footer-menu-list {
+  margin: 11px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-menu-list__item {
+  width: 50%;
+}
+
+.footer-menu-list__item--full {
+  width: 100%;
+}

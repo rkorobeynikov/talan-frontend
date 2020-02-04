@@ -1,0 +1,39 @@
+.features-grid {
+
+}
+
+.features-grid__row {
+  display: flex;
+}
+
+.features-grid__item {
+  position: relative;
+}
+
+.features-grid__item--medium {
+  width: 50%;
+  margin-left: 40px;
+}
+
+.features-grid__item--medium:first-child {
+  margin-left: 0;
+}
+
+.features-grid__item--narrow {
+  width: 30.69%;
+}
+
+.features-grid__group {
+  width: 65.34%;
+  margin-left: 40px;
+}
+
+.features-grid__label {
+  position: absolute;
+  @include heading-4();
+  font-size: 24px;
+  color: $color-white;
+  bottom: 30px;
+  left: 30px;
+  z-index: 1;
+}

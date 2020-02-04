@@ -1,0 +1,21 @@
+.page-header {
+  @include page-inner();
+  display: flex;
+}
+
+.page-heeader__logo-img {
+  width: 18px;
+}
+
+.page-header__btn {
+  @include allcaps();
+  color: $color-green;
+  text-decoration: none;
+}
+
+.page-header__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}

@@ -1,0 +1,32 @@
+.feature-card {
+  @include page-inner();
+}
+
+.feature-card__row {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.feature-card__row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-card__title {
+  @include heading-3();
+}
+
+.feature-card__item-info {
+  flex: 0 0 32.35%;
+}
+
+.feature-card__item-image {
+  flex: 0 0 65.66%;
+}
+
+.feature-card__item-img {
+  display: block;
+  width: 100%;
+  border-radius: $radius-medium;
+}
+

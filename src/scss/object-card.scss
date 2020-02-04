@@ -1,0 +1,71 @@
+.object-card {
+  border-radius: $radius-medium;
+  box-shadow: $object-shadow;
+  overflow: hidden;
+}
+
+.object-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.object-card__info {
+  padding: 21px 30px 41px;
+  height: 208px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.object-card__title-wrapper {
+  display: flex;
+}
+
+.object-card__radial-progress {
+  margin-left: 25px;
+}
+
+.object-card__title {
+  @include heading-4();
+  color: $color-green;
+}
+
+.object-card__additional {
+  margin-top: auto;
+}
+
+.object-card__deadline {
+  font-size: 14px;
+  font-weight: 500;
+  color: #979797;
+  margin: 0;
+}
+
+.object-card__deadline-value {
+  color: #343434;
+}
+
+.object-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.object-card__price {
+  color: #343434;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.object-card__price-value {
+  color: $color-green;
+}
+
+.object-card__warn-message {
+  font-size: 14px;
+  font-weight: 500;
+  color: #D95454;
+  margin: 0;
+}

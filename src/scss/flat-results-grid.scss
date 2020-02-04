@@ -1,0 +1,17 @@
+.flat-results-grid {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flat-results-grid__item {
+  width: 30.69%;
+  margin-top: 40px;
+}
+
+.flat-results-grid__item:nth-child(3n+1) {
+  margin-left: 0;
+}

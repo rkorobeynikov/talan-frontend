@@ -1,0 +1,24 @@
+.development-progress-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.development-progress-section__inner {
+  @include page-inner();
+}
+
+.development-progress-section__title {
+  @include heading-3();
+}
+
+.development-progress-section__progress-bar {
+  margin-top: 31px;
+}
+
+.development-progress-section__column {
+  width: 74.26%;
+}
+
+.development-progress-section__links-list {
+  margin: 40px 0 0;
+}

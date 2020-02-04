@@ -1,0 +1,31 @@
+.input-range {
+  display: flex;
+  margin-top: 7px;
+}
+
+.input-range__item {
+  width: 46.15%;
+  max-width: 120px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.input-range__item::after {
+  content: '–';
+  position: absolute;
+  width: 20px;
+  text-align: center;
+  left: -20px;
+  top: 0;
+  height: 34px;
+  line-height: 34px;
+}
+
+.input-range__item:first-child {
+  margin-left: 0;
+}
+
+.input-range__item:first-child::after {
+  display: none;
+}
+

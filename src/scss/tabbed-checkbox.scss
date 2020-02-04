@@ -1,0 +1,21 @@
+.tabbed-checkbox {
+  display: inline-block;
+}
+
+.tabbed-checkbox__label {
+  @include tab-btn();
+}
+
+.tabbed-checkbox__label--narrow {
+  padding: 0;
+  width: 41px;
+}
+
+.tabbed-checkbox__checkbox:checked + .tabbed-checkbox__label {
+  @include tab-btn-active();
+}
+
+.tabbed-checkbox__checkbox:checked + .tabbed-checkbox__label--narrow {
+  padding: 0;
+  width: 41px;
+}

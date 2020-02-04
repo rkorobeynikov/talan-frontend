@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<ol class="breadcrumbs">
+    <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <span aria-hidden="true">/</span>
+    </li>
+    <li class="breadcrumbs__item">
+        <span aria-current="page">Квартиры в&nbsp;наличии</span>
+    </li>
+</ol>
+
+<div class="flat-search">
+    <h1 class="flat-search__title">Квартиры в наличии</h1>
+    <main class="flat-search__main">
+        <div class="flat-search__filter">
+            <form action="" class="filter-form">
+                <fieldset class="filter-form__fieldset">
+                    <h3 class="filter-form__title">ЖК:</h3>
+                    <div class="filter-form__tabs-list">
+                        <ul class="tabs-list">
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label">Все</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label">Дом на Фруктовой</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label">Я ЖИВУ! На Подлесной</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset class="filter-form__fieldset">
+                    <h3 class="filter-form__title">Количество комнат:</h3>
+                    <div class="filter-form__tabs-list">
+                        <ul class="tabs-list">
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label">Студия</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">1</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">2</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">2+</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">3</span>
+                                </label>
+                            </li>
+                            <li class="tabs-list__item">
+                                <label class="tabbed-checkbox">
+                                    <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                    <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">3+</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset class="filter-form__fieldset">
+                    <h3 class="filter-form__title"><label for="price-from">Цена, ₽:</label></h3>
+                    <div class="input-range">
+                        <div class="input-range__item">
+                            <input id="price-from" type="text" class="input input--shadowed" placeholder="От 2 350 000">
+                        </div>
+                        <div class="input-range__item">
+                            <label for="price-to" class="visually-hidden">От</label>
+                            <input id="price-to" type="text" class="input input--shadowed" placeholder="До 5 350 000">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="filter-form__fieldset">
+                    <h3 class="filter-form__title"><label for="square-from">Площадь, м<sup>2</sup>:</label></h3>
+                    <div class="input-range">
+                        <div class="input-range__item">
+                            <input id="square-from" type="text" class="input input--shadowed" placeholder="От 36">
+                        </div>
+                        <div class="input-range__item">
+                            <label for="square-to" class="visually-hidden">До</label>
+                            <input id="square-to" type="text" class="input input--shadowed" placeholder="До 95">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="filter-form__fieldset">
+                    <h3 class="filter-form__title"><label for="floor-from">Этаж:</label></h3>
+                    <div class="input-range">
+                        <div class="input-range__item">
+                            <input id="floor-from" type="text" class="input input--shadowed" placeholder="1">
+                        </div>
+                        <div class="input-range__item">
+                            <label for="floor-to" class="visually-hidden">До</label>
+                            <input id="floor-to" type="text" class="input input--shadowed" placeholder="16">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <p class="filter-form__summary">Найдено 13 квартир</p>
+            </form>
+        </div>
+
+        <div class="flat-search__results">
+            <button type="button">Сначала недорогие</button>
+
+            <label>
+                <input type="checkbox">
+                <span>Только акционные</span>
+            </label>
+
+            <ul class="flat-results-grid">
+                <li class="flat-results-grid__item">
+                    <div class="flat-mini-card">
+                        <a href="#" class="flat-mini-card__image">
+                            <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                        </a>
+                        <div class="flat-mini-card__description">
+                            <p class="flat-mini-card__price">
+                                <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                            </p>
+                            <ul class="flat-mini-card__list">
+                                <li class="flat-mini-card__list-item">3-комн.</li>
+                                <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                <li class="flat-mini-card__list-item">102 м²</li>
+                            </ul>
+                            <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                        </div>
+                        <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                    </div>
+                </li>
+                <li class="flat-results-grid__item">
+                    <div class="flat-mini-card">
+                        <a href="#" class="flat-mini-card__image">
+                            <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                        </a>
+                        <div class="flat-mini-card__description">
+                            <p class="flat-mini-card__price">
+                                <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                            </p>
+                            <ul class="flat-mini-card__list">
+                                <li class="flat-mini-card__list-item">3-комн.</li>
+                                <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                <li class="flat-mini-card__list-item">102 м²</li>
+                            </ul>
+                            <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                        </div>
+                        <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                    </div>
+                </li>
+                <li class="flat-results-grid__item">
+                    <div class="flat-mini-card">
+                        <a href="#" class="flat-mini-card__image">
+                            <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                        </a>
+                        <div class="flat-mini-card__description">
+                            <p class="flat-mini-card__price">
+                                <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                            </p>
+                            <ul class="flat-mini-card__list">
+                                <li class="flat-mini-card__list-item">3-комн.</li>
+                                <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                <li class="flat-mini-card__list-item">102 м²</li>
+                            </ul>
+                            <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                        </div>
+                        <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                    </div>
+                </li>
+                <li class="flat-results-grid__item">
+                    <div class="flat-mini-card">
+                        <a href="#" class="flat-mini-card__image">
+                            <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                        </a>
+                        <div class="flat-mini-card__description">
+                            <p class="flat-mini-card__price">
+                                <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                            </p>
+                            <ul class="flat-mini-card__list">
+                                <li class="flat-mini-card__list-item">3-комн.</li>
+                                <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                <li class="flat-mini-card__list-item">102 м²</li>
+                            </ul>
+                            <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                        </div>
+                        <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</div>
+
+<div class="callback-promo">
+    <div class="callback-promo__inner">
+        <div class="callback-promo__description">
+            <h3 class="callback-promo__title">Нужна консультация?</h3>
+            <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
+        </div>
+        <form action="" class="callback-promo__form">
+            <div class="callback-promo__input">
+                <label for="callback-form-name" class="visually-hidden">Имя</label>
+                <input type="text" id="callback-form-name" placeholder="Имя" class="input">
+            </div>
+            <div class="callback-promo__input">
+                <label for="callback-form-phone" class="visually-hidden">Телефон</label>
+                <input type="text" id="callback-form-phone" placeholder="Телефон" class="input">
+            </div>
+            <button type="submit" class="button button--small button--dark">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="page-footer__inner page-footer__inner--has-border">
+        <div class="page-footer__menu">
+            <div class="page-footer__column page-footer__column--wide">
+                <h3 class="page-footer__title">Города</h3>
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ижевск</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Уфа</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Пермь</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Набережные Челны</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тюмень</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Хабаровск</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Сочи</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тверь</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ханты-Мансийск</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижний Новгород</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Новосибирск</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижневартовск</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Владивосток</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Севастополь</a></li>
+                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ярославль</a></li>
+                </ul>
+            </div>
+
+            <div class="page-footer__column page-footer__column--narrow">
+                <h3 class="page-footer__title">О&nbsp;компании</h3>
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Контакты</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Команда</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Вакансии</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Миссия компании</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Новости</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Открытые данные</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Карьера</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.журнал</a></li>
+                </ul>
+            </div>
+
+            <div class="page-footer__column page-footer__column--narrow">
+                <h3 class="page-footer__title">Партнерам</h3>
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Риелторам</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Владельцам участков</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Тендеры</a></li>
+                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.инвест</a></li>
+                </ul>
+            </div>
+
+            <div class="page-footer__column page-footer__column--narrow">
+                <h3 class="page-footer__title">Контакты</h3>
+                <p class="page-footer__address">
+                    <span class="page-footer__address-label">Отдел продаж:</span> ул. Красноармейская, 86
+                </p>
+                <a class="page-footer__phone" href="tel:+73412918742">+ 7 3412 918 742</a>
+                <p class="page-footer__hours">с 9:00 до 19:00</p>
+                <button type="button" class="button button--shadow page-footer__cta-btn">Заказать звонок</button>
+            </div>
+
+            <div class="page-footer__column page-footer__column--narrow">
+                <h3 class="page-footer__title">Приложение Талан</h3>
+                <div class="app-buttons">
+                    <a href="#" class="app-buttons__link">
+                        <img class="app-buttons__badge" src="img/app-store-badge.svg" alt="">
+                    </a>
+                    <a href="#" class="app-buttons__link">
+                        <img class="app-buttons__badge" src="img/google-play-badge.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer__copy">
+            <div class="page-footer__copy-left">
+                <p class="page-footer__copy-year">&copy;&nbsp;2019 Талан</p>
+                <div class="page-footer__legal-link-wrapper">
+                    <a href="#" class="footer-link">Гарантийные замечания</a>
+                </div>
+                <div class="page-footer__legal-link-wrapper">
+                    <a href="#" class="footer-link">Соглашение и политика по обработке персональных данных</a>
+                </div>
+            </div>
+            <div class="page-footer__copy-text">
+                <p>Обращаем внимание, что настоящий рекламный материал носит исключительно информационный характер и не является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса РФ.<br>Общество с ограниченной ответственностью «ТАЛАН-ФИНАНС» (ОГРН 1117746313739) публикует информацию, подлежащую раскрытию эмитентами эмиссионных ценных бумаг, на странице в сети Интернет, предоставленной распространителем информации на рынке ценных бумаг ООО «Интерфакс-ЦРКИ», аккредитованным ЦБ РФ на раскрытие информации, по адресу: http://www.e-disclosure.ru/portal/company.aspx?id=37631</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

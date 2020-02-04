@@ -1,0 +1,91 @@
+.flat-type-card {
+  border-radius: $radius-medium;
+  min-height: 180px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 22px 18px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: $color-black;
+  background: transparent no-repeat right top;
+  background-size: cover;
+  position: relative;
+}
+
+.flat-type-card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: $radius-medium;
+}
+
+.flat-type-card--heading {
+  padding-top: 0;
+}
+
+.flat-type-card--green::before {
+  background: $color-bg-green;
+}
+
+.flat-type-card--blue::before {
+  background: $color-bg-blue;
+}
+
+.flat-type-card--gray::before {
+  background: $color-bg-gray;
+}
+
+.flat-type-card--yellow::before {
+  background: $color-bg-yellow;
+}
+
+.flat-type-card--studio {
+  background-image: url(../img/studio.jpg);
+}
+
+.flat-type-card--1room {
+  background-image: url(../img/1room.jpg);
+}
+
+.flat-type-card--1plusroom {
+  background-image: url(../img/1plusroom.jpg);
+}
+
+.flat-type-card--2rooms {
+  background-image: url(../img/2rooms.jpg);
+}
+
+.flat-type-card--2plusrooms {
+  background-image: url(../img/2plusrooms.jpg);
+}
+
+.flat-type-card--3rooms {
+  background-image: url(../img/3rooms.jpg);
+}
+
+.flat-type-card--3plusrooms {
+  background-image: url(../img/3plusrooms.jpg);
+}
+
+.flat-type-card__label {
+  font-size: 18px;
+  line-height: 1;
+  margin-top: auto;
+  max-width: 180px;
+  z-index: 1;
+  position: relative;
+}
+
+.flat-type-card__number {
+  font-size: 36px;
+  line-height: 1;
+  z-index: 1;
+  position: relative;
+}
