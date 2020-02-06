@@ -1,6 +1,19 @@
 .real-estate-type-card {
   border-radius: $radius-medium;
   box-shadow: $object-shadow;
+  padding: 32px 33px 37px 99px;
+}
+
+.real-estate-type-card--commercial {
+  background: url(../img/icon-other-realty-commercial.svg) 30px 30px no-repeat;
+}
+
+.real-estate-type-card--boxes {
+  background: url(../img/icon-other-realty-boxes.svg) 36px 20px no-repeat;
+}
+
+.real-estate-type-card--parking {
+  background: url(../img/icon-other-realty-parking.svg) 33px 37px no-repeat;
 }
 
 .real-estate-type-card__title {
@@ -11,4 +24,17 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+  color: #979797;
+  margin: 17px 0 0;
+}
+
+.real-estate-type-card__price {
+  margin: 17px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-black;
+}
+
+.real-estate-type-card__price-value {
+  color: $color-green;
 }

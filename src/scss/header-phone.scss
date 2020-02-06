@@ -1,0 +1,17 @@
+.header-phone {
+
+}
+
+.header-phone__phone {
+  @include allcaps();
+  color: $color-green;
+  text-decoration: none;
+}
+
+.header-phone__hours {
+  font-size: 10px;
+  color: #a1a1a1;
+  display: block;
+  font-weight: 500;
+  line-height: 10px;
+}

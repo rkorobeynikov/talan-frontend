@@ -1,7 +1,21 @@
 .residental-properties-section {
-
+  margin: 100px 0 0;
 }
 
 .residental-properties-section__inner {
   @include page-inner();
+}
+
+.residental-properties-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.residental-properties-section__title {
+  @include heading-3();
+}
+
+.residental-properties-section__properties-list {
+  margin-top: 42px;
 }

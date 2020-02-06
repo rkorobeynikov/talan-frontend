@@ -806,188 +806,159 @@ Math.easeInOutQuad = function (t, b, c, d) {
     }
 }());
 
-// File#: _2_dropdown
+
+// File#: _1_menu
 // Usage: codyhouse.co/license
 (function() {
-    var Dropdown = function(element) {
+    var Menu = function(element) {
         this.element = element;
-        this.trigger = this.element.getElementsByClassName('dropdown__trigger')[0];
-        this.dropdown = this.element.getElementsByClassName('dropdown__menu')[0];
-        this.triggerFocus = false;
-        this.dropdownFocus = false;
-        this.hideInterval = false;
-        // sublevels
-        this.dropdownSubElements = this.element.getElementsByClassName('dropdown__sub-wrapperu');
-        this.prevFocus = false; // store element that was in focus before focus changed
-        this.addDropdownEvents();
+        this.elementId = this.element.getAttribute('id');
+        this.menuItems = this.element.getElementsByClassName('js-menu__content');
+        this.trigger = document.querySelectorAll('[aria-controls="'+this.elementId+'"]');
+        this.selectedTrigger = false;
+        this.menuIsOpen = false;
+        this.initMenu();
+        this.initMenuEvents();
     };
 
-    Dropdown.prototype.addDropdownEvents = function(){
-        // init dropdown
-        this.initElementEvents(this.trigger, this.triggerFocus); // this is used to trigger the primary dropdown
-        this.initElementEvents(this.dropdown, this.dropdownFocus); // this is used to trigger the primary dropdown
-        // init sublevels
-        this.initSublevels(); // if there are additional sublevels -> bind hover/focus events
+    Menu.prototype.initMenu = function() {
+        // init aria-labels
+        for(var i = 0; i < this.trigger.length; i++) {
+            Util.setAttributes(this.trigger[i], {'aria-expanded': 'false', 'aria-haspopup': 'true'});
+        }
+        // init tabindex
+        for(var i = 0; i < this.menuItems.length; i++) {
+            this.menuItems[i].setAttribute('tabindex', '0');
+        }
     };
 
-    Dropdown.prototype.initElementEvents = function(element, bool) {
+    Menu.prototype.initMenuEvents = function() {
         var self = this;
-        element.addEventListener('mouseenter', function(){
-            bool = true;
-            self.showDropdown();
-        });
-        element.addEventListener('focus', function(){
-            self.showDropdown();
-        });
-        element.addEventListener('mouseleave', function(){
-            bool = false;
-            self.hideDropdown();
-        });
-        element.addEventListener('focusout', function(){
-            self.hideDropdown();
-        });
-    };
-
-    Dropdown.prototype.showDropdown = function(){
-        if(this.hideInterval) clearInterval(this.hideInterval);
-        this.showLevel(this.dropdown, true);
-    };
-
-    Dropdown.prototype.hideDropdown = function(){
-        var self = this;
-        if(this.hideInterval) clearInterval(this.hideInterval);
-        this.hideInterval = setTimeout(function(){
-            var dropDownFocus = document.activeElement.closest('.js-dropdown'),
-                inFocus = dropDownFocus && (dropDownFocus == self.element);
-            // if not in focus and not hover -> hide
-            if(!self.triggerFocus && !self.dropdownFocus && !inFocus) {
-                self.hideLevel(self.dropdown);
-                // make sure to hide sub/dropdown
-                self.hideSubLevels();
-                self.prevFocus = false;
-            }
-        }, 300);
-    };
-
-    Dropdown.prototype.initSublevels = function(){
-        var self = this;
-        var dropdownMenu = this.element.getElementsByClassName('dropdown__menu');
-        for(var i = 0; i < dropdownMenu.length; i++) {
-            var listItems = dropdownMenu[i].children;
-            // bind hover
-            new menuAim({
-                menu: dropdownMenu[i],
-                activate: function(row) {
-                    var subList = row.getElementsByClassName('dropdown__menu')[0];
-                    if(!subList) return;
-                    Util.addClass(row.querySelector('a'), 'dropdown__item--hover');
-                    self.showLevel(subList);
-                },
-                deactivate: function(row) {
-                    var subList = row.getElementsByClassName('dropdown__menu')[0];
-                    if(!subList) return;
-                    Util.removeClass(row.querySelector('a'), 'dropdown__item--hover');
-                    self.hideLevel(subList);
-                },
-                submenuSelector: '.dropdown__sub-wrapper',
+        for(var i = 0; i < this.trigger.length; i++) {(function(i){
+            self.trigger[i].addEventListener('click', function(event){
+                event.preventDefault();
+                // if the menu had been previously opened by another trigger element -> close it first and reopen in the right position
+                if(Util.hasClass(self.element, 'menu--is-visible') && self.selectedTrigger !=  self.trigger[i]) {
+                    self.toggleMenu(false, false); // close menu
+                }
+                // toggle menu
+                self.selectedTrigger = self.trigger[i];
+                self.toggleMenu(!Util.hasClass(self.element, 'menu--is-visible'), true);
             });
-        }
-        // store focus element before change in focus
+        })(i);}
+
+        // keyboard events
         this.element.addEventListener('keydown', function(event) {
-            if( event.keyCode && event.keyCode == 9 || event.key && event.key == 'Tab' ) {
-                self.prevFocus = document.activeElement;
-            }
-        });
-        // make sure that sublevel are visible when their items are in focus
-        this.element.addEventListener('keyup', function(event) {
-            if( event.keyCode && event.keyCode == 9 || event.key && event.key == 'Tab' ) {
-                // focus has been moved -> make sure the proper classes are added to subnavigation
-                var focusElement = document.activeElement,
-                    focusElementParent = focusElement.closest('.dropdown__menu'),
-                    focusElementSibling = focusElement.nextElementSibling;
-
-                // if item in focus is inside submenu -> make sure it is visible
-                if(focusElementParent && !Util.hasClass(focusElementParent, 'dropdown__menu--is-visible')) {
-                    self.showLevel(focusElementParent);
-                }
-                // if item in focus triggers a submenu -> make sure it is visible
-                if(focusElementSibling && !Util.hasClass(focusElementSibling, 'dropdown__menu--is-visible')) {
-                    self.showLevel(focusElementSibling);
-                }
-
-                // check previous element in focus -> hide sublevel if required
-                if( !self.prevFocus) return;
-                var prevFocusElementParent = self.prevFocus.closest('.dropdown__menu'),
-                    prevFocusElementSibling = self.prevFocus.nextElementSibling;
-
-                if( !prevFocusElementParent ) return;
-
-                // element in focus and element prev in focus are siblings
-                if( focusElementParent && focusElementParent == prevFocusElementParent) {
-                    if(prevFocusElementSibling) self.hideLevel(prevFocusElementSibling);
-                    return;
-                }
-
-                // element in focus is inside submenu triggered by element prev in focus
-                if( prevFocusElementSibling && focusElementParent && focusElementParent == prevFocusElementSibling) return;
-
-                // shift tab -> element in focus triggers the submenu of the element prev in focus
-                if( focusElementSibling && prevFocusElementParent && focusElementSibling == prevFocusElementParent) return;
-
-                var focusElementParentParent = focusElementParent.parentNode.closest('.dropdown__menu');
-
-                // shift tab -> element in focus is inside the dropdown triggered by a siblings of the element prev in focus
-                if(focusElementParentParent && focusElementParentParent == prevFocusElementParent) {
-                    if(prevFocusElementSibling) self.hideLevel(prevFocusElementSibling);
-                    return;
-                }
-
-                if(prevFocusElementParent && Util.hasClass(prevFocusElementParent, 'dropdown__menu--is-visible')) {
-                    self.hideLevel(prevFocusElementParent);
-                }
+            // use up/down arrow to navigate list of menu items
+            if( !Util.hasClass(event.target, 'js-menu__content') ) return;
+            if( (event.keyCode && event.keyCode == 40) || (event.key && event.key.toLowerCase() == 'arrowdown') ) {
+                self.navigateItems(event, 'next');
+            } else if( (event.keyCode && event.keyCode == 38) || (event.key && event.key.toLowerCase() == 'arrowup') ) {
+                self.navigateItems(event, 'prev');
             }
         });
     };
 
-    Dropdown.prototype.hideSubLevels = function(){
-        var visibleSubLevels = this.dropdown.getElementsByClassName('dropdown__menu--is-visible');
-        if(visibleSubLevels.length == 0) return;
-        while (visibleSubLevels[0]) {
-            this.hideLevel(visibleSubLevels[0]);
-        }
-        var hoveredItems = this.dropdown.getElementsByClassName('dropdown__item--hover');
-        while (hoveredItems[0]) {
-            Util.removeClass(hoveredItems[0], 'dropdown__item--hover');
+    Menu.prototype.toggleMenu = function(bool, moveFocus) {
+        var self = this;
+        // toggle menu visibility
+        Util.toggleClass(this.element, 'menu--is-visible', bool);
+        this.menuIsOpen = bool;
+        if(bool) {
+            this.selectedTrigger.setAttribute('aria-expanded', 'true');
+            Util.moveFocus(this.menuItems[0]);
+            this.element.addEventListener("transitionend", function(event) {Util.moveFocus(self.menuItems[0]);}, {once: true});
+            // position the menu element
+            this.positionMenu();
+            // add class to menu trigger
+            Util.addClass(this.selectedTrigger, 'menu-control--active');
+        } else if(this.selectedTrigger) {
+            this.selectedTrigger.setAttribute('aria-expanded', 'false');
+            if(moveFocus) Util.moveFocus(this.selectedTrigger);
+            // remove class from menu trigger
+            Util.removeClass(this.selectedTrigger, 'menu-control--active');
+            this.selectedTrigger = false;
         }
     };
 
-    Dropdown.prototype.showLevel = function(level, bool){
-        if(bool == undefined) {
-            //check if the sublevel needs to be open to the left
-            Util.removeClass(level, 'dropdown__menu--left');
-            var boundingRect = level.getBoundingClientRect();
-            if(window.innerWidth - boundingRect.right < 5 && boundingRect.left + window.scrollX > 2*boundingRect.width) Util.addClass(level, 'dropdown__menu--left');
-        }
-        Util.addClass(level, 'dropdown__menu--is-visible');
-        Util.removeClass(level, 'dropdown__menu--is-hidden');
+    Menu.prototype.positionMenu = function(event, direction) {
+        var selectedTriggerPosition = this.selectedTrigger.getBoundingClientRect(),
+            menuOnTop = (window.innerHeight - selectedTriggerPosition.bottom) < selectedTriggerPosition.top;
+        // menuOnTop = window.innerHeight < selectedTriggerPosition.bottom + this.element.offsetHeight;
+
+        var left = selectedTriggerPosition.left,
+            right = (window.innerWidth - selectedTriggerPosition.right),
+            isRight = (window.innerWidth < selectedTriggerPosition.left + this.element.offsetWidth);
+
+        var horizontal = isRight ? 'right: '+right+'px;' : 'left: '+left+'px;',
+            vertical = menuOnTop
+                ? 'bottom: '+(window.innerHeight - selectedTriggerPosition.top)+'px;'
+                : 'top: '+selectedTriggerPosition.bottom+'px;';
+        // check right position is correct -> otherwise set left to 0
+        if( isRight && (right + this.element.offsetWidth) > window.innerWidth) horizontal = 'left: '+ parseInt((window.innerWidth - this.element.offsetWidth)/2)+'px;';
+        var maxHeight = menuOnTop ? selectedTriggerPosition.top - 20 : window.innerHeight - selectedTriggerPosition.bottom - 20;
+        this.element.setAttribute('style', horizontal + vertical +'max-height:'+Math.floor(maxHeight)+'px;');
     };
 
-    Dropdown.prototype.hideLevel = function(level){
-        if(!Util.hasClass(level, 'dropdown__menu--is-visible')) return;
-        Util.removeClass(level, 'dropdown__menu--is-visible');
-        Util.addClass(level, 'dropdown__menu--is-hidden');
+    Menu.prototype.navigateItems = function(event, direction) {
+        event.preventDefault();
+        var index = Util.getIndexInArray(this.menuItems, event.target),
+            nextIndex = direction == 'next' ? index + 1 : index - 1;
+        if(nextIndex < 0) nextIndex = this.menuItems.length - 1;
+        if(nextIndex > this.menuItems.length - 1) nextIndex = 0;
+        Util.moveFocus(this.menuItems[nextIndex]);
+    };
 
-        level.addEventListener('animationend', function cb(){
-            level.removeEventListener('animationend', cb);
-            Util.removeClass(level, 'dropdown__menu--is-hidden dropdown__menu--left');
+    Menu.prototype.checkMenuFocus = function() {
+        var menuParent = document.activeElement.closest('.js-menu');
+        if (!menuParent || !this.element.contains(menuParent)) this.toggleMenu(false, false);
+    };
+
+    Menu.prototype.checkMenuClick = function(target) {
+        if( !this.element.contains(target) && !target.closest('[aria-controls="'+this.elementId+'"]')) this.toggleMenu(false);
+    };
+
+    window.Menu = Menu;
+
+    //initialize the Menu objects
+    var menus = document.getElementsByClassName('js-menu');
+    if( menus.length > 0 ) {
+        var menusArray = [];
+        for( var i = 0; i < menus.length; i++) {
+            (function(i){menusArray.push(new Menu(menus[i]));})(i);
+        }
+
+        // listen for key events
+        window.addEventListener('keyup', function(event){
+            if( event.keyCode && event.keyCode == 9 || event.key && event.key.toLowerCase() == 'tab' ) {
+                //close menu if focus is outside menu element
+                menusArray.forEach(function(element){
+                    element.checkMenuFocus();
+                });
+            } else if( event.keyCode && event.keyCode == 27 || event.key && event.key.toLowerCase() == 'escape' ) {
+                // close menu on 'Esc'
+                menusArray.forEach(function(element){
+                    element.toggleMenu(false, false);
+                });
+            }
         });
-    };
-
-
-    var dropdown = document.getElementsByClassName('js-dropdown');
-    if( dropdown.length > 0 ) { // init Dropdown objects
-        for( var i = 0; i < dropdown.length; i++) {
-            (function(i){new Dropdown(dropdown[i]);})(i);
-        }
+        // close menu when clicking outside it
+        window.addEventListener('click', function(event){
+            menusArray.forEach(function(element){
+                element.checkMenuClick(event.target);
+            });
+        });
+        // on resize -> close all menu elements
+        window.addEventListener('resize', function(event){
+            menusArray.forEach(function(element){
+                element.toggleMenu(false, false);
+            });
+        });
+        // on scroll -> close all menu elements
+        window.addEventListener('scroll', function(event){
+            menusArray.forEach(function(element){
+                if(element.menuIsOpen) element.toggleMenu(false, false);
+            });
+        });
     }
 }());

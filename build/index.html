@@ -7,65 +7,65 @@
 </head>
 <body>
     <header class="page-header">
-        <a href="#" class="page-header__logo">
-            <img src="img/logo.svg" alt="Талан" class="page-heeader__logo-img">
-        </a>
-        <div class="page-header__city dropdown js-dropdown">
-            <div class="dropdown__wrapper">
-                <a href="#0" class="dropdown__trigger inline-flex items-center page-header__btn">Ижевск</a>
-
-                <ul class="dropdown__menu" aria-label="submenu">
-                    <li><a href="#0" class="dropdown__item">Уфа</a></li>
-                    <li><a href="#0" class="dropdown__item">Пермь</a></li>
-                    <li><a href="#0" class="dropdown__item">Набережные Челны</a></li>
-                    <li><a href="#0" class="dropdown__item">Тюмень</a></li>
-                    <li><a href="#0" class="dropdown__item">Хабаровск</a></li>
-                    <li><a href="#0" class="dropdown__item">Сочи</a></li>
-                    <li><a href="#0" class="dropdown__item">Тверь</a></li>
-                    <li><a href="#0" class="dropdown__item">Ханты-Мансийск</a></li>
-                    <li><a href="#0" class="dropdown__item">Нижний Новгород</a></li>
-                    <li><a href="#0" class="dropdown__item">Новосибирск</a></li>
-                    <li><a href="#0" class="dropdown__item">Нижневартовск</a></li>
-                    <li><a href="#0" class="dropdown__item">Владивосток</a></li>
-                    <li><a href="#0" class="dropdown__item">Севастополь</a></li>
-                    <li><a href="#0" class="dropdown__item">Ярославль</a></li>
+        <div class="page-header__left-group">
+            <a href="#" class="page-header__logo">
+                <img src="img/logo.svg" alt="Талан" class="page-heeader__logo-img">
+            </a>
+            <div class="page-header__city dropdown js-dropdown">
+                <button type="button" aria-controls="menu-example" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Ижевск</button>
+                <ul class="menu js-menu" id="menu-example">
+                    <li><a href="#0" class="menu__item">Уфа</a></li>
+                    <li><a href="#0" class="menu__item">Пермь</a></li>
+                    <li><a href="#0" class="menu__item">Набережные Челны</a></li>
+                    <li><a href="#0" class="menu__item">Тюмень</a></li>
+                    <li><a href="#0" class="menu__item">Хабаровск</a></li>
+                    <li><a href="#0" class="menu__item">Сочи</a></li>
+                    <li><a href="#0" class="menu__item">Тверь</a></li>
+                    <li><a href="#0" class="menu__item">Ханты-Мансийск</a></li>
+                    <li><a href="#0" class="menu__item">Нижний Новгород</a></li>
+                    <li><a href="#0" class="menu__item">Новосибирск</a></li>
+                    <li><a href="#0" class="menu__item">Нижневартовск</a></li>
+                    <li><a href="#0" class="menu__item">Владивосток</a></li>
+                    <li><a href="#0" class="menu__item">Севастополь</a></li>
+                    <li><a href="#0" class="menu__item">Ярославль</a></li>
                 </ul>
             </div>
         </div>
-        <ul class="page-header__nav top-nav">
-           <li class="top-nav__item dropdown js-dropdown">
-               <div class="dropdown__wrapper">
-                   <a href="#0" class="dropdown__trigger inline-flex items-center page-header__btn">Объекты</a>
 
-                   <ul class="dropdown__menu" aria-label="submenu">
-                       <li><a href="#0" class="dropdown__item">Жилой комплекс «Я ЖИВУ! На Подлесной»</a></li>
-                       <li><a href="#0" class="dropdown__item">Жилой комплекс «Клубный дом на Фруктовой»</a></li>
-                   </ul>
-               </div>
-           </li>
-           <li class="top-nav__item dropdown js-dropdown">
-               <div class="dropdown__wrapper">
-                   <a href="#0" class="dropdown__trigger inline-flex items-center page-header__btn">О компании</a>
+        <div class="page-header__middle-group">
+            <ul class="page-header__nav top-nav">
+                <li class="top-nav__item dropdown js-dropdown">
+                    <button type="button" aria-controls="objects-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Объекты</button>
+                    <ul class="menu js-menu" id="objects-dropdown">
+                        <li><a href="#0" class="menu__item">Жилой комплекс «Я ЖИВУ! На Подлесной»</a></li>
+                        <li><a href="#0" class="menu__item">Жилой комплекс «Клубный дом на Фруктовой»</a></li>
+                    </ul>
+                </li>
+                <li class="top-nav__item dropdown js-dropdown">
+                    <button type="button" aria-controls="sections-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">О компании</button>
 
-                   <ul class="dropdown__menu" aria-label="submenu">
-                       <li><a href="#" class="dropdown__item">Контакты</a></li>
-                       <li><a href="#" class="dropdown__item">Команда</a></li>
-                       <li><a href="#" class="dropdown__item">Вакансии</a></li>
-                       <li><a href="#" class="dropdown__item">Миссия компании</a></li>
-                       <li><a href="#" class="dropdown__item">Новости</a></li>
-                       <li><a href="#" class="dropdown__item">Открытые данные</a></li>
-                       <li><a href="#" class="dropdown__item">Карьера</a></li>
-                       <li><a href="#" class="dropdown__item">Талан.журнал</a></li>
-                   </ul>
-               </div>
-           </li>
-        </ul>
-        <div class="page-header__contacts header-phone">
-            <a href="tel:+73412918742" class="header-phone__phone">+ 7 3412 918-742</a>
-            <span class="header-phone__hours">с 9:00 до 19:00</span>
+                    <ul class="menu js-menu" id="sections-dropdown">
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item">Команда</a></li>
+                        <li><a href="#" class="menu__item">Вакансии</a></li>
+                        <li><a href="#" class="menu__item">Миссия компании</a></li>
+                        <li><a href="#" class="menu__item">Новости</a></li>
+                        <li><a href="#" class="menu__item">Открытые данные</a></li>
+                        <li><a href="#" class="menu__item">Карьера</a></li>
+                        <li><a href="#" class="menu__item">Талан.журнал</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div class="page-header__login">
-            <a href="#" class="">Личный кабинет</a>
+
+        <div class="page-header__right-group">
+            <div class="page-header__contacts header-phone">
+                <a href="tel:+73412918742" class="header-phone__phone">+ 7 3412 918-742</a>
+                <span class="header-phone__hours">с 9:00 до 19:00</span>
+            </div>
+            <div class="page-header__login">
+                <a href="#" class="page-header__btn page-header__btn--profile">Корзина</a>
+            </div>
         </div>
     </header>
 
@@ -75,7 +75,7 @@
                 <div class="flat-types-grid__item">
                     <div class="flat-type-card flat-type-card--heading">
                         <h3 class="flat-types-grid__title">Квартиры в&nbsp;продаже</h3>
-                        <a class="flat-types-grid__link" href="#">Показать все квартиры</a>
+                        <a class="link-underlined" href="#">Показать все квартиры</a>
                     </div>
                 </div>
                 <div class="flat-types-grid__item">
@@ -127,7 +127,7 @@
     <div class="residental-properties-section__inner">
         <header class="residental-properties-section__header">
             <h3 class="residental-properties-section__title">Жилая недвижимость в Ижевске</h3>
-            <a href="#" class="residental-properties-section__link">Все объекты</a>
+            <a href="#" class="residental-properties-section__link link-underlined">Все объекты</a>
         </header>
 
         <ul class="residental-properties-section__properties-list properties-list">
@@ -155,6 +155,10 @@
                                 <p class="object-card__warn-message">Осталось 3 квартиры</p>
                             </div>
                         </div>
+                        <div class="object-card__actions">
+                            <a href="#" class="object-card__action button button--small">Выбрать квартиру</a>
+                            <a href="#" class="object-card__action button button--ghost-small">Подробнее о ЖК</a>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -180,6 +184,10 @@
                             <div class="object-card__price-wrapper">
                                 <p class="object-card__price">от <span class="object-card__price-value">2 435 000 ₽</span></p>
                             </div>
+                        </div>
+                        <div class="object-card__actions">
+                            <a href="#" class="object-card__action button button--small">Выбрать квартиру</a>
+                            <a href="#" class="object-card__action button button--ghost-small">Подробнее о ЖК</a>
                         </div>
                     </div>
                 </div>
@@ -207,6 +215,10 @@
                                 <p class="object-card__price">от <span class="object-card__price-value">2 435 000 ₽</span></p>
                             </div>
                         </div>
+                        <div class="object-card__actions">
+                            <a href="#" class="object-card__action button button--small">Выбрать квартиру</a>
+                            <a href="#" class="object-card__action button button--ghost-small">Подробнее о ЖК</a>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -219,97 +231,112 @@
     <div class="other-real-estate-section__inner">
         <h3 class="other-real-estate-section__title">Другая недвижимость</h3>
         <ul class="other-real-estate-list">
-            <li class="other-real-estate-list__item real-estate-type-card">
+            <li class="other-real-estate-list__item real-estate-type-card real-estate-type-card--commercial">
                 <h4 class="real-estate-type-card__title">Коммерческая недвижимость</h4>
                 <p class="real-estate-type-card__description">Торговая галерея в ЖК «Я ЖИВУ! На подлесн</p>
-                <p class="real-estate-type-card__price">от 4 500 000 ₽</p>
+                <p class="real-estate-type-card__price">от <span class="real-estate-type-card__price-value">4 500 000 ₽</span></p>
             </li>
-            <li class="other-real-estate-list__item real-estate-type-card">
+            <li class="other-real-estate-list__item real-estate-type-card real-estate-type-card--parking">
                 <h4 class="real-estate-type-card__title">Машиноместа</h4>
                 <p class="real-estate-type-card__description">ЖК «Я ЖИВУ! На подлесной», «Клубный дом на Фруктовой», ЖК «Maxima»</p>
-                <p class="real-estate-type-card__price">от 780 000 ₽</p>
+                <p class="real-estate-type-card__price">от <span class="real-estate-type-card__price-value">780 000 ₽</span></p>
             </li>
-            <li class="other-real-estate-list__item real-estate-type-card">
+            <li class="other-real-estate-list__item real-estate-type-card real-estate-type-card--boxes">
                 <h4 class="real-estate-type-card__title">Кладовые</h4>
                 <p class="real-estate-type-card__description">ЖК «Я ЖИВУ! На подлесной», «Клубный дом на Фруктовой», ЖК «Maxima»</p>
-                <p class="real-estate-type-card__price">от 78 000 ₽</p>
+                <p class="real-estate-type-card__price">от <span class="real-estate-type-card__price-value">78 000 ₽</span></p>
             </li>
         </ul>
     </div>
 </section>
 
-<footer class="page-footer">
-    <div class="page-footer__inner">
-        <div class="page-footer__menu">
-            <div class="page-footer__column page-footer__column--wide">
-                <h3 class="page-footer__title">Города</h3>
-                <ul class="footer-menu-list">
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ижевск</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Уфа</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Пермь</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Набережные Челны</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тюмень</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Хабаровск</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Сочи</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тверь</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ханты-Мансийск</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижний Новгород</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Новосибирск</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижневартовск</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Владивосток</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Севастополь</a></li>
-                    <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ярославль</a></li>
-                </ul>
+    <footer class="page-footer">
+        <div class="page-footer__inner page-footer__inner--has-border">
+            <div class="page-footer__menu">
+                <div class="page-footer__column page-footer__column--wide">
+                    <h3 class="page-footer__title">Города</h3>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ижевск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Уфа</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Пермь</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Набережные Челны</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тюмень</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Хабаровск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Сочи</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тверь</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ханты-Мансийск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижний Новгород</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Новосибирск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижневартовск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Владивосток</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Севастополь</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ярославль</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow">
+                    <h3 class="page-footer__title">О&nbsp;компании</h3>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Контакты</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Команда</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Вакансии</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Миссия компании</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Новости</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Открытые данные</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Карьера</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.журнал</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow">
+                    <h3 class="page-footer__title">Партнерам</h3>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Риелторам</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Владельцам участков</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Тендеры</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.инвест</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow">
+                    <h3 class="page-footer__title">Контакты</h3>
+                    <p class="page-footer__address">
+                        <span class="page-footer__address-label">Отдел продаж:</span> ул. Красноармейская, 86
+                    </p>
+                    <a class="page-footer__phone" href="tel:+73412918742">+ 7 3412 918 742</a>
+                    <p class="page-footer__hours">с 9:00 до 19:00</p>
+                    <button type="button" class="button button--shadow page-footer__cta-btn">Заказать звонок</button>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow">
+                    <h3 class="page-footer__title">Приложение Талан</h3>
+                    <div class="app-buttons">
+                        <a href="#" class="app-buttons__link">
+                            <img class="app-buttons__badge" src="img/app-store-badge.svg" alt="">
+                        </a>
+                        <a href="#" class="app-buttons__link">
+                            <img class="app-buttons__badge" src="img/google-play-badge.svg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="page-footer__column page-footer__column--narrow">
-                <h3 class="page-footer__title">О&nbsp;компании</h3>
-                <ul class="footer-menu-list">
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Контакты</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Команда</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Вакансии</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Миссия компании</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Новости</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Открытые данные</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Карьера</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.журнал</a></li>
-                </ul>
-            </div>
-
-            <div class="page-footer__column page-footer__column--narrow">
-                <h3 class="page-footer__title">Партнерам</h3>
-                <ul class="footer-menu-list">
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Риелторам</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Владельцам участков</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Тендеры</a></li>
-                    <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.инвест</a></li>
-                </ul>
-            </div>
-
-            <div class="page-footer__column page-footer__column--narrow">
-                <h3 class="page-footer__title">Контакты</h3>
-                <p><span>Отдел продаж:</span> ул. Красноармейская, 86</p>
-                <a href="tel:+73412918742">+ 7 3412 918 742</a>
-                <p>с 9:00 до 19:00</p>
-                <button type="button" class="button button--shadow">Заказать звонок</button>
-            </div>
-
-            <div class="page-footer__column">
-                <h3 class="page-footer__title">Приложение Талан</h3>
-
+            <div class="page-footer__copy">
+                <div class="page-footer__copy-left">
+                    <p class="page-footer__copy-year">&copy;&nbsp;2019 Талан</p>
+                    <div class="page-footer__legal-link-wrapper">
+                        <a href="#" class="footer-link">Гарантийные замечания</a>
+                    </div>
+                    <div class="page-footer__legal-link-wrapper">
+                        <a href="#" class="footer-link">Соглашение и политика по обработке персональных данных</a>
+                    </div>
+                </div>
+                <div class="page-footer__copy-text">
+                    <p>Обращаем внимание, что настоящий рекламный материал носит исключительно информационный характер и не является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса РФ.<br>Общество с ограниченной ответственностью «ТАЛАН-ФИНАНС» (ОГРН 1117746313739) публикует информацию, подлежащую раскрытию эмитентами эмиссионных ценных бумаг, на странице в сети Интернет, предоставленной распространителем информации на рынке ценных бумаг ООО «Интерфакс-ЦРКИ», аккредитованным ЦБ РФ на раскрытие информации, по адресу: http://www.e-disclosure.ru/portal/company.aspx?id=37631</p>
+                </div>
             </div>
         </div>
-
-        <div class="page-footer__copy">
-            <p>&copy;&nbsp;2019 Талан</p>
-            <a href="#" class="footer-link">Гарантийные замечания</a>
-            <a href="#" class="footer-link">Соглашение и политика по обработке персональных данных</a>
-
-            <p>Обращаем внимание, что настоящий рекламный материал носит исключительно информационный характер и не является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса РФ.<br>Общество с ограниченной ответственностью «ТАЛАН-ФИНАНС» (ОГРН 1117746313739) публикует информацию, подлежащую раскрытию эмитентами эмиссионных ценных бумаг, на странице в сети Интернет, предоставленной распространителем информации на рынке ценных бумаг ООО «Интерфакс-ЦРКИ», аккредитованным ЦБ РФ на раскрытие информации, по адресу: http://www.e-disclosure.ru/portal/company.aspx?id=37631</p>
-        </div>
-    </div>
-</footer>
-
+    </footer>
 
 
     <script src="js/micromodal.min.js"></script>
