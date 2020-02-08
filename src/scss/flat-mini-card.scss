@@ -6,6 +6,40 @@
   padding: 20px;
 }
 
+.flat-mini-card--new {
+  &::before {
+    content: 'New';
+    text-transform: uppercase;
+    font-size: 8px;
+    line-height: 26px;
+    text-align: center;
+    color: $color-white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #4BA46E;
+  }
+}
+
+.flat-mini-card--popular {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #E49922 url(../img/icon-fire.svg) center center no-repeat;
+  }
+}
+
 .flat-mini-card__image {
   width: 96px;
   display: inline-block;

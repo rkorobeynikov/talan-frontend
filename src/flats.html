@@ -7,6 +7,69 @@
 </head>
 <body>
 
+<header class="page-header">
+    <div class="page-header__left-group">
+        <a href="#" class="page-header__logo">
+            <img src="img/logo.svg" alt="Талан" class="page-heeader__logo-img">
+        </a>
+        <div class="page-header__city dropdown js-dropdown">
+            <button type="button" aria-controls="menu-example" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Ижевск</button>
+            <ul class="menu js-menu" id="menu-example">
+                <li><a href="#0" class="menu__item">Уфа</a></li>
+                <li><a href="#0" class="menu__item">Пермь</a></li>
+                <li><a href="#0" class="menu__item">Набережные Челны</a></li>
+                <li><a href="#0" class="menu__item">Тюмень</a></li>
+                <li><a href="#0" class="menu__item">Хабаровск</a></li>
+                <li><a href="#0" class="menu__item">Сочи</a></li>
+                <li><a href="#0" class="menu__item">Тверь</a></li>
+                <li><a href="#0" class="menu__item">Ханты-Мансийск</a></li>
+                <li><a href="#0" class="menu__item">Нижний Новгород</a></li>
+                <li><a href="#0" class="menu__item">Новосибирск</a></li>
+                <li><a href="#0" class="menu__item">Нижневартовск</a></li>
+                <li><a href="#0" class="menu__item">Владивосток</a></li>
+                <li><a href="#0" class="menu__item">Севастополь</a></li>
+                <li><a href="#0" class="menu__item">Ярославль</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header__middle-group">
+        <ul class="page-header__nav top-nav">
+            <li class="top-nav__item dropdown js-dropdown">
+                <button type="button" aria-controls="objects-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Объекты</button>
+                <ul class="menu js-menu" id="objects-dropdown">
+                    <li><a href="#0" class="menu__item">Жилой комплекс «Я ЖИВУ! На Подлесной»</a></li>
+                    <li><a href="#0" class="menu__item">Жилой комплекс «Клубный дом на Фруктовой»</a></li>
+                </ul>
+            </li>
+            <li class="top-nav__item dropdown js-dropdown">
+                <button type="button" aria-controls="sections-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">О компании</button>
+
+                <ul class="menu js-menu" id="sections-dropdown">
+                    <li><a href="#" class="menu__item">Контакты</a></li>
+                    <li><a href="#" class="menu__item">Команда</a></li>
+                    <li><a href="#" class="menu__item">Вакансии</a></li>
+                    <li><a href="#" class="menu__item">Миссия компании</a></li>
+                    <li><a href="#" class="menu__item">Новости</a></li>
+                    <li><a href="#" class="menu__item">Открытые данные</a></li>
+                    <li><a href="#" class="menu__item">Карьера</a></li>
+                    <li><a href="#" class="menu__item">Талан.журнал</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-header__right-group">
+        <div class="page-header__contacts header-phone">
+            <a href="tel:+73412918742" class="header-phone__phone">+ 7 3412 918-742</a>
+            <span class="header-phone__hours">с 9:00 до 19:00</span>
+        </div>
+        <div class="page-header__login">
+            <a href="#" class="page-header__btn page-header__btn--profile">Корзина</a>
+        </div>
+    </div>
+</header>
+
 <ol class="breadcrumbs">
     <li class="breadcrumbs__item">
         <a href="#" class="breadcrumbs__link">Главная</a>
@@ -135,16 +198,22 @@
         </div>
 
         <div class="flat-search__results">
-            <button type="button">Сначала недорогие</button>
+            <div class="flat-search__results-controls">
+                <button type="button" aria-controls="filter-sort" class="flat-search__filter-btn">Сначала недорогие</button>
+                <ul class="menu js-menu" id="filter-sort">
+                    <li><a href="#0" class="menu__item">Сначала дешевые</a></li>
+                    <li><a href="#0" class="menu__item">Сначала популярные</a></li>
+                </ul>
 
-            <label>
-                <input type="checkbox">
-                <span>Только акционные</span>
-            </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Только акционные</span>
+                </label>
+            </div>
 
             <ul class="flat-results-grid">
                 <li class="flat-results-grid__item">
-                    <div class="flat-mini-card">
+                    <div class="flat-mini-card flat-mini-card--popular">
                         <a href="#" class="flat-mini-card__image">
                             <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
                         </a>
@@ -182,7 +251,7 @@
                     </div>
                 </li>
                 <li class="flat-results-grid__item">
-                    <div class="flat-mini-card">
+                    <div class="flat-mini-card flat-mini-card--new">
                         <a href="#" class="flat-mini-card__image">
                             <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
                         </a>
@@ -331,6 +400,9 @@
         </div>
     </div>
 </footer>
+
+<script src="js/micromodal.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
