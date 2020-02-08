@@ -1,0 +1,22 @@
+.promotion-modal-content {
+
+}
+
+.promotion-modal-content__title {
+  @include heading-3();
+}
+
+.promotion-modal-content__date {
+  font-size: 12px;
+}
+
+.promotion-modal-content__actions {
+  display: flex;
+}
+
+.promotion-modal-content__legal {
+  font-size: 12px;
+  line-height: 1.67em;
+  padding-top: 40px;
+  border-top: 1px solid #e2e2e2;
+}

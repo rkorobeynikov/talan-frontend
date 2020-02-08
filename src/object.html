@@ -7,6 +7,69 @@
 </head>
 <body>
 
+    <header class="page-header">
+        <div class="page-header__left-group">
+            <a href="#" class="page-header__logo">
+                <img src="img/logo.svg" alt="Талан" class="page-heeader__logo-img">
+            </a>
+            <div class="page-header__city dropdown js-dropdown">
+                <button type="button" aria-controls="menu-example" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Ижевск</button>
+                <ul class="menu js-menu" id="menu-example">
+                    <li><a href="#0" class="menu__item">Уфа</a></li>
+                    <li><a href="#0" class="menu__item">Пермь</a></li>
+                    <li><a href="#0" class="menu__item">Набережные Челны</a></li>
+                    <li><a href="#0" class="menu__item">Тюмень</a></li>
+                    <li><a href="#0" class="menu__item">Хабаровск</a></li>
+                    <li><a href="#0" class="menu__item">Сочи</a></li>
+                    <li><a href="#0" class="menu__item">Тверь</a></li>
+                    <li><a href="#0" class="menu__item">Ханты-Мансийск</a></li>
+                    <li><a href="#0" class="menu__item">Нижний Новгород</a></li>
+                    <li><a href="#0" class="menu__item">Новосибирск</a></li>
+                    <li><a href="#0" class="menu__item">Нижневартовск</a></li>
+                    <li><a href="#0" class="menu__item">Владивосток</a></li>
+                    <li><a href="#0" class="menu__item">Севастополь</a></li>
+                    <li><a href="#0" class="menu__item">Ярославль</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-header__middle-group">
+            <ul class="page-header__nav top-nav">
+                <li class="top-nav__item dropdown js-dropdown">
+                    <button type="button" aria-controls="objects-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Объекты</button>
+                    <ul class="menu js-menu" id="objects-dropdown">
+                        <li><a href="#0" class="menu__item">Жилой комплекс «Я ЖИВУ! На Подлесной»</a></li>
+                        <li><a href="#0" class="menu__item">Жилой комплекс «Клубный дом на Фруктовой»</a></li>
+                    </ul>
+                </li>
+                <li class="top-nav__item dropdown js-dropdown">
+                    <button type="button" aria-controls="sections-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">О компании</button>
+
+                    <ul class="menu js-menu" id="sections-dropdown">
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item">Команда</a></li>
+                        <li><a href="#" class="menu__item">Вакансии</a></li>
+                        <li><a href="#" class="menu__item">Миссия компании</a></li>
+                        <li><a href="#" class="menu__item">Новости</a></li>
+                        <li><a href="#" class="menu__item">Открытые данные</a></li>
+                        <li><a href="#" class="menu__item">Карьера</a></li>
+                        <li><a href="#" class="menu__item">Талан.журнал</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-header__right-group">
+            <div class="page-header__contacts header-phone">
+                <a href="tel:+73412918742" class="header-phone__phone">+ 7 3412 918-742</a>
+                <span class="header-phone__hours">с 9:00 до 19:00</span>
+            </div>
+            <div class="page-header__login">
+                <a href="#" class="page-header__btn page-header__btn--profile">Корзина</a>
+            </div>
+        </div>
+    </header>
+
     <div class="callback-promo">
         <div class="callback-promo__inner">
             <div class="callback-promo__description">
@@ -14,14 +77,19 @@
                 <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
             </div>
             <form action="" class="callback-promo__form">
-                <label for="callback-form-name" class="visually-hidden">Имя</label>
-                <input type="text" id="callback-form-name" placeholder="Имя" class="input callback-promo__input">
-                <label for="callback-form-phone" class="visually-hidden">Телефон</label>
-                <input type="text" id="callback-form-phone" placeholder="Телефон" class="input callback-promo__input">
-                <button type="submit" class="button">Заказать звонок</button>
+                <div class="callback-promo__input">
+                    <label for="callback-form-name" class="visually-hidden">Имя</label>
+                    <input type="text" id="callback-form-name" placeholder="Имя" class="input">
+                </div>
+                <div class="callback-promo__input">
+                    <label for="callback-form-phone" class="visually-hidden">Телефон</label>
+                    <input type="text" id="callback-form-phone" placeholder="Телефон" class="input">
+                </div>
+                <button type="submit" class="button button--small button--dark">Заказать звонок</button>
             </form>
         </div>
     </div>
+
     <div class="sticky-nav-container">
         <div class="sticky-nav-container__inner">
             <ul class="sticky-nav-list">
@@ -268,6 +336,7 @@
     <button data-micromodal-trigger="modal-1">modal-1</button>
     <button data-micromodal-trigger="modal-2">modal-2</button>
     <button data-micromodal-trigger="modal-3">modal-3</button>
+    <button data-micromodal-trigger="modal-5">modal-5</button>
 
 
     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
@@ -477,6 +546,63 @@
                 </header>
                 <main class="modal__content" id="modal-4-content">
                     <img src="img/content/image%2048-2.jpg" alt="">
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-5-content">
+                    <div class="promotion-modal-layout">
+                        <div class="promotion-modal-layout__image">
+                            <img src="img/content/image%2054.png" alt="" class="promotion-modal-layout__img">
+                        </div>
+                        <div class="promotion-modal-layout__content promotion-modal-content">
+                            <h2 class="promotion-modal-content__title">Неипотека 0% до конца строительства</h2>
+                            <time class="promotion-modal-content__date">29 декабря 2019</time>
+                            <div class="promotion-modal-content__text-content text-content">
+                                <p>Ипотека сейчас выгодна, а рассрочка еще выгоднее.</p>
+                                <p>Внесите первый взнос и забудьте о процентах до конца строительства. Зачем переплачивать, когда можно сэкономить и готовиться к переезду — заказать дизайн проект, присматривать новую мебель или просто съездить всей семьей в отпуск. Это вам не ипотека</p>
+                            </div>
+                            <div class="promotion-modal-content__actions">
+                                <a href="#" class="button button--small">Перейти к&nbsp;квартирам в&nbsp;акции</a>
+                                <div class="promotion-modal-content__social">
+                                    <span class="promotion-modal-content__social-label">Поделиться</span>
+                                    <!-- social icons -->
+                                </div>
+                            </div>
+                            <div class="promotion-modal-content__legal">
+                                <p>Подробности и проектные декларации на сайте наш.дом.рф и ижевск.талан.рф. Застройщик: ООО «Специализированный Застройщик «ТАЛАН-ИЖЕВСК» (ИНН 1831081441, Ижевск, Красноармейская,86). Беспроцентная рассрочка при покупке объекта долевого участия в «Многофункциональном жилом комплексе переменной этажности со встроенными нежилыми помещениями по ул. Фруктовая в Октябрьском районе г. Ижевска. Этап 1,2,3». Под НЕИПОТЕКОЙ понимается рассрочка предоставляется ООО «Специализированный Застройщик «ТАЛАН-ИЖЕВСК» . Под «до конца строительства" понимается дата не позднее 30.09.2020 (3 месяца до ввода дома в эксплуатацию по проектной декларации). Период акции с 25.12.2019 по 31.01.2020 г. Предложение ограничено. Реклама. Не является офертой.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callback-promo">
+                        <div class="callback-promo__inner">
+                            <div class="callback-promo__description">
+                                <h3 class="callback-promo__title">Мы всегда готовы ответить на любые ваши вопросы</h3>
+                                <p class="callback-promo__paragraph">Оставьте свои данные и&nbsp;напишите интересующий вопрос. Наши менеджеры как можно оперативнее свяжутся с&nbsp;вами, и&nbsp;квалифицированно проконсультируют.</p>
+                            </div>
+                            <form action="" class="callback-promo__form">
+                                <div class="callback-promo__input">
+                                    <label for="question-form-name" class="visually-hidden">Имя</label>
+                                    <input type="text" id="question-form-name" placeholder="Имя" class="input">
+                                </div>
+                                <div class="callback-promo__input">
+                                    <label for="question-form-phone" class="visually-hidden">Телефон</label>
+                                    <input type="text" id="question-form-phone" placeholder="Телефон" class="input">
+                                </div>
+                                <label for="question-form-body" class="visually-hidden">Ваш вопрос</label>
+                                <textarea id="question-form-body" placeholder="Ваш вопрос"></textarea>
+                                <button type="submit" class="button button--small button--dark">Задать вопрос</button>
+                            </form>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>

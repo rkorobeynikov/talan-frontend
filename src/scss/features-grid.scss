@@ -4,10 +4,16 @@
 
 .features-grid__row {
   display: flex;
+  margin-top: 40px;
 }
 
 .features-grid__item {
   position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .features-grid__item--medium {
@@ -26,6 +32,14 @@
 .features-grid__group {
   width: 65.34%;
   margin-left: 40px;
+}
+
+.features-grid__group > .features-grid__item {
+  margin-top: 40px;
+}
+
+.features-grid__group > .features-grid__item:first-child {
+  margin-top: 0;
 }
 
 .features-grid__label {

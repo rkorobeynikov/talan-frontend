@@ -1,0 +1,18 @@
+.promotion-modal-layout {
+  @include page-inner();
+  display: flex;
+  justify-content: space-between;
+}
+
+.promotion-modal-layout__image {
+  flex: 0 1 31.4%;
+}
+
+.promotion-modal-layout__img {
+  display: block;
+  width: 100%;
+}
+
+.promotion-modal-layout__content {
+  flex: 0 1 64.93%
+}
