@@ -7,6 +7,69 @@
 
 </head>
 <body>
+<header class="page-header">
+    <div class="page-header__left-group">
+        <a href="#" class="page-header__logo">
+            <img src="img/logo.svg" alt="Талан" class="page-heeader__logo-img">
+        </a>
+        <div class="page-header__city dropdown js-dropdown">
+            <button type="button" aria-controls="menu-example" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Ижевск</button>
+            <ul class="menu js-menu" id="menu-example">
+                <li><a href="#0" class="menu__item">Уфа</a></li>
+                <li><a href="#0" class="menu__item">Пермь</a></li>
+                <li><a href="#0" class="menu__item">Набережные Челны</a></li>
+                <li><a href="#0" class="menu__item">Тюмень</a></li>
+                <li><a href="#0" class="menu__item">Хабаровск</a></li>
+                <li><a href="#0" class="menu__item">Сочи</a></li>
+                <li><a href="#0" class="menu__item">Тверь</a></li>
+                <li><a href="#0" class="menu__item">Ханты-Мансийск</a></li>
+                <li><a href="#0" class="menu__item">Нижний Новгород</a></li>
+                <li><a href="#0" class="menu__item">Новосибирск</a></li>
+                <li><a href="#0" class="menu__item">Нижневартовск</a></li>
+                <li><a href="#0" class="menu__item">Владивосток</a></li>
+                <li><a href="#0" class="menu__item">Севастополь</a></li>
+                <li><a href="#0" class="menu__item">Ярославль</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header__middle-group">
+        <ul class="page-header__nav top-nav">
+            <li class="top-nav__item dropdown js-dropdown">
+                <button type="button" aria-controls="objects-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Объекты</button>
+                <ul class="menu js-menu" id="objects-dropdown">
+                    <li><a href="#0" class="menu__item">Жилой комплекс «Я ЖИВУ! На Подлесной»</a></li>
+                    <li><a href="#0" class="menu__item">Жилой комплекс «Клубный дом на Фруктовой»</a></li>
+                </ul>
+            </li>
+            <li class="top-nav__item dropdown js-dropdown">
+                <button type="button" aria-controls="sections-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">О компании</button>
+
+                <ul class="menu js-menu" id="sections-dropdown">
+                    <li><a href="#" class="menu__item">Контакты</a></li>
+                    <li><a href="#" class="menu__item">Команда</a></li>
+                    <li><a href="#" class="menu__item">Вакансии</a></li>
+                    <li><a href="#" class="menu__item">Миссия компании</a></li>
+                    <li><a href="#" class="menu__item">Новости</a></li>
+                    <li><a href="#" class="menu__item">Открытые данные</a></li>
+                    <li><a href="#" class="menu__item">Карьера</a></li>
+                    <li><a href="#" class="menu__item">Талан.журнал</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-header__right-group">
+        <div class="page-header__contacts header-phone">
+            <a href="tel:+73412918742" class="header-phone__phone">+ 7 3412 918-742</a>
+            <span class="header-phone__hours">с 9:00 до 19:00</span>
+        </div>
+        <div class="page-header__login">
+            <a href="#" class="page-header__btn page-header__btn--profile">Корзина</a>
+        </div>
+    </div>
+</header>
+
     <ol class="breadcrumbs">
         <li class="breadcrumbs__item">
             <a href="#" class="breadcrumbs__link">Главная</a>
@@ -98,8 +161,13 @@
                 </div>
             </div>
             <div class="flat-overview__description object-description">
+                <p class="object-description__price">
+                    <span class="object-description__price-value">от 2 305 800 ₽</span>
+                    <span class="object-description__price-square">52 468 ₽/м<sup>2</sup></span>
+<!--                    <span class="object-description__mortgage-payment">20 380 ₽/месяц в ипотеку</span>-->
+                </p>
                 <p class="object-description__bookmark">
-                    <a href="#" class="icon-btn icon-btn--like">Добавить в&nbsp;избранное</a>
+                    <a href="#" class="icon-btn icon-btn--like">В&nbsp;избранное</a>
                     <span class="object-description__bookmark-label">32 человека добавили в&nbsp;избранное</span>
                 </p>
                 <table class="object-description__table">
@@ -139,18 +207,22 @@
                     </tbody>
                 </table>
 
-                <p class="object-description__price">
-                    <span class="object-description__price-value">2 305 800 ₽</span>
-                    <span class="object-description__price-square">52 468 ₽/м<sup>2</sup></span>
-                    <span class="object-description__mortgage-payment">20 380 ₽/месяц в ипотеку</span>
-                </p>
+                <div class="object-description__mortgage">
+                    <p class="object-description__mortgage-type">
+                        <span class="object-description__mortgage-type-label">Ипотека:</span>
+                        <span class="object-description__mortgage-type-rate">от 9,2%</span>
+                        <a href="#" class="object-description__mortgage-payment object-description__mortgage-payment--link">20 380 ₽/месяц</a>
+                    </p>
+                    <p class="object-description__mortgage-type">
+                        <span class="object-description__mortgage-type-label">Ипотека:</span>
+                        <span class="object-description__mortgage-type-rate">от 9,2%</span>
+                        <span class="object-description__mortgage-payment">20 380 ₽/месяц</span>
+                    </p>
+                </div>
 
                 <div class="object-description__actions">
                     <div class="object-description__action">
-                        <a href="#" class="button ">Добавить в&nbsp;корзину</a>
-                    </div>
-                    <div class="object-description__action">
-                        <a href="#" class="button button--white">Забронировать</a>
+                        <a href="#" class="button button--large">Добавить в&nbsp;корзину</a>
                     </div>
                 </div>
 
@@ -177,11 +249,15 @@
                 <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
             </div>
             <form action="" class="callback-promo__form">
-                <label for="callback-form-name" class="visually-hidden">Имя</label>
-                <input type="text" id="callback-form-name" placeholder="Имя" class="input callback-promo__input">
-                <label for="callback-form-phone" class="visually-hidden">Телефон</label>
-                <input type="text" id="callback-form-phone" placeholder="Телефон" class="input callback-promo__input">
-                <button type="submit" class="button">Заказать звонок</button>
+                <div class="callback-promo__input">
+                    <label for="callback-form-name" class="visually-hidden">Имя</label>
+                    <input type="text" id="callback-form-name" placeholder="Имя" class="input">
+                </div>
+                <div class="callback-promo__input">
+                    <label for="callback-form-phone" class="visually-hidden">Телефон</label>
+                    <input type="text" id="callback-form-phone" placeholder="Телефон" class="input">
+                </div>
+                <button type="submit" class="button button--small button--dark">Заказать звонок</button>
             </form>
         </div>
     </div>
@@ -274,6 +350,7 @@
         </div>
     </footer>
 
+    <script src="js/micromodal.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

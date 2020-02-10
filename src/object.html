@@ -159,6 +159,46 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="flat-selector">
+                <header class="flat-selector__header">
+                    <ul class="tabs-list">
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label">Все</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label">1-комн.</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label">1,5-комн.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </header>
+                <div class="flat-selector__body">
+                    <div class="flat-selector__flats-grid"></div>
+                    <div class="flat-selector__flats-list"></div>
+                </div>
+            </div>
+
+            <div class="unit-selector" style="position:relative;display: inline-block;">
+                <style>.unit-2:hover { fill-opacity: 0.2 }</style>
+                <img src="img/content/Rectangle%2058.jpg" alt="">
+                <svg style="position:absolute;top: 0;left: 0;" width="339" height="355" viewBox="0 0 339 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="unit-2" d="M88 65.5L6.5 110L2.5 107.5L11.5 241L181 351.5L324 217L336 74.5L275 52L298 37L299.5 12.5L269 3L239 21V28.5L220.5 39V50L185 71V80L125.5 58L99.5 72.5L88 65.5Z" fill="#00CE2D" fill-opacity="0.33" stroke="black" stroke-opacity="0.56" stroke-width="4"/>
+                </svg>
+            </div>
+        </section>
+
         <section class="promotions-section">
             <h2 class="promotions-section__title">Акции и спецпредложения</h2>
             <ul class="promotions-list">
@@ -570,7 +610,7 @@
                                 <p>Внесите первый взнос и забудьте о процентах до конца строительства. Зачем переплачивать, когда можно сэкономить и готовиться к переезду — заказать дизайн проект, присматривать новую мебель или просто съездить всей семьей в отпуск. Это вам не ипотека</p>
                             </div>
                             <div class="promotion-modal-content__actions">
-                                <a href="#" class="button button--small">Перейти к&nbsp;квартирам в&nbsp;акции</a>
+                                <a href="#" class="button">Перейти к&nbsp;квартирам в&nbsp;акции</a>
                                 <div class="promotion-modal-content__social">
                                     <span class="promotion-modal-content__social-label">Поделиться</span>
                                     <!-- social icons -->
@@ -582,13 +622,13 @@
                         </div>
                     </div>
 
-                    <div class="callback-promo">
-                        <div class="callback-promo__inner">
-                            <div class="callback-promo__description">
+                    <div class="callback-promo callback-promo--question">
+                        <div class="callback-promo__inner callback-promo__inner--question">
+                            <div class="callback-promo__description callback-promo__description--question">
                                 <h3 class="callback-promo__title">Мы всегда готовы ответить на любые ваши вопросы</h3>
                                 <p class="callback-promo__paragraph">Оставьте свои данные и&nbsp;напишите интересующий вопрос. Наши менеджеры как можно оперативнее свяжутся с&nbsp;вами, и&nbsp;квалифицированно проконсультируют.</p>
                             </div>
-                            <form action="" class="callback-promo__form">
+                            <form action="" class="callback-promo__form callback-promo__form--question">
                                 <div class="callback-promo__input">
                                     <label for="question-form-name" class="visually-hidden">Имя</label>
                                     <input type="text" id="question-form-name" placeholder="Имя" class="input">
@@ -598,7 +638,7 @@
                                     <input type="text" id="question-form-phone" placeholder="Телефон" class="input">
                                 </div>
                                 <label for="question-form-body" class="visually-hidden">Ваш вопрос</label>
-                                <textarea id="question-form-body" placeholder="Ваш вопрос"></textarea>
+                                <textarea id="question-form-body" placeholder="Ваш вопрос" class="input input--textarea callback-promo__textarea"></textarea>
                                 <button type="submit" class="button button--small button--dark">Задать вопрос</button>
                             </form>
                         </div>

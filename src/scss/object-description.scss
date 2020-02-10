@@ -4,7 +4,7 @@
 
 .object-description__bookmark-label {
   font-size: 18px;
-  color: #909DA8;
+  color: #3d3d3d;
   display: inline-block;
   margin-left: 28px;
   letter-spacing: 0.15px;
@@ -14,6 +14,7 @@
   width: 100%;
   display: block;
   margin-top: 36px;
+  color: #3d3d3d;
 }
 
 .object-description__table-body {
@@ -65,11 +66,6 @@
 
 .object-description__action {
   flex: 1;
-  margin-left: 40px;
-
-  &:first-child {
-    margin-left: 0;
-  }
 }
 
 .object-description__text-content {
@@ -85,21 +81,47 @@
 
 .object-description__price-value {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 42px;
   color: #343434;
 }
 
 .object-description__price-square {
-  color: #909DA8;
+  color: #3d3d3d;
   font-size: 18px;
   display: inline-block;
   margin-left: 30px;
 }
 
+.object-description__mortgage {
+  display: flex;
+}
+
+.object-description__mortgage-type {
+  flex: 1;
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 .object-description__mortgage-payment {
-  min-width: 100%;
-  width: 100%;
   display: block;
+  color: #343434;
   margin-top: 18px;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.object-description__mortgage-type-label {
+  color: #3d3d3d;
+}
+
+.object-description__mortgage-type-rate {
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+.object-description__mortgage-payment--link {
+  color: $color-green;
 }

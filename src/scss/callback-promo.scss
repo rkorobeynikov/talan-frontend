@@ -1,9 +1,12 @@
 .callback-promo {
   @include page-inner();
-
-
-
 }
+
+.callback-promo--question {
+  max-width: 1126px;
+  margin-top: 40px;
+}
+
 .callback-promo__inner {
   background: $color-green;
   border-radius: $radius-medium;
@@ -15,12 +18,24 @@
   box-sizing: border-box;
 }
 
+.callback-promo__inner--question {
+  padding: 52px 53px 36px 48px;
+  align-items: flex-start;
+}
+
+
 .callback-promo__description {
   padding-left: 126px;
   position: relative;
   flex: 36.32% 0 0;
   box-sizing: border-box;
   margin-right: 6.88%;
+}
+
+.callback-promo__description--question {
+  flex: 33.07% 0 0;
+  box-sizing: content-box;
+  padding-top: 6px;
 }
 
 .callback-promo__description::before {
@@ -37,6 +52,12 @@
   margin-top: -50px;
 }
 
+.callback-promo__description--question::before {
+  top: -13px;
+  margin-top: 0;
+}
+
+
 .callback-promo__title {
   @include heading-4();
 }
@@ -49,13 +70,37 @@
   display: flex;
   flex: 56.8% 0 0;
   max-width: 56.8%;
+  flex-wrap: nowrap;
 
   button {
     width: 27.5%;
   }
 }
 
+.callback-promo__form--question {
+  flex: 1;
+  flex-wrap: wrap;
+
+  button {
+    margin-top: 24px;
+    width: 62.2%;
+  }
+}
+
 .callback-promo__input {
   width: 35.76%;
   padding-right: 30px;
+}
+
+.callback-promo--question .callback-promo__input {
+  flex: 1;
+}
+
+.callback-promo--question .callback-promo__input + .callback-promo__input {
+  padding: 0;
+}
+
+
+.callback-promo__textarea {
+  margin-top: 24px;
 }

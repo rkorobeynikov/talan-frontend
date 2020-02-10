@@ -8,10 +8,19 @@
 
 .promotion-modal-content__date {
   font-size: 12px;
+  margin-top: 14px;
+  display: block;
 }
 
 .promotion-modal-content__actions {
   display: flex;
+  align-items: baseline;
+  margin-top: 40px;
+
+  .button {
+    min-width: 378px;
+    margin-right: 64px;
+  }
 }
 
 .promotion-modal-content__legal {
@@ -19,4 +28,8 @@
   line-height: 1.67em;
   padding-top: 40px;
   border-top: 1px solid #e2e2e2;
+}
+
+.promotion-modal-content__actions {
+  padding-bottom: 43px;
 }
