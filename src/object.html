@@ -160,42 +160,153 @@
             </div>
         </section>
 
-        <section>
-            <div class="flat-selector">
-                <header class="flat-selector__header">
-                    <ul class="tabs-list">
-                        <li class="tabs-list__item">
-                            <label class="tabbed-checkbox">
-                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
-                                <span class="tabbed-checkbox__label">Все</span>
-                            </label>
-                        </li>
-                        <li class="tabs-list__item">
-                            <label class="tabbed-checkbox">
-                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
-                                <span class="tabbed-checkbox__label">1-комн.</span>
-                            </label>
-                        </li>
-                        <li class="tabs-list__item">
-                            <label class="tabbed-checkbox">
-                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
-                                <span class="tabbed-checkbox__label">1,5-комн.</span>
-                            </label>
-                        </li>
-                    </ul>
-                </header>
-                <div class="flat-selector__body">
-                    <div class="flat-selector__flats-grid"></div>
-                    <div class="flat-selector__flats-list"></div>
-                </div>
-            </div>
+        <section class="flat-selector-section">
+            <div class="flat-selector-section__inner">
 
-            <div class="unit-selector" style="position:relative;display: inline-block;">
-                <style>.unit-2:hover { fill-opacity: 0.2 }</style>
-                <img src="img/content/Rectangle%2058.jpg" alt="">
-                <svg style="position:absolute;top: 0;left: 0;" width="339" height="355" viewBox="0 0 339 355" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="unit-2" d="M88 65.5L6.5 110L2.5 107.5L11.5 241L181 351.5L324 217L336 74.5L275 52L298 37L299.5 12.5L269 3L239 21V28.5L220.5 39V50L185 71V80L125.5 58L99.5 72.5L88 65.5Z" fill="#00CE2D" fill-opacity="0.33" stroke="black" stroke-opacity="0.56" stroke-width="4"/>
-                </svg>
+                <div class="tabs js-tabs">
+                    <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
+                        <li><a href="#flat-choser" class="tabs__control--selected js-tab-focus">Выбор планировки</a></li>
+                        <li><a href="#unit-choser" class="js-tab-focus">Выбор секции</a></li>
+                    </ul>
+
+                    <div class="tabs__panels js-tabs__panels">
+                        <section id="flat-choser" class="tabs__panel tabs__panel--selected js-tabs__panel">
+                            <div class="flat-selector">
+                                <header class="flat-selector__header">
+                                    <button type="button" class="control" data-filter="all">Все</button>
+                                    <button type="button" class="control" data-filter=".room1">1-комн.</button>
+                                    <button type="button" class="control" data-filter=".room15">1,5-комн.</button>
+                                </header>
+                                <div class="flat-selector__body">
+                                    <div class="flat-selector__flats-grid flat-selector-grid container" data-ref="container">
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room15">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1.5-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room15">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1.5-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="flat-selector-grid__item mix room1">
+                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                            <div class="flat-selector-grid__title">1-комнатная</div>
+                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                        </div>
+                                    </div>
+                                    <div class="flat-selector__flats-list">
+                                        <h3>В наличии 3 квартиры</h3>
+                                        <ul class="flat-selector-list">
+                                            <li class="flat-selector-list__item">
+                                                <img src="" alt="">
+                                                <div class="flat-selector-list__info">
+                                                    <a href="#">4 500 000 ₽</a>
+                                                    <ul class="flat-selector-list__meta">
+                                                        <li>4-комн.</li>
+                                                        <li>156 м<sup>2</sup></li>
+                                                        <li>4/14 этаж</li>
+                                                        <li>1 секция</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="unit-choser" class="tabs__panel js-tabs__panel">
+                            <div class="unit-selector" style="position:relative;display: inline-block;">
+                                <style>.unit-2:hover { fill-opacity: 0.2 }</style>
+                                <img src="img/content/Rectangle%2058.jpg" alt="">
+                                <svg style="position:absolute;top: 0;left: 0;" width="339" height="355" viewBox="0 0 339 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="unit-2" d="M88 65.5L6.5 110L2.5 107.5L11.5 241L181 351.5L324 217L336 74.5L275 52L298 37L299.5 12.5L269 3L239 21V28.5L220.5 39V50L185 71V80L125.5 58L99.5 72.5L88 65.5Z" fill="#00CE2D" fill-opacity="0.33" stroke="black" stroke-opacity="0.56" stroke-width="4"/>
+                                </svg>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -648,6 +759,7 @@
         </div>
     </div>
 
+    <script src="js/mixitup.js"></script>
     <script src="js/micromodal.min.js"></script>
     <script src="js/main.js"></script>
 </body>

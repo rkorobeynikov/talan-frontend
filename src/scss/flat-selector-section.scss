@@ -1,0 +1,7 @@
+.flat-selector-section {
+  background: #f9f9f9;
+}
+
+.flat-selector-section__inner {
+  @include page-inner();
+}

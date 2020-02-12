@@ -1,0 +1,22 @@
+.flat-selector {
+  max-width: 74.26%;
+  border-radius: $radius-medium;
+  box-shadow: $object-shadow;
+  background: $color-white;
+}
+
+.flat-selector__body {
+  display: flex;
+  border-top: 1px solid #e2e2e2;
+  max-height: 600px;
+}
+
+.flat-selector__flats-grid {
+  flex: 0 0 50%;
+  overflow: auto;
+}
+
+.flat-selector__flats-list {
+  flex: 0 0 50%;
+  border-left: 1px solid #e2e2e2;
+}

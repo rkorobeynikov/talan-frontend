@@ -1,0 +1,27 @@
+.flat-selector-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.flat-selector-grid__item {
+  flex: 0 0 33.33%;
+  text-align: center;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flat-selector-grid__item:hover {
+  background: #f5f5f5;
+}
+
+.flat-selector-grid__image {
+  margin: 0 auto;
+  display: block;
+}
+

@@ -962,3 +962,15 @@ Math.easeInOutQuad = function (t, b, c, d) {
         });
     }
 }());
+
+(function () {
+
+    var container = document.querySelector('[data-ref="container"]');
+
+    var mixer = mixitup(container, {
+        animation: {
+            duration: 500
+        }
+    })
+}());
+
