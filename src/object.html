@@ -173,9 +173,9 @@
                         <section id="flat-choser" class="tabs__panel tabs__panel--selected js-tabs__panel">
                             <div class="flat-selector">
                                 <header class="flat-selector__header">
-                                    <button type="button" class="control" data-filter="all">Все</button>
-                                    <button type="button" class="control" data-filter=".room1">1-комн.</button>
-                                    <button type="button" class="control" data-filter=".room15">1,5-комн.</button>
+                                    <button type="button" class="flat-selector__filter-btn" data-filter="all">Все</button>
+                                    <button type="button" class="flat-selector__filter-btn" data-filter=".room1">1-комн.</button>
+                                    <button type="button" class="flat-selector__filter-btn" data-filter=".room15">1,5-комн.</button>
                                 </header>
                                 <div class="flat-selector__body">
                                     <div class="flat-selector__flats-grid flat-selector-grid container" data-ref="container">
@@ -276,21 +276,57 @@
                                         </div>
                                     </div>
                                     <div class="flat-selector__flats-list">
-                                        <h3>В наличии 3 квартиры</h3>
+                                        <h3 class="flat-selector__flats-list-title">В наличии 3 квартиры</h3>
                                         <ul class="flat-selector-list">
-                                            <li class="flat-selector-list__item">
-                                                <img src="" alt="">
+                                            <li class="flat-selector-list__item flat-selector-list__item--popular">
+                                                <div class="flat-selector-list__image">
+                                                    <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
+                                                </div>
                                                 <div class="flat-selector-list__info">
-                                                    <a href="#">4 500 000 ₽</a>
+                                                    <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
                                                     <ul class="flat-selector-list__meta">
                                                         <li>4-комн.</li>
                                                         <li>156 м<sup>2</sup></li>
                                                         <li>4/14 этаж</li>
                                                         <li>1 секция</li>
                                                     </ul>
+                                                    <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
+                                                </div>
+                                            </li>
+                                            <li class="flat-selector-list__item">
+                                                <div class="flat-selector-list__image">
+                                                    <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
+                                                </div>
+                                                <div class="flat-selector-list__info">
+                                                    <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
+                                                    <ul class="flat-selector-list__meta">
+                                                        <li>4-комн.</li>
+                                                        <li>156 м<sup>2</sup></li>
+                                                        <li>4/14 этаж</li>
+                                                        <li>1 секция</li>
+                                                    </ul>
+                                                    <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
+                                                </div>
+                                            </li>
+                                            <li class="flat-selector-list__item flat-selector-list__item--popular">
+                                                <div class="flat-selector-list__image">
+                                                    <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
+                                                </div>
+                                                <div class="flat-selector-list__info">
+                                                    <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
+                                                    <ul class="flat-selector-list__meta">
+                                                        <li>4-комн.</li>
+                                                        <li>156 м<sup>2</sup></li>
+                                                        <li>4/14 этаж</li>
+                                                        <li>1 секция</li>
+                                                    </ul>
+                                                    <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
                                                 </div>
                                             </li>
                                         </ul>
+                                        <div class="flat-selector__footer">
+                                            <a href="#" class="flat-selector__show-all-flats">Показать все квартиры в ЖК</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
