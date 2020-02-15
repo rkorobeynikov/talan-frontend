@@ -497,7 +497,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
     }
 }());
 
-// File#: _2_slideshow
+/// File#: _2_slideshow
 // Usage: codyhouse.co/license
 (function() {
     var Slideshow = function(opts) {
@@ -567,7 +567,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
         slideshow.selectedSlide = Util.getIndexInArray(slideshow.items, slideshow.element.getElementsByClassName('slideshow__item--selected')[0]);
         // create an element that will be used to announce the new visible slide to SR
         var srLiveArea = document.createElement('div');
-        Util.setAttributes(srLiveArea, {'class': 'visually-hidden js-slideshow__aria-live', 'aria-live': 'polite', 'aria-atomic': 'true'});
+        Util.setAttributes(srLiveArea, {'class': 'sr-only js-slideshow__aria-live', 'aria-live': 'polite', 'aria-atomic': 'true'});
         slideshow.element.appendChild(srLiveArea);
         slideshow.ariaLive = srLiveArea;
     };
@@ -581,8 +581,8 @@ Math.easeInOutQuad = function (t, b, c, d) {
             navigation.setAttribute('class', 'slideshow__navigation');
             for(var i = 0; i < slideshow.items.length; i++) {
                 var className = (i == slideshow.selectedSlide) ? 'class="slideshow__nav-item slideshow__nav-item--selected js-slideshow__nav-item"' :  'class="slideshow__nav-item js-slideshow__nav-item"',
-                    navCurrentLabel = (i == slideshow.selectedSlide) ? '<span class="visually-hidden js-slideshow__nav-current-label">Current Item</span>' : '';
-                navChildren = navChildren + '<li '+className+'><button class="reset"><span class="visually-hidden">'+ (i+1) + '</span>'+navCurrentLabel+'</button></li>';
+                    navCurrentLabel = (i == slideshow.selectedSlide) ? '<span class="sr-only js-slideshow__nav-current-label">Current Item</span>' : '';
+                navChildren = navChildren + '<li '+className+'><button class="reset"><span class="sr-only">'+ (i+1) + '</span>'+navCurrentLabel+'</button></li>';
             }
 
             navigation.innerHTML = navChildren;
@@ -967,10 +967,12 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
     var container = document.querySelector('[data-ref="container"]');
 
-    var mixer = mixitup(container, {
-        animation: {
-            duration: 500
-        }
-    })
+    if (container) {
+        var mixer = mixitup(container, {
+            animation: {
+                duration: 500
+            }
+        })
+    }
 }());
 

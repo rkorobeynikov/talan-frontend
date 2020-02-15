@@ -7,13 +7,14 @@ Usage: codyhouse.co/license
 
 -------------------------------- */
 :root {
-  --slideshow-fade-transition-duration: 0.25s; // fade effect transition duration
+  --slideshow-fade-transition-duration: 1.25s; // fade effect transition duration
   --slideshow-slide-transition-duration: 0.35s; // slide effect transition duration
 
   // controls
   --slideshow-btn-width: 1.6em;
   --slideshow-btn-height: 3.2em;
   --slideshow-btn-icon-size: 1.6em;
+  --slideshow-btn-offset: 10px; // gap between button and slideshow edges
 }
 
 // slide
@@ -21,14 +22,19 @@ Usage: codyhouse.co/license
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 480px; // slideshow height
-  background-color: var(--color-bg);
+  height: 400px; // slideshow height
+  background-color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
   &:focus {
     outline: none;
+  }
+
+  &--hero-left {
+    justify-content: flex-start;
+    height: calc(100vh - 80px);
   }
 }
 
@@ -46,10 +52,18 @@ Usage: codyhouse.co/license
     overflow: hidden;
   }
 
+  .slideshow--hero {
+    border-radius: $radius-medium;
+
+    .slideshow__control {
+      display: none;
+    }
+  }
+
   .slideshow__content {
     overflow: hidden;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .slideshow__item {
@@ -65,6 +79,21 @@ Usage: codyhouse.co/license
     position: relative;
     z-index: 3;
     visibility: visible;
+  }
+
+  .slideshow__hero-text-container {
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 560px;
+
+    h1 {
+      @include heading-1();
+      color: #FFC248;;
+    }
   }
 }
 
@@ -183,7 +212,9 @@ Usage: codyhouse.co/license
 }
 
 .js {
-
+  .slideshow[data-swipe="on"] .slideshow__control {
+    display: none; // hide arrows on mobile if swipe is enabled
+  }
 
   .slideshow__control {
     display: block;
@@ -193,42 +224,57 @@ Usage: codyhouse.co/license
     transform: translateY(-50%);
 
     &:first-of-type {
-      left: 16px;
+      left: var(--slideshow-btn-offset);
     }
 
     &:last-of-type {
-      right: 16px;
+      right: var(--slideshow-btn-offset);
     }
   }
 
+    .slideshow[data-swipe="on"] .slideshow__control {
+      display: block; // show arrow controls
+    }
 
-  .slideshow[data-swipe="on"] .slideshow__control {
-    display: block; // show arrow controls
-  }
 }
 
 .slideshow__btn {
   display: block;
-  background-color: transparent;
-  height: 43px;
-  width: 23px;
+  background-color: rgba(0, 0, 0, 0.5); // IE fallback
+  height: var(--slideshow-btn-height);
+  width: var(--slideshow-btn-width);
+  border-radius: 10px;
   cursor: pointer;
-  transition: opacity 0.2s;
-  border: none;
-  appearance: none;
-  padding: 5px;
+  transition: background .2s, transform 0.2s;
 
   &:hover {
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .icon {
+      color: rgba(0, 0, 0, 0.5);
+    }
   }
 
   .slideshow:not(.slideshow--is-animating) &:active { // active effect
     transform: scale(0.95);
   }
-}
 
-.slideshow__btn--next {
-  transform: rotate(180deg);
+  .icon {
+    display: block;
+    width: var(--slideshow-btn-icon-size);
+    height: var(--slideshow-btn-icon-size);
+    margin: 0 auto;
+    transition: color .2s;
+    color: #ffffff; // IE fallback
+  }
+
+  @supports (grid-area: auto) {
+    background-color: transparent; // button color
+
+    .icon {
+      color: #000; // icon color
+    }
+  }
 }
 
 // slideshow navigation
@@ -242,19 +288,17 @@ Usage: codyhouse.co/license
   justify-content: center;
   align-items: center;
   background: transparent;
-  padding: 0;
-  margin: 0;
 }
 
 .slideshow__nav-item {
   display: inline-block; // flex fallback
-  margin: 0 var(--space-xxxs);
+  margin: 0 5px;
 
   button { // dot
     display: block;
     position: relative;
     font-size: 8px; // dot size
-    color: var(--color-contrast-high); // dot color
+    color: #000; // dot color
     height: 1em;
     width: 1em;
     border-radius: 50%;
@@ -272,7 +316,7 @@ Usage: codyhouse.co/license
       width: 1em;
       font-size: 14px;
       border-radius: inherit;
-      border: 1px solid var(--color-contrast-high);
+      border: 1px solid #ddd;
       opacity: 0;
       transform: scale(0);
       transition: 0.3s;
@@ -287,18 +331,43 @@ Usage: codyhouse.co/license
       }
     }
   }
+
+
+}
+
+.slideshow--hero .slideshow__nav-item {
+  margin: 0;
 }
 
 .slideshow__nav-item--selected button {
   opacity: 1;
 }
 
-  .slideshow__nav-item {
-    button {
-      font-size: 10px; // dot size
+.slideshow--hero .slideshow__nav-item button {
+  padding: 5px;
+  background: none;
+  border: none;
+  opacity: 1;
+  width: 18px;
+  height: 20px;
 
-      &::before { // focus circle
-        font-size: 16px;
-      }
-    }
+  &::before {
+    height: 4px;
+    width: 8px;
+    background: $color-green;
+    border-radius: 2px;
+    opacity: 1;
+    border: none;
+    display: block;
+    position: static;
+    transform: none;
   }
+}
+
+.slideshow--hero .slideshow__nav-item--selected button {
+  width: 48px;
+}
+
+.slideshow--hero .slideshow__nav-item--selected button::before {
+  width: 38px;
+}
