@@ -7,7 +7,7 @@ Usage: codyhouse.co/license
 
 -------------------------------- */
 :root {
-  --slideshow-fade-transition-duration: 1.25s; // fade effect transition duration
+  --slideshow-fade-transition-duration: 0.25s; // fade effect transition duration
   --slideshow-slide-transition-duration: 0.35s; // slide effect transition duration
 
   // controls
@@ -370,4 +370,34 @@ Usage: codyhouse.co/license
 
 .slideshow--hero .slideshow__nav-item--selected button::before {
   width: 38px;
+}
+
+.slideshow--flat-layout .slideshow__item {
+  overflow: hidden;
+}
+
+.slideshow--flat-layout .slideshow__nav-item {
+  margin: 0 5px;
+}
+
+.slideshow--flat-layout .slideshow__nav-item--selected button {
+  opacity: 1;
+}
+
+.slideshow--flat-layout .slideshow__nav-item button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #D8D8D8;
+  border-radius: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.slideshow--flat-layout .slideshow__navigation {
+  margin: 0;
+  padding: 0;
+  position: static;
+  height: auto;
 }

@@ -110,44 +110,42 @@
 
                     <div class="tabs__panels js-tabs__panels">
                         <section id="tab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
-                            <div class="text-component">
-                                <h1>Panel 1</h1>
-                                <div class="slideshow js-slideshow slideshow--transition-fade" data-swipe="on">
+                            <div class="slideshow js-slideshow slideshow--transition-fade slideshow--flat-layout" data-swipe="on">
 
-                                    <ul class="slideshow__content">
+                                <ul class="slideshow__content">
 
-                                        <li class="slideshow__item js-slideshow__item" style="">
-                                            <img src="img/content/flat-interior.jpg" alt="">
-                                        </li>
+                                    <li class="slideshow__item js-slideshow__item" style="">
+                                        <img src="img/content/image%2042.png" alt="">
+                                    </li>
 
-                                        <li class="slideshow__item js-slideshow__item" style="">
-                                            <div class='container max-width-sm'><div class='text-component'><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla expedita eius eos maiores consectetur autem ratione voluptatem sequi, id eveniet.</p></div><div class='margin-top-md'><div class='flex flex-wrap flex-center flex-gap-sm'><a href='#0' class='btn btn--primary'>Download</a><a href='#0' class='color-inherit'>Learn more</a></div></div></div>
-                                        </li>
+                                    <li class="slideshow__item js-slideshow__item" style="">
+                                        <img src="img/content/image%2056.png" alt="">
+                                    </li>
 
-                                        <li class="slideshow__item js-slideshow__item" style="background-image: url('../../../app/assets/img/slideshow-img-1.jpg');">
-                                            <div class='container max-width-sm'><div class='text-component text-center'><h1>Slide Three</h1></div></div>
-                                        </li>
+                                </ul>
 
-                                        <li class="slideshow__item js-slideshow__item" style="">
-                                            <div class='container max-width-sm'><div class='text-component text-center'><h1>Slide Four</h1></div></div>
-                                        </li>
+                                <ul>
+                                    <li class="slideshow__control js-slideshow__control">
+                                        <button class="reset slideshow__btn js-tab-focus">
+                                            <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                        </button>
+                                    </li>
 
-                                    </ul>
+                                    <li class="slideshow__control js-slideshow__control">
+                                        <button class="reset slideshow__btn slideshow__btn--next js-tab-focus">
+                                            <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                        </button>
+                                    </li>
+                                </ul>
 
-                                    <ul>
-                                        <li class="slideshow__control js-slideshow__control">
-                                            <button class="reset slideshow__btn js-tab-focus">
-                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
-                                            </button>
-                                        </li>
-
-                                        <li class="slideshow__control js-slideshow__control">
-                                            <button class="reset slideshow__btn slideshow__btn--next js-tab-focus">
-                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <style>
+                                    .slideshow--flat-layout .slideshow__nav-item:nth-child(1) button {
+                                        background-image: url('img/content/image 42.png');
+                                    }
+                                    .slideshow--flat-layout .slideshow__nav-item:nth-child(2) button {
+                                        background-image: url('img/content/image 56.png');
+                                    }
+                                </style>
                             </div>
                         </section>
 
