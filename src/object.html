@@ -132,31 +132,33 @@
 
     <div class="sticky-nav-container">
         <div class="sticky-nav-container__inner">
-            <ul class="sticky-nav-list">
-                <li class="sticky-nav-list__item">
-                    <a href="" class="sticky-nav-list__link">О проекте</a>
-                </li>
-                <li class="sticky-nav-list__item">
-                    <a href="" class="sticky-nav-list__link">Выбор квартиры</a>
-                </li>
-                <li class="sticky-nav-list__item">
-                    <a href="" class="sticky-nav-list__link">Акции и спецпредложения</a>
-                </li>
-                <li class="sticky-nav-list__item">
-                    <a href="" class="sticky-nav-list__link">Инфраструктура</a>
-                </li>
-                <li class="sticky-nav-list__item">
-                    <a href="" class="sticky-nav-list__link">Ход строительства</a>
-                </li>
-                <li class="sticky-nav-list__item">
-                    <a href="" class="sticky-nav-list__link">Документация</a>
-                </li>
-            </ul>
+            <div class="sticky-nav-list">
+<!--                <ul class="sticky-nav-list__inner">-->
+<!--                    <li class="sticky-nav-list__item">-->
+<!--                        <a href="#about" class="sticky-nav-list__link">О проекте</a>-->
+<!--                    </li>-->
+<!--                    <li class="sticky-nav-list__item">-->
+<!--                        <a href="#choose-flat" class="sticky-nav-list__link">Выбор квартиры</a>-->
+<!--                    </li>-->
+<!--                    <li class="sticky-nav-list__item">-->
+<!--                        <a href="#promotions" class="sticky-nav-list__link">Акции и спецпредложения</a>-->
+<!--                    </li>-->
+<!--                    <li class="sticky-nav-list__item">-->
+<!--                        <a href="#infrastructure" class="sticky-nav-list__link">Инфраструктура</a>-->
+<!--                    </li>-->
+<!--                    <li class="sticky-nav-list__item">-->
+<!--                        <a href="#progress" class="sticky-nav-list__link">Ход строительства</a>-->
+<!--                    </li>-->
+<!--                    <li class="sticky-nav-list__item">-->
+<!--                        <a href="#docs" class="sticky-nav-list__link">Документация</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+            </div>
         </div>
 
         <section class="about-object-section">
             <div class="about-object-section__inner">
-                <h2 class="about-object-section__title">О проекте</h2>
+                <h2 id="about" class="about-object-section__title">О проекте</h2>
                 <div class="about-object-section__main">
                     <div class="about-object-section__grid features-grid">
                         <div class="features-grid__row">
@@ -201,7 +203,7 @@
         </section>
 
         <section class="flat-selector-section">
-            <div class="flat-selector-section__inner">
+            <div class="flat-selector-section__inner" id="choose-flat">
 
                 <div class="tabs js-tabs">
                     <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
@@ -380,14 +382,31 @@
                                     <path class="unit-2" d="M88 65.5L6.5 110L2.5 107.5L11.5 241L181 351.5L324 217L336 74.5L275 52L298 37L299.5 12.5L269 3L239 21V28.5L220.5 39V50L185 71V80L125.5 58L99.5 72.5L88 65.5Z" fill="#00CE2D" fill-opacity="0.33" stroke="black" stroke-opacity="0.56" stroke-width="4"/>
                                 </svg>
                             </div>
+
+                            <div class="unit-selector__tooltips">
+                                <div class="unit-selector__tooltip">
+                                    <h3>Подъезд 2</h3>
+                                    <p>Квартиры с улучшеной предчистовой отделкой</p>
+                                    <ul>
+                                        <li><span>1 комн.</span><span>от 2.7 млн</span></li>
+                                        <li><span>2 комн.</span><span>от 3.4 млн</span></li>
+                                        <li><span>3 комн.</span><span>от 5.6 млн</span></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </section>
+                        <script>
+                            document.querySelector('.unit-2').addEventListener('mouseover', function (e) {
+                                console.log(e);
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="promotions-section">
-            <h2 class="promotions-section__title">Акции и спецпредложения</h2>
+            <h2 class="promotions-section__title" id="promotions">Акции и спецпредложения</h2>
             <ul class="promotions-list">
                 <li class="promotions-list__item">
                     <a href="#">
@@ -409,7 +428,7 @@
 
         <section class="infrastructure-section">
             <div class="infrastructure-section__inner">
-                <h2 class="infrastructure-section__title">Инфраструктура</h2>
+                <h2 class="infrastructure-section__title" id="infrastructure">Инфраструктура</h2>
                 <div class="infrastructure-section__zoom-image">
                     <img src="img/content/image%2048-2.jpg" alt="" class="infrastructure-section__zoom-img">
                     <button data-micromodal-trigger="modal-4" aria-label="Увеличить изображение" type="button" class="infrastructure-section__zoom-btn"></button>
@@ -420,7 +439,7 @@
         <section class="development-progress-section">
             <div class="development-progress-section__inner">
                 <div class="development-progress-section__column">
-                    <h2 class="development-progress-section__title">Ход строительства</h2>
+                    <h2 class="development-progress-section__title" id="progress">Ход строительства</h2>
                     <div class="development-progress-section__progress-bar progress-widget">
                         <div class="progress-widget__header">
                             <h3 class="progress-widget__title">Общая готовность</h3>
@@ -461,7 +480,7 @@
 
         <section class="docs-section">
             <div class="docs-section__inner">
-                <h2 class="docs-section__title">Документация</h2>
+                <h2 class="docs-section__title" id="docs">Документация</h2>
                 <ul class="docs-list">
                     <li class="docs-list__item"><a href="#" class="docs-list__link docs-list__link--external">ЖК «Я живу!» На Подлесной на сайте Минстрой России</a></li>
                     <li class="docs-list__item"><a href="#" class="docs-list__link docs-list__link--doc">Скачать прайс-лист на доступные квартиры</a></li>
@@ -837,6 +856,17 @@
 
     <script src="js/mixitup.js"></script>
     <script src="js/micromodal.min.js"></script>
+    <script src="js/scrollnav.min.umd.js"></script>
     <script src="js/main.js"></script>
+    <script>
+
+            const content = document.querySelector('.sticky-nav-container');
+            scrollnav.init(content, {
+                debug: false,
+                insertTarget: document.querySelector('.sticky-nav-list'),
+                insertLocation: 'append'
+            });
+
+    </script>
 </body>
 </html>
