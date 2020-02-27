@@ -1,10 +1,10 @@
 .promotions-section {
   @include page-inner();
   margin-top: 60px;
+  padding-bottom: 60px;
 }
 
 .promotions-section__title {
   @include heading-3();
 
 }
-

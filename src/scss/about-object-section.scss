@@ -8,11 +8,13 @@
 
 .about-object-section__title {
   @include heading-3();
+  margin-top: -88px;
 }
 
 .about-object-section__main {
   display: flex;
   align-items: flex-start;
+  padding-bottom: 60px;
 }
 
 .about-object-section__grid {

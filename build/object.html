@@ -81,7 +81,7 @@
     </ol>
 
     <section class="hero-slider-section">
-        <div class="slideshow slideshow--hero slideshow--transition-fade js-slideshow">
+        <div class="slideshow slideshow--hero slideshow--transition-fade js-slideshow" data-autoplay="on">
             <ul class="slideshow__content">
                 <li class="slideshow__item slideshow__item--hero-left js-slideshow__item" style="background-image: url('img/content/image 13.jpg');">
                     <div class="slideshow__hero-text-container">
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <div class="callback-promo">
+    <div class="callback-promo callback-promo--object">
         <div class="callback-promo__inner">
             <div class="callback-promo__description">
                 <h3 class="callback-promo__title">Нужна консультация?</h3>
@@ -132,28 +132,7 @@
 
     <div class="sticky-nav-container">
         <div class="sticky-nav-container__inner">
-            <div class="sticky-nav-list">
-<!--                <ul class="sticky-nav-list__inner">-->
-<!--                    <li class="sticky-nav-list__item">-->
-<!--                        <a href="#about" class="sticky-nav-list__link">О проекте</a>-->
-<!--                    </li>-->
-<!--                    <li class="sticky-nav-list__item">-->
-<!--                        <a href="#choose-flat" class="sticky-nav-list__link">Выбор квартиры</a>-->
-<!--                    </li>-->
-<!--                    <li class="sticky-nav-list__item">-->
-<!--                        <a href="#promotions" class="sticky-nav-list__link">Акции и спецпредложения</a>-->
-<!--                    </li>-->
-<!--                    <li class="sticky-nav-list__item">-->
-<!--                        <a href="#infrastructure" class="sticky-nav-list__link">Инфраструктура</a>-->
-<!--                    </li>-->
-<!--                    <li class="sticky-nav-list__item">-->
-<!--                        <a href="#progress" class="sticky-nav-list__link">Ход строительства</a>-->
-<!--                    </li>-->
-<!--                    <li class="sticky-nav-list__item">-->
-<!--                        <a href="#docs" class="sticky-nav-list__link">Документация</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-            </div>
+            <div class="sticky-nav-list"></div>
         </div>
 
         <section class="about-object-section">
@@ -162,40 +141,55 @@
                 <div class="about-object-section__main">
                     <div class="about-object-section__grid features-grid">
                         <div class="features-grid__row">
-                            <div class="features-grid__item features-grid__item--medium">
-                                <img src="img/content/image%2017.jpg" alt="">
-                                <span class="features-grid__label">Архитектура</span>
-                            </div>
-                            <div class="features-grid__item features-grid__item--medium">
-                                <img src="img/content/image%2049.jpg" alt="">
-                                <span class="features-grid__label">Безопасность</span>
-                            </div>
+                            <a href="#" class="features-grid__item features-grid__item--medium">
+                                <img src="img/tile-architecture.jpg" alt="">
+                                <div class="features-grid__label">
+                                    <h3 class="features-grid__title">Архитектура</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="features-grid__item features-grid__item--medium">
+                                <img src="img/tile-security.jpg" alt="">
+                                <div class="features-grid__label">
+                                    <h3 class="features-grid__title">Безопасность</h3>
+                                    <p class="features-grid__description">7 уровней безопасности для вас и ваших близких</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="features-grid__row">
-                            <div class="features-grid__item features-grid__item--narrow">
-                                <img src="img/content/image%2050.jpg" alt="">
-                                <span class="features-grid__label">Благоустройство</span>
-                            </div>
+                            <a href="#" class="features-grid__item features-grid__item--narrow">
+                                <img src="img/tile-yard.jpg" alt="">
+                                <div class="features-grid__label">
+                                    <h3 class="features-grid__title">Благоустройство</h3>
+                                </div>
+                            </a>
                             <div class="features-grid__group">
-                                <div class="features-grid__item features-grid__item--wide">
-                                    <img src="img/content/image%2020.jpg" alt="">
-                                    <span class="features-grid__label">Стильное лобби</span>
-                                </div>
-                                <div class="features-grid__item features-grid__item--wide">
-                                    <img src="img/content/image%2021.jpg" alt="">
-                                    <span class="features-grid__label">Озеленение</span>
-                                </div>
+                                <a href="#" class="features-grid__item features-grid__item--wide">
+                                    <img src="img/tile-lobby.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Стильное лобби</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="features-grid__item features-grid__item--wide">
+                                    <img src="img/tile-landscaping.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Озеленение</h3>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="features-grid__row">
-                            <div class="features-grid__item features-grid__item--medium">
-                                <img src="img/content/image%2017.jpg" alt="">
-                                <span class="features-grid__label">Квартиры</span>
-                            </div>
-                            <div class="features-grid__item features-grid__item--medium">
-                                <img src="img/content/image%2049.jpg" alt="">
-                                <span class="features-grid__label">Умные технологии</span>
-                            </div>
+                            <a href="#" class="features-grid__item features-grid__item--medium">
+                                <img src="img/tile-flats.jpg" alt="">
+                                <div class="features-grid__label">
+                                    <h3 class="features-grid__title">Квартиры</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="features-grid__item features-grid__item--medium">
+                                <img src="img/tile-smarthome.jpg" alt="">
+                                <div class="features-grid__label">
+                                    <h3 class="features-grid__title">Умные технологии</h3>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +197,8 @@
         </section>
 
         <section class="flat-selector-section">
-            <div class="flat-selector-section__inner" id="choose-flat">
+            <h2 id="choose-flat" class="flat-selector-section__title visually-hidden">Выбор квартиры</h2>
+            <div class="flat-selector-section__inner">
 
                 <div class="tabs js-tabs">
                     <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
@@ -375,29 +370,55 @@
                         </section>
 
                         <section id="unit-choser" class="tabs__panel js-tabs__panel">
-                            <div class="unit-selector" style="position:relative;display: inline-block;">
-                                <style>.unit-2:hover { fill-opacity: 0.2 }</style>
-                                <img src="img/content/Rectangle%2058.jpg" alt="">
-                                <svg style="position:absolute;top: 0;left: 0;" width="339" height="355" viewBox="0 0 339 355" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="unit-2" d="M88 65.5L6.5 110L2.5 107.5L11.5 241L181 351.5L324 217L336 74.5L275 52L298 37L299.5 12.5L269 3L239 21V28.5L220.5 39V50L185 71V80L125.5 58L99.5 72.5L88 65.5Z" fill="#00CE2D" fill-opacity="0.33" stroke="black" stroke-opacity="0.56" stroke-width="4"></path>
-                                </svg>
-                            </div>
+                            <div class="unit-selector">
+                                <img src="img/content/Rectangle%2058.jpg" alt="" class="unit-selector__image">
 
-                            <div class="unit-selector__tooltips">
-                                <div class="unit-selector__tooltip">
-                                    <h3>Подъезд 2</h3>
-                                    <p>Квартиры с улучшеной предчистовой отделкой</p>
-                                    <ul>
-                                        <li><span>1 комн.</span><span>от 2.7 млн</span></li>
-                                        <li><span>2 комн.</span><span>от 3.4 млн</span></li>
-                                        <li><span>3 комн.</span><span>от 5.6 млн</span></li>
-                                    </ul>
+                                <svg width="1010" height="677" viewBox="0 0 1010 677" fill="none" xmlns="http://www.w3.org/2000/svg" class="unit-selector__paths">
+                                    <path data-unit-path="1" class="unit-selector__unit-path" d="M459 337.5L377.5 382L373.5 379.5L382.5 513L552 623.5L695 489L707 346.5L646 324L669 309L670.5 284.5L640 275L610 293V300.5L591.5 311V322L556 343V352L496.5 330L470.5 344.5L459 337.5Z" fill="#00CE2D" fill-opacity="0.33"></path>
+                                    <path data-unit-path="2" class="unit-selector__unit-path" d="M286 189.5L196 218.5L223 396.5L227 427.5L367 507.5L371 506L381 512V482L374 380.5L385.5 374.5L386 381.5L453.5 344V337L457 335.5L459 337L456.5 243L380.5 219V212.5L372 210L371 197.5L347.5 190V189L342.5 187.5L340.5 188L336 186.5L334.5 184.5L327.5 182V184.5L311.5 189L312.5 197.5L286 189.5Z" fill="#E49922" fill-opacity="0.7"></path>
+                                </svg>
+
+
+                                <div class="unit-selector__tooltips">
+                                    <div class="unit-selector__tooltip" data-unit-tooltip="1" style="top: 20%;left:50%;">
+                                        <h3 class="unit-selector__tooltip-title">Подъезд 1</h3>
+                                        <p class="unit-selector__tooltip-description">Квартиры с улучшеной предчистовой отделкой</p>
+                                        <ul class="unit-selector__tooltip-flats-list">
+                                            <li class="unit-selector__tooltip-flats-list-item"><span>1 комн.</span><span>от 2.7 млн</span></li>
+                                            <li class="unit-selector__tooltip-flats-list-item"><span>2 комн.</span><span>от 3.4 млн</span></li>
+                                            <li class="unit-selector__tooltip-flats-list-item"><span>3 комн.</span><span>от 5.6 млн</span></li>
+                                        </ul>
+                                        <p class="unit-selector__tooltip-footer">
+                                            <span class="unit-selector__tooltip-available-flats">4 свободно</span>
+                                            <span>3 квартал 2020</span>
+                                        </p>
+                                    </div>
+                                    <div class="unit-selector__tooltip" data-unit-tooltip="2" style="top: 10%;left: 45%">
+                                        <h3 class="unit-selector__tooltip-title">Подъезд 2</h3>
+                                        <p class="unit-selector__tooltip-description">Квартиры с улучшеной предчистовой отделкой</p>
+                                        <ul class="unit-selector__tooltip-flats-list">
+                                            <li class="unit-selector__tooltip-flats-list-item"><span>1 комн.</span><span>от 2.7 млн</span></li>
+                                            <li class="unit-selector__tooltip-flats-list-item"><span>2 комн.</span><span>от 3.4 млн</span></li>
+                                            <li class="unit-selector__tooltip-flats-list-item"><span>3 комн.</span><span>от 5.6 млн</span></li>
+                                        </ul>
+                                        <p class="unit-selector__tooltip-footer">
+                                            <span class="unit-selector__tooltip-available-flats">4 свободно</span>
+                                            <span>3 квартал 2020</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                         <script>
-                            document.querySelector('.unit-2').addEventListener('mouseover', function (e) {
-                                console.log(e);
+                            var units = document.querySelectorAll('.unit-selector__unit-path');
+                            units.forEach(function (unit) {
+                                unit.addEventListener('mouseover', function (event) {
+                                    var tooltips = document.querySelectorAll('.unit-selector__tooltip');
+                                    tooltips.forEach(function (tooltip) {
+                                        tooltip.classList.remove('unit-selector__tooltip--visible');
+                                    });
+                                    document.querySelector('.unit-selector__tooltip[data-unit-tooltip="' + event.target.getAttribute('data-unit-path') + '"]').classList.add('unit-selector__tooltip--visible');
+                                });
                             });
                         </script>
                     </div>

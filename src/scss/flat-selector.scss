@@ -3,6 +3,7 @@
   border-radius: $radius-medium;
   box-shadow: $object-shadow;
   background: $color-white;
+  overflow: hidden;
 }
 
 .flat-selector__header {
