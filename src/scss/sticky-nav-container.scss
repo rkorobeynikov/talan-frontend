@@ -3,14 +3,18 @@
 }
 
 .sticky-nav-container__inner {
-  @include page-inner();
-  //width: 22.79%;
-  box-sizing: border-box;
-  margin: 0;
-  position: sticky;
-  top: 30px;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 1;
-  height: 0;
+  display: none;
+
+  @media (min-width: 768px) {
+    @include page-inner();
+    //width: 22.79%;
+    box-sizing: border-box;
+    margin: 0;
+    position: sticky;
+    top: 30px;
+    justify-content: flex-end;
+    z-index: 1;
+    height: 0;
+    display: flex;
+  }
 }

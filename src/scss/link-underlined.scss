@@ -14,4 +14,8 @@
     bottom: -7px;
     left: 0;
   }
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }

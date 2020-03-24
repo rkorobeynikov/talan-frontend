@@ -14,23 +14,42 @@
 
 .infrastructure-section__zoom-image {
   margin-top: 30px;
-  width: 74.26%;
   position: relative;
+  width: auto;
+  overflow-x: scroll;
+  margin-left: -12px;
+  margin-right: -12px;
+
+  @media (min-width: 768px) {
+    width: 74.26%;
+    overflow: initial;
+    margin: 0;
+  }
 }
 
 .infrastructure-section__zoom-img {
   display: block;
-  width: 100%;
-  border-radius: $radius-medium;
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    height: auto;
+    width: 100%;
+    border-radius: $radius-medium;
+  }
 }
 
 .infrastructure-section__zoom-btn {
-  width: 64px;
-  height: 64px;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  background: url(../img/icon-zoom.svg) center center no-repeat;
-  border: none;
-  cursor: pointer;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 64px;
+    height: 64px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background: url(../img/icon-zoom.svg) center center no-repeat;
+    border: none;
+    cursor: pointer;
+  }
 }

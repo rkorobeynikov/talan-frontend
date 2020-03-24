@@ -11,8 +11,8 @@
 }
 
 .object-card__info {
-  padding: 21px 30px 41px;
-  height: 268px;
+  padding: 21px 30px 37px;
+  min-height: 268px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,7 @@
 
 .object-card__title-wrapper {
   display: flex;
+  margin-bottom: 8px;
 }
 
 .object-card__radial-progress {
@@ -29,6 +30,7 @@
 .object-card__title {
   @include heading-4();
   color: $color-green;
+  word-break: break-word;
 }
 
 .object-card__additional {
@@ -56,11 +58,12 @@
   color: #343434;
   font-size: 18px;
   font-weight: 500;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 
 .object-card__price-value {
   color: $color-green;
+  white-space: nowrap;
 }
 
 .object-card__warn-message {

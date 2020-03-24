@@ -2,13 +2,21 @@
   display: flex;
   padding: 0;
   list-style: none;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .images-list__item {
-  margin-left: 40px;
   overflow: hidden;
   border-radius: $radius-medium;
   position: relative;
+
+  @media (min-width: 768px) {
+    margin-left: 40px;
+  }
 }
 
 .images-list__item:nth-child(2n+1) {

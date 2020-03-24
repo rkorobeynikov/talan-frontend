@@ -35,6 +35,10 @@ Usage: codyhouse.co/license
   &--hero-left {
     justify-content: flex-start;
     height: calc(100vh - 80px);
+
+    @media (max-width: 767px) {
+      height: 185px;
+    }
   }
 }
 
@@ -314,6 +318,40 @@ Usage: codyhouse.co/license
   }
 
 
+}
+
+.slideshow--hero .slideshow__navigation {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.slideshow--hero .slideshow__content {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: mandatory;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slideshow--hero .slideshow__item {
+  display: inline-block;
+  margin-right: 10px;
+  white-space: normal;
+  scroll-snap-align: start;
+  width: 100%;
+  min-width: 100%;
+}
+
+.js .slideshow--hero .slideshow__item {
+  @media (max-width: 767px) {
+    opacity: 1 ;
+    visibility: visible;
+    position: static;
+  }
 }
 
 .slideshow--hero .slideshow__nav-item {

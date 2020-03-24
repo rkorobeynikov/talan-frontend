@@ -11,20 +11,78 @@
 
 .page-footer__menu {
   display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
+.page-footer__column {
+  @media (min-width: 768px) {
+    padding-right: 10px;
+  }
+}
+
+
 .page-footer__column--narrow {
-  width: 16.415%;
+  width: 50%;
+
+  @media (min-width: 768px) {
+    width: 16.415%;
+  }
 }
 
 .page-footer__column--wide {
   width: 34.34%;
 }
 
+.page-footer__column--cities {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.page-footer__column--company,
+.page-footer__column--partners {
+  margin-top: 35px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.page-footer__column--contacts {
+  order: -1;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    order: initial;
+    width: 16.415%;
+  }
+}
+
+.page-footer__column--apps {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+
 .page-footer__address {
   font-size: 12px;
   font-weight: 500;
-  margin: 0;
+  margin: 13px 0 0;
+  display: flex;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin: 0;
+  }
 }
 
 .page-footer__address-label {
@@ -32,8 +90,14 @@
   font-weight: 500;
   color: #a1a1a1;
   display: block;
-  margin-top: 11px;
+  margin-top: 0;
   margin-bottom: -2px;
+  width: 90px;
+
+  @media (min-width: 768px) {
+    margin-top: 11px;
+    width: auto;
+  }
 }
 
 .page-footer__phone {
@@ -41,6 +105,15 @@
   font-weight: 500;
   color: $color-green;
   text-decoration: none;
+  margin-left: 90px;
+  margin-top: 3px;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    margin-top: 0;
+    display: block;
+  }
 }
 
 .page-footer__hours {
@@ -48,10 +121,22 @@
   font-weight: 500;
   color: #a1a1a1;
   margin: -9px 0 0;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    margin: -9px 0 0;
+    display: block;
+  }
 }
 
 .page-footer__cta-btn {
-  margin-top: 7px;
+  margin-top: 10px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    margin-top: 7px;
+    width: auto;
+  }
 }
 
 .page-footer__title {
@@ -68,6 +153,11 @@
   display: flex;
   margin-top: 61px;
   padding-bottom: 26px;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .page-footer__copy-year {
@@ -86,12 +176,20 @@
 }
 
 .page-footer__copy-left {
-  width: 34.34%;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 34.34%;
+  }
 }
 
 .page-footer__copy-text {
-  width: 65.66%;
+  width: 100%;
   font-size: 12px;
   line-height: 1.5em;
   color: #979797;
+
+  @media (min-width: 768px) {
+    width: 65.66%;
+  }
 }

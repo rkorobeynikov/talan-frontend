@@ -18,5 +18,9 @@
 }
 
 .about-object-section__grid {
-  width: 74.26%;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 74.26%;
+  }
 }

@@ -3,13 +3,23 @@
   margin: 30px 0 0;
   padding: 0;
   list-style: none;
+  overflow-x: scroll;
+
+  @media (min-width: 768px) {
+    overflow: initial;
+  }
 }
 
 .promotions-list__item {
-  width: 310px;
+  width: calc(100% - 78px);
+  min-width: calc(100% - 78px);
   margin-left: 40px;
   border-radius: $radius-medium;
-  overflow: hidden;
+
+  @media (min-width: 768px) {
+    overflow: hidden;
+    width: 310px;
+  }
 }
 
 .promotions-list__item:nth-child(4n+1) {
@@ -20,4 +30,9 @@
   border-radius: $radius-medium;
   overflow: hidden;
   display: block;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
 }

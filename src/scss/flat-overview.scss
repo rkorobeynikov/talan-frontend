@@ -8,6 +8,11 @@
   display: flex;
   align-items: flex-start;
   margin-top: 30px;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .flat-overview__header {
@@ -22,9 +27,13 @@
 .flat-overview__progress {
   width: 170px;
   min-width: 170px;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .flat-overview__progress-label {
@@ -41,11 +50,18 @@
 }
 
 .flat-overview__pictures {
-  width: 48.53%;
+
+  @media (min-width: 768px) {
+    width: 48.53%;
+  }
 }
 
 .flat-overview__description {
-  width: 51.47%;
-  padding-left: 40px;
-  box-sizing: border-box;
+
+
+  @media (min-width: 768px) {
+    width: 51.47%;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
 }

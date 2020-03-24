@@ -16,10 +16,18 @@
   border-radius: $radius-medium;
   color: $color-white;
   display: flex;
-  padding: 19px 40px;
-  align-items: center;
+  padding: 28px 12px 37px;
+  align-items: flex-start;
   min-height: 138px;
   box-sizing: border-box;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    padding: 19px 40px;
+    flex-direction: row;
+    align-items: center;
+
+  }
 }
 
 .callback-promo__inner--question {
@@ -27,13 +35,17 @@
   align-items: flex-start;
 }
 
-
 .callback-promo__description {
-  padding-left: 126px;
+  padding-left: 76px;
   position: relative;
   flex: 36.32% 0 0;
   box-sizing: border-box;
   margin-right: 6.88%;
+  min-height: 54px;
+
+  @media (min-width: 768px) {
+    padding-left: 126px;
+  }
 }
 
 .callback-promo__description--question {
@@ -43,17 +55,25 @@
 }
 
 .callback-promo__description::before {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   content: '';
   display: block;
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
   background: url('../img/call-center.png');
+  background-size: 60px 60px;
   left: 0;
-  top: 50%;
-  margin-top: -50px;
+  top: -6px;
+
+  @media (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    margin-top: -50px;
+    background-size: 100px 100px;
+  }
 }
 
 .callback-promo__description--question::before {
@@ -63,21 +83,48 @@
 
 
 .callback-promo__title {
-  @include heading-4();
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.18em;
+
+  @media (min-width: 768px) {
+    @include heading-4();
+  }
 }
 
 .callback-promo__paragraph {
   margin: 6px 0 0;
+  font-size: 10px;
+  line-height: 1.4em;
+
+  @media (min-width: 768px) {
+    font-size: inherit;
+    line-height: inherit;
+  }
 }
 
 .callback-promo__form {
   display: flex;
-  flex: 56.8% 0 0;
-  max-width: 56.8%;
+  width: 100%;
+  flex-direction: column;
   flex-wrap: nowrap;
 
   button {
-    width: 27.5%;
+    width: 100%;
+    margin-top: 18px;
+
+    @media (min-width: 768px) {
+      width: 27.5%;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex: 56.8% 0 0;
+    max-width: 56.8%;
+    flex-direction: row;
   }
 }
 
@@ -92,8 +139,13 @@
 }
 
 .callback-promo__input {
-  width: 35.76%;
-  padding-right: 30px;
+  margin-top: 18px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    width: 35.76%;
+    padding-right: 30px;
+  }
 }
 
 .callback-promo--question .callback-promo__input {

@@ -1,10 +1,14 @@
 .breadcrumbs {
   @include page-inner();
-  display: flex;
+  display: none;
   list-style: none;
   font-size: 12px;
   color: $color-gray;
   margin: 30px 0 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 
   &--slideshow {
     padding-left: 50px;

@@ -44,8 +44,13 @@ input[type="radio"].visually-hidden {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @mixin heading-1() {
@@ -67,9 +72,14 @@ input[type="radio"].visually-hidden {
 @mixin heading-3() {
   font-family: $heading-font;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1.2em;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
 }
 
 @mixin heading-4() {
