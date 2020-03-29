@@ -1,31 +1,56 @@
 .flat-types-grid {
   @include page-inner();
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     flex-wrap: wrap;
     overflow: initial;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    justify-content: space-between;
   }
 }
 
 .flat-types-grid__item {
-  flex: 48% 0 0;
-  min-width: 48%;
-  margin-top: 40px;
-  margin-right: 6px;
+  flex: 45.63% 0 0;
+  min-width: 45.63%;
+  padding-left: 12px;
+  margin-top: 16px;
+  scroll-snap-align: start;
 
   &:first-child {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-breakpoint) {
       display: block;
     }
   }
 
-  @media (min-width: 768px) {
+  &:last-child {
+    padding-right: 12px;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 40px;
+    margin-right: 2.6%;
+    flex: 31.59% 0 0;
+    min-width: 31.59%;
+    padding-left: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-right: 0;
     flex: 22.14% 0 0;
     min-width: 22.14%;
@@ -34,13 +59,14 @@
 
 .flat-types-grid__title {
   @include heading-3();
+  max-width: 240px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     font-size: 30px;
     line-height: 1.2em;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $desktop-breakpoint) {
     font-size: 40px;
     line-height: 1.2em;
   }
@@ -48,8 +74,9 @@
 
 .flat-types-grid-mobile-title {
   @include heading-3();
+  padding: 0 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: none;
   }
 }

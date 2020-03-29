@@ -4,7 +4,7 @@
   list-style: none;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
   }
 }
@@ -14,7 +14,7 @@
   border-radius: $radius-medium;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-left: 40px;
   }
 }

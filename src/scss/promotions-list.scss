@@ -5,7 +5,7 @@
   list-style: none;
   overflow-x: scroll;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     overflow: initial;
   }
 }
@@ -16,7 +16,7 @@
   margin-left: 40px;
   border-radius: $radius-medium;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     overflow: hidden;
     width: 310px;
   }
@@ -32,7 +32,7 @@
   display: block;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     width: auto;
   }
 }

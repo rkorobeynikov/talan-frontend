@@ -1,13 +1,15 @@
 .properties-list {
-  margin: 0 -12px;
   padding: 0 0 30px;
   display: flex;
   list-style: none;
   flex-wrap: nowrap;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
 
-  @media (min-width: 768px) {
-    margin: 0 -20px;
+  @media (min-width: $tablet-breakpoint) {
+    overflow: initial;
+    flex-wrap: wrap;
+    padding: 0 20px;
   }
 }
 
@@ -15,33 +17,37 @@
   width: calc(100% - 40px);
   min-width: calc(100% - 40px);
   margin-left: 16px;
+  scroll-snap-align: start;
+  padding-left: 12px;
 
-  @media (min-width: 768px) {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 48.63%;
+    min-width: initial;
+    margin-left: 2.74%;
+    margin-top: 20px;
+    padding-left: 0;
+
+    &:nth-child(2n+1) {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     width: 33.33%;
     min-width: initial;
-    margin-left: 20px;
+    padding-left: 0;
   }
 
-  @media (min-width: 1024px) {
-    margin-left: 40px;
-  }
-
-}
-
-.properties-list__item:first-child {
-  @media (max-width: 767px) {
-    margin-left: 12px;
-  }
-
-  @media (min-width: 1024px) {
-    margin-left: 20px;
-  }
 }
 
 .properties-list__item:last-child {
   padding-right: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     padding-right: 20px;
   }
 }

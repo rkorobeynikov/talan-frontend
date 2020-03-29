@@ -5,7 +5,7 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     justify-content: flex-start;
     margin: 25px 0 0;
   }
@@ -18,7 +18,7 @@
 .footer-social__item:first-child {
   margin-left: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-left: -5px;
   }
 }

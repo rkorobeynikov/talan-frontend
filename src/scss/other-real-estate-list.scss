@@ -1,27 +1,61 @@
 .other-real-estate-list {
   display: flex;
-  margin: 29px -12px 0;
+  margin: 29px 0 0;
   padding: 0 0 30px;
   list-style: none;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin: 29px 0 0;
-    padding: 0;
+    padding: 0 20px;
     overflow: initial;
+    flex-wrap: wrap;
   }
 }
 
 .other-real-estate-list__item {
   width: calc(100% - 40px);
+  min-width: calc(100% - 40px);
   margin-left: 15px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
 
-  @media (min-width: 768px) {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 12px;
+
+    @media (min-width: $tablet-breakpoint) {
+      padding-right: 0px;
+    }
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 48.63%;
+    min-width: initial;
+    margin-left: 2.74%;
+    margin-top: 20px;
+    padding-left: 0;
+
+    &:nth-child(2n+1) {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     width: 33.33%;
-    margin-left: 40px;
+    min-width: initial;
+    padding-left: 0;
   }
 }
 
 .other-real-estate-list__item:nth-child(3n+1) {
-  margin-left: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-left: 0;
+  }
 }

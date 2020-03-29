@@ -59,7 +59,7 @@
 .page-header__login {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: block;
     margin-left: 125px;
   }
@@ -76,7 +76,7 @@
 .page-header__middle-group {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: flex;
     justify-content: center;
   }

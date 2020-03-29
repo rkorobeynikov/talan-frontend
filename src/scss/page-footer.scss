@@ -13,13 +13,15 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: 768px) {
+  @media (min-width: $desktop-breakpoint) {
     flex-wrap: nowrap;
   }
 }
 
 .page-footer__column {
-  @media (min-width: 768px) {
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-breakpoint) {
     padding-right: 10px;
   }
 }
@@ -28,19 +30,31 @@
 .page-footer__column--narrow {
   width: 50%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
+    width: 25%;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     width: 16.415%;
   }
 }
 
 .page-footer__column--wide {
-  width: 34.34%;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 34.34%;
+  }
 }
 
 .page-footer__column--cities {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: block;
   }
 }
@@ -49,7 +63,7 @@
 .page-footer__column--partners {
   margin-top: 35px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-top: 0;
   }
 }
@@ -58,8 +72,14 @@
   order: -1;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
+    width: 50%;
     order: initial;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 0;
     width: 16.415%;
   }
 }
@@ -67,8 +87,14 @@
 .page-footer__column--apps {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
+    width: 50%;
     display: block;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 0;
   }
 }
 
@@ -79,7 +105,7 @@
   margin: 13px 0 0;
   display: flex;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: block;
     margin: 0;
   }
@@ -94,7 +120,7 @@
   margin-bottom: -2px;
   width: 90px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-top: 11px;
     width: auto;
   }
@@ -109,7 +135,7 @@
   margin-top: 3px;
   display: inline-block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-left: 0;
     margin-top: 0;
     display: block;
@@ -123,7 +149,7 @@
   margin: -9px 0 0;
   display: inline-block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin: -9px 0 0;
     display: block;
   }
@@ -133,7 +159,7 @@
   margin-top: 10px;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-top: 7px;
     width: auto;
   }
@@ -155,7 +181,7 @@
   padding-bottom: 26px;
   flex-wrap: wrap;
 
-  @media (min-width: 768px) {
+  @media (min-width: $desktop-breakpoint) {
     flex-wrap: nowrap;
   }
 }
@@ -178,7 +204,7 @@
 .page-footer__copy-left {
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $desktop-breakpoint) {
     width: 34.34%;
   }
 }
@@ -189,7 +215,7 @@
   line-height: 1.5em;
   color: #979797;
 
-  @media (min-width: 768px) {
+  @media (min-width: $desktop-breakpoint) {
     width: 65.66%;
   }
 }

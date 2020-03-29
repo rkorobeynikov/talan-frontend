@@ -2,6 +2,11 @@
   border-radius: $radius-medium;
   box-shadow: $object-shadow;
   padding: 32px 33px 37px 99px;
+
+  @media (min-width: $tablet-breakpoint) {
+    height: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .real-estate-type-card--commercial {

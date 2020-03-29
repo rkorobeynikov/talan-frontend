@@ -14,7 +14,7 @@
   background-size: cover;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     padding: 20px 22px 18px;
     min-height: 180px;
   }
@@ -33,6 +33,14 @@
 
 .flat-type-card--heading {
   padding-top: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 30px;
+  }
 }
 
 .flat-type-card--green::before {
@@ -87,7 +95,7 @@
   z-index: 1;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     font-size: 18px;
   }
 }
@@ -98,7 +106,7 @@
   z-index: 1;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     font-size: 36px;
   }
 }

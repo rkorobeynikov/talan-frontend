@@ -3,9 +3,9 @@
 }
 
 .other-real-estate-section__inner {
-  @include page-inner();
 }
 
 .other-real-estate-section__title {
+  @include page-inner();
   @include heading-3();
 }

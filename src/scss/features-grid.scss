@@ -5,7 +5,7 @@
 .features-grid__row {
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: flex;
     margin-top: 40px;
   }
@@ -31,7 +31,7 @@
     transition: all 3s ease-in-out;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     height: auto;
     margin-top: 0;
   }
@@ -39,39 +39,39 @@
 
 .features-grid__item--medium {
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     width: 50%;
     margin-left: 40px;
   }
 }
 
 .features-grid__item--medium:first-child {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-left: 0;
   }
 }
 
 .features-grid__item--narrow {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     width: 30.69%;
   }
 }
 
 .features-grid__group {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     width: 65.34%;
     margin-left: 40px;
   }
 }
 
 .features-grid__group > .features-grid__item {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-top: 40px;
   }
 }
 
 .features-grid__group > .features-grid__item:first-child {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     margin-top: 0;
   }
 }

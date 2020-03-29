@@ -16,6 +16,10 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 21px 16px 30px;
+  }
 }
 
 .object-card__title-wrapper {

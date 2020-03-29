@@ -323,7 +323,7 @@ Usage: codyhouse.co/license
 .slideshow--hero .slideshow__navigation {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     display: block;
   }
 }

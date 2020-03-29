@@ -20,7 +20,7 @@
 .about-object-section__grid {
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     width: 74.26%;
   }
 }

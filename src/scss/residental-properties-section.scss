@@ -1,12 +1,21 @@
 .residental-properties-section {
-  margin: 100px 0 0;
+  margin: 40px 0 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 60px 0 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 100px 0 0;
+  }
 }
 
 .residental-properties-section__inner {
-  @include page-inner();
+  //@include page-inner();
 }
 
 .residental-properties-section__header {
+  @include page-inner();
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +25,19 @@
   @include heading-3();
 }
 
+.residental-properties-section__header-link {
+  color: $color-green;
+  text-decoration: none;
+}
+
 .residental-properties-section__properties-list {
   margin-top: 42px;
+}
+
+.residental-properties-section__link {
+  display: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: inline-block;
+  }
 }
