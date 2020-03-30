@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -13,29 +14,59 @@
   overflow: hidden;
   border-radius: $radius-medium;
   position: relative;
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 0;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-top: 20px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-top: 40px;
+    }
+  }
 
   @media (min-width: $tablet-breakpoint) {
-    margin-left: 40px;
+    margin-left: 2.75%;
+    width: 48.62%;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 48.02%;
+    margin-left: 3.96%;
+    margin-top: 40px;
   }
 }
 
 .images-list__item:nth-child(2n+1) {
-  margin-left: 0;
+  @media (min-width: $tablet-breakpoint) {
+    margin-left: 0;
+  }
 }
-
 
 .images-list__img {
   display: block;
+  width: 100%;
 }
 
 .images-list__description {
   position: absolute;
-  padding: 0 30px 20px;
+  padding: 0 16px 10px;
   color: $color-white;
   bottom: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-breakpoint) {
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 0 30px 25px;
+  }
 }
 
 .images-list__description--black-text {
@@ -44,11 +75,27 @@
 
 .images-list__title {
   @include heading-4();
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 1.19em;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
 }
 
 .images-list__label {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 500;
-  margin: 0;
+  margin: -1px 0 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 15px;
+  }
 }

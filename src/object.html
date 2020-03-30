@@ -427,24 +427,31 @@
         </section>
 
         <section class="promotions-section">
-            <h2 class="promotions-section__title" id="promotions">Акции и спецпредложения</h2>
-            <ul class="promotions-list">
-                <li class="promotions-list__item">
-                    <a href="#">
-                        <img src="img/content/image%2053.png" alt="" class="promotions-list__image">
-                    </a>
-                </li>
-                <li class="promotions-list__item">
-                    <a href="#">
-                        <img src="img/content/image%2054.png" alt="" class="promotions-list__image">
-                    </a>
-                </li>
-                <li class="promotions-list__item">
-                    <a href="#">
-                        <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
-                    </a>
-                </li>
-            </ul>
+            <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
+            <div class="promotions-section__list-wrapper">
+                <ul class="promotions-list">
+                    <li class="promotions-list__item">
+                        <a href="#">
+                            <img src="img/content/image%2053.png" alt="" class="promotions-list__image">
+                        </a>
+                    </li>
+                    <li class="promotions-list__item">
+                        <a href="#">
+                            <img src="img/content/image%2054.png" alt="" class="promotions-list__image">
+                        </a>
+                    </li>
+                    <li class="promotions-list__item">
+                        <a href="#">
+                            <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                        </a>
+                    </li>
+                    <li class="promotions-list__item">
+                        <a href="#">
+                            <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="infrastructure-section">
@@ -465,6 +472,10 @@
                         <div class="progress-widget__header">
                             <h3 class="progress-widget__title">Общая готовность</h3>
                             <a class="progress-widget__link" data-micromodal-trigger="modal-3">Узнать больше</a>
+                        </div>
+                        <div class="progress-widget__dates">
+                            <span class="progress-widget__date">Декабрь 2018</span>
+                            <span class="progress-widget__date">Май 2020</span>
                         </div>
                         <div class="progress-widget__progress-wrapper">
                             <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
@@ -501,7 +512,7 @@
 
         <section class="docs-section">
             <div class="docs-section__inner">
-                <h2 class="docs-section__title" id="docs">Документация</h2>
+                <h2 class="docs-section__title" id="docs"><span class="docs-section__title-inner">Документация</span></h2>
                 <ul class="docs-list">
                     <li class="docs-list__item"><a href="#" class="docs-list__link docs-list__link--external">ЖК «Я живу!» На Подлесной на сайте Минстрой России</a></li>
                     <li class="docs-list__item"><a href="#" class="docs-list__link docs-list__link--doc">Скачать прайс-лист на доступные квартиры</a></li>
@@ -513,9 +524,9 @@
     </div>
 
     <footer class="page-footer">
-        <div class="page-footer__inner page-footer__inner--has-border">
+        <div class="page-footer__inner">
             <div class="page-footer__menu">
-                <div class="page-footer__column page-footer__column--wide">
+                <div class="page-footer__column page-footer__column--wide page-footer__column--cities">
                     <h3 class="page-footer__title">Города</h3>
                     <ul class="footer-menu-list">
                         <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ижевск</a></li>
@@ -536,7 +547,7 @@
                     </ul>
                 </div>
 
-                <div class="page-footer__column page-footer__column--narrow">
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--company">
                     <h3 class="page-footer__title">О&nbsp;компании</h3>
                     <ul class="footer-menu-list">
                         <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Контакты</a></li>
@@ -550,7 +561,7 @@
                     </ul>
                 </div>
 
-                <div class="page-footer__column page-footer__column--narrow">
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--partners">
                     <h3 class="page-footer__title">Партнерам</h3>
                     <ul class="footer-menu-list">
                         <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Риелторам</a></li>
@@ -560,7 +571,7 @@
                     </ul>
                 </div>
 
-                <div class="page-footer__column page-footer__column--narrow">
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--contacts">
                     <h3 class="page-footer__title">Контакты</h3>
                     <p class="page-footer__address">
                         <span class="page-footer__address-label">Отдел продаж:</span> ул. Красноармейская, 86
@@ -568,9 +579,15 @@
                     <a class="page-footer__phone" href="tel:+73412918742">+ 7 3412 918 742</a>
                     <p class="page-footer__hours">с 9:00 до 19:00</p>
                     <button type="button" class="button button--shadow page-footer__cta-btn">Заказать звонок</button>
+                    <ul class="footer-social">
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--instagram"></a></li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--ok"></a></li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--vk"></a></li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--fb"></a></li>
+                    </ul>
                 </div>
 
-                <div class="page-footer__column page-footer__column--narrow">
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--apps">
                     <h3 class="page-footer__title">Приложение Талан</h3>
                     <div class="app-buttons">
                         <a href="#" class="app-buttons__link">

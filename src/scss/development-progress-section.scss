@@ -1,6 +1,11 @@
 .development-progress-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .development-progress-section__inner {
@@ -9,20 +14,44 @@
 
 .development-progress-section__title {
   @include heading-3();
+  color: #343434;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding-left: 30px;
+  }
 }
 
 .development-progress-section__progress-bar {
-  margin-top: 31px;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 32px;
+  }
 }
 
 .development-progress-section__column {
   width: 100%;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     width: 74.26%;
   }
 }
 
 .development-progress-section__links-list {
-  margin: 40px 0 0;
+  margin: 33px 0 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 31px 0 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
+  }
 }

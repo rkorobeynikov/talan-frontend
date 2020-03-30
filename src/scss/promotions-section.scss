@@ -1,10 +1,40 @@
 .promotions-section {
-  @include page-inner();
-  margin-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 36px;
+  background: #F9F9F9;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #ffffff;
+  }
 }
 
 .promotions-section__title {
+  @include page-inner();
   @include heading-3();
+  color: #343434;
+  max-width: 210px;
 
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 30px;
+    line-height: 1.2em;
+    @include page-inner();
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+}
+
+.promotions-section__title-inner {
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 30px;
+  }
+}
+
+.promotions-section__list-wrapper {
+  @media (min-width: $tablet-breakpoint) {
+    @include page-inner();
+  }
 }

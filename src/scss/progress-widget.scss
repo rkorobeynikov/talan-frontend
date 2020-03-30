@@ -1,7 +1,11 @@
 .progress-widget {
   box-shadow: $object-shadow;
   border-radius: $radius-medium;
-  padding: 35px 30px 24px;
+  padding: 20px 16px 23px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 35px 30px 26px;
+  }
 }
 
 .progress-widget__header {
@@ -11,7 +15,14 @@
 
 .progress-widget__title {
   @include heading-4();
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 1.19em;
+  color: #343434;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
 }
 
 .progress-widget__link {
@@ -19,13 +30,28 @@
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
+  cursor: pointer;
 }
+
+.progress-widget__dates {
+  margin: 18px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-widget__date {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+
+}
+
 .progress-widget__progress-wrapper {
-  margin-top: 27px;
+  margin-top: 5px;
   border-radius: 4px;
   overflow: hidden;
 }
-
 
 .progress-widget__progress {
   appearance: none;

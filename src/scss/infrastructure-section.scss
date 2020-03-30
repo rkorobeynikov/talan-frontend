@@ -1,19 +1,39 @@
 .infrastructure-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background: #F9F9F9;
+  padding-top: 36px;
+  background: #ffffff;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 60px;
+    background: #F9F9F9;
+    padding-bottom: 60px;
+  }
 }
 
 .infrastructure-section__inner {
   @include page-inner();
+
+  @media (min-width: $tablet-breakpoint) {
+  }
 }
 
 .infrastructure-section__title {
   @include heading-3();
+  color: #343434;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding-left: 30px;
+  }
 }
 
 .infrastructure-section__zoom-image {
-  margin-top: 30px;
+  margin-top: 24px;
   position: relative;
   width: auto;
   overflow-x: scroll;
@@ -21,15 +41,20 @@
   margin-right: -12px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 74.26%;
+    width: 100%;
     overflow: initial;
-    margin: 0;
+    margin: 23px 0 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 74.26%;
+    margin: 30px 0 0;
   }
 }
 
 .infrastructure-section__zoom-img {
   display: block;
-  height: 100vh;
+  height: 80vh;
 
   @media (min-width: $tablet-breakpoint) {
     height: auto;

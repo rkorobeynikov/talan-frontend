@@ -1,7 +1,15 @@
 .docs-section {
   background: #F9F9F9;
-  padding-top: 24px;
+  padding-top: 36px;
   padding-bottom: 51px;
+
+  @media (min-width: $tablet-breakpoint) {
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 24px;
+    padding-bottom: 57px;
+  }
 }
 
 .docs-section__inner {
@@ -10,4 +18,11 @@
 
 .docs-section__title {
   @include heading-3();
+  color: #343434;
+}
+
+.docs-section__title-inner {
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 30px;
+  }
 }
