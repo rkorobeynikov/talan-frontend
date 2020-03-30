@@ -23,6 +23,10 @@
   flex-direction: column;
 
   @media (min-width: $tablet-breakpoint) {
+    padding: 28px 23px 40px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     padding: 19px 40px;
     flex-direction: row;
     align-items: center;
@@ -44,6 +48,10 @@
   min-height: 54px;
 
   @media (min-width: $tablet-breakpoint) {
+    padding-left: 102px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     padding-left: 126px;
   }
 }
@@ -68,6 +76,14 @@
   top: -6px;
 
   @media (min-width: $tablet-breakpoint) {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    margin-top: -40px;
+    background-size: 80px 80px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     width: 100px;
     height: 100px;
     top: 50%;
@@ -122,6 +138,11 @@
   }
 
   @media (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    margin-top: 26px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     flex: 56.8% 0 0;
     max-width: 56.8%;
     flex-direction: row;

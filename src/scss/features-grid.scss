@@ -7,6 +7,10 @@
 
   @media (min-width: $tablet-breakpoint) {
     display: flex;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-top: 40px;
   }
 }
@@ -41,6 +45,10 @@
 
   @media (min-width: $tablet-breakpoint) {
     width: 50%;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-left: 40px;
   }
 }
@@ -60,12 +68,20 @@
 .features-grid__group {
   @media (min-width: $tablet-breakpoint) {
     width: 65.34%;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-left: 40px;
   }
 }
 
 .features-grid__group > .features-grid__item {
   @media (min-width: $tablet-breakpoint) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-top: 40px;
   }
 }
@@ -84,10 +100,22 @@
 }
 
 .features-grid__title {
-  @include heading-4();
-  font-size: 24px;
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19em;
   color: $color-white;
   margin: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
 }
 
 .features-grid__description {

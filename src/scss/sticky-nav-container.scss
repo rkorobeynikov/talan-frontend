@@ -5,9 +5,8 @@
 .sticky-nav-container__inner {
   display: none;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     @include page-inner();
-    //width: 22.79%;
     box-sizing: border-box;
     margin: 0;
     position: sticky;
