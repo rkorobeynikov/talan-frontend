@@ -81,33 +81,18 @@
     </ol>
 
     <section class="hero-slider-section">
-        <div class="slideshow slideshow--hero slideshow--transition-fade js-slideshow" data-autoplay="on">
-            <ul class="slideshow__content">
-                <li class="slideshow__item slideshow__item--hero-left js-slideshow__item" style="background-image: url('img/content/image 13.jpg');">
-                    <div class="slideshow__hero-text-container">
-                        <h1>Красота какая! Лепота!</h1>
-                        <p>Царские квартиры с выгодой</p>
-                        <p>до <span class="">2020</span> ₽/м<sup>2</sup></p>
-                    </div>
-                </li>
-
-                <li class="slideshow__item slideshow__item--hero-left js-slideshow__item" style="background-image: url('img/content/hernan-lucio-gJFvHkUHdSI-unsplash.jpg');">
-                    <div class="slideshow__hero-text-container">
-                        <h1>Красота какая! Лепота!</h1>
-                        <p>Царские квартиры с выгодой</p>
-                        <p>до <span class="">2020</span> ₽/м<sup>2</sup></p>
-                    </div>
-                </li>
-
-                <li class="slideshow__item slideshow__item--hero-left js-slideshow__item" style="background-image: url('img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg');">
-                    <div class="slideshow__hero-text-container">
-                        <h1>Красота какая! Лепота!</h1>
-                        <p>Царские квартиры с выгодой</p>
-                        <p>до <span class="">2020</span> ₽/м<sup>2</sup></p>
-                    </div>
-                </li>
-            </ul>
+        <div class="peppermint peppermint-inactive" id="peppermint">
+            <figure>
+                <img src="img/content/image 13.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="img/content/hernan-lucio-gJFvHkUHdSI-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="">
+            </figure>
         </div>
+
     </section>
 
     <div class="callback-promo callback-promo--object">
@@ -412,7 +397,7 @@
                         <script>
                             var units = document.querySelectorAll('.unit-selector__unit-path');
                             units.forEach(function (unit) {
-                                unit.addEventListener('mouseover', function (event) {
+                                unit.addEventListener('click', function (event) {
                                     var tooltips = document.querySelectorAll('.unit-selector__tooltip');
                                     tooltips.forEach(function (tooltip) {
                                         tooltip.classList.remove('unit-selector__tooltip--visible');
@@ -895,6 +880,7 @@
     <script src="js/mixitup.js"></script>
     <script src="js/micromodal.min.js"></script>
     <script src="js/scrollnav.min.umd.js"></script>
+    <script src="js/peppermint.min.js"></script>
     <script src="js/main.js"></script>
     <script>
 

@@ -32,11 +32,15 @@
     display: block;
     position: absolute;
     top: 14px;
-    left: 14px;
+    left: 7px;
     width: 26px;
     height: 26px;
     border-radius: 50%;
     background: #E49922 url(../img/icon-fire.svg) center center no-repeat;
+
+    @media (min-width: $tablet-breakpoint) {
+      left: 14px;
+    }
   }
 }
 

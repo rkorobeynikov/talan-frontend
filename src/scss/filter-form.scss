@@ -2,12 +2,40 @@
   box-shadow: $object-shadow;
   border-radius: $radius-medium;
   padding: 20px 20px 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+  }
 }
 
 .filter-form__fieldset {
   padding: 0;
   margin: 0;
   border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-breakpoint) {
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+  }
+}
+
+.filter-form__fieldset--price,
+.filter-form__fieldset--square {
+  @media (min-width: $tablet-breakpoint) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 100%;
+  }
 }
 
 .filter-form__fieldset:first-child .filter-form__title {
@@ -31,4 +59,5 @@
   font-size: 15px;
   font-weight: 500;
   margin: 36px -20px 0;
+  width: 100%;
 }

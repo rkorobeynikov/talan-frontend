@@ -10,7 +10,7 @@
   margin-top: 30px;
   flex-direction: column;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     flex-direction: row;
   }
 }
@@ -31,7 +31,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     display: flex;
   }
 }
@@ -51,15 +51,14 @@
 
 .flat-overview__pictures {
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     width: 48.53%;
   }
 }
 
 .flat-overview__description {
 
-
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     width: 51.47%;
     padding-left: 40px;
     box-sizing: border-box;

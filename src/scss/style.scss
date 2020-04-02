@@ -12,6 +12,8 @@
 @import "button";
 @import "flat-overview";
 @import "object-description";
+@import "rate-flat";
+@import "related-flats";
 @import "object-pictures";
 @import "radial-progress";
 @import "text-content";
@@ -60,7 +62,6 @@
 @import "input-range";
 @import "app-buttons";
 @import "news-photos-card";
-
 @import "feature-card";
 @import "infrastructure-section";
 @import "link-underlined";
@@ -76,3 +77,6 @@
 @import "flat-selector-list";
 @import "unit-selector";
 @import "footer-social";
+
+@import "vendor/peppermint.required";
+@import "vendor/peppermint.suggested";

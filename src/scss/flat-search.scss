@@ -4,33 +4,105 @@
 }
 
 .flat-search__title {
-  @include heading-2();
-  padding: 0 30px;
+  font-family: $heading-font;
+  font-weight: 500;
+  padding: 0;
   margin: 40px 0 0;
+  font-size: 20px;
+  line-height: 1.2em;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 30px;
+    font-size: 48px;
+    line-height: 1.2em;
+  }
 }
 
 .flat-search__main {
   display: flex;
   margin: 48px 0 0;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-breakpoint) {
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 .flat-search__filter {
-  width: 22.79%;
+  width: 100%;
+
+  @media (min-width: $tablet-breakpoint) {
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 22.79%;
+
+  }
 }
 
 .flat-search__results {
-  flex: 1;
-  margin-left: 40px;
+
+
+
+  @media (min-width: $desktop-breakpoint) {
+    flex: 1;
+    margin-left: 40px;
+  }
+}
+
+.flat-search__results-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+  }
+}
+
+.flat-search__results-checkbox {
+  padding-left: 26px;
+  position: relative;
+  font-size: 12px;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+  }
+}
+
+.flat-search__results-checkbox-input {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .flat-search__filter-btn {
   appearance: none;
   padding: 0;
   border: none;
-  font-size: 14px;
+  font-size: 12px;
   color: $color-green;
   cursor: pointer;
   margin-right: 36px;
+  text-align: left;
 
   &::after {
     content: '';
@@ -40,5 +112,13 @@
     width: 9px;
     height: 5px;
     margin-bottom: 2px;
+  }
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
   }
 }

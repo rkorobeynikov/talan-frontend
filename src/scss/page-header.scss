@@ -23,6 +23,8 @@
   @include allcaps();
   color: $color-green;
   text-decoration: none;
+  white-space: nowrap;
+  background: transparent;
 }
 
 .page-header__btn--profile {
@@ -61,6 +63,10 @@
 
   @media (min-width: $tablet-breakpoint) {
     display: block;
+    margin-left: 46px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-left: 125px;
   }
 }
@@ -68,9 +74,12 @@
 .page-header__left-group,
 .page-header__middle-group,
 .page-header__right-group {
-  flex: 1;
-  display: flex;
   align-items: center;
+  display: flex;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex: 1;
+  }
 }
 
 .page-header__middle-group {

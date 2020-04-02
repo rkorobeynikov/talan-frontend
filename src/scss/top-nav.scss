@@ -3,9 +3,16 @@
 }
 
 .top-nav__item {
-  margin-left: 62px;
 
   &:first-child {
     margin-left: 0;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-left: 33px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 62px;
   }
 }

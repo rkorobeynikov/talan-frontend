@@ -1,0 +1,68 @@
+.rate-flat {
+
+}
+
+.rate-flat__title {
+  @include heading-4();
+  line-height: 1.2em;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 24px;
+  }
+}
+
+
+.rate-flat__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-start;
+  }
+}
+
+.rate-flat__item {
+  @media (min-width: $tablet-breakpoint) {
+    margin-left: 31px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.rate-flat__button {
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  display: inline-block;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 38px;
+    height: 38px;
+    background-size: 38px 38px;
+  }
+}
+
+.rate-flat__button--emo-1 {
+  background-image: url(../img/emo-1.svg);
+}
+
+.rate-flat__button--emo-2 {
+  background-image: url(../img/emo-2.svg);
+}
+
+.rate-flat__button--emo-3 {
+  background-image: url(../img/emo-3.svg);
+}
+
+.rate-flat__button--emo-4 {
+  background-image: url(../img/emo-4.svg);
+}
+
+.rate-flat__button--emo-5 {
+  background-image: url(../img/emo-5.svg);
+}
