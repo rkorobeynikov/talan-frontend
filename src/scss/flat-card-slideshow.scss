@@ -1,0 +1,110 @@
+.flat-card-slideshow {
+  position: relative;
+}
+
+.flat-card-slideshow__peppermint.peppermint figure img {
+  box-shadow: none;
+}
+
+.flat-card-slideshow__arrows {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flat-card-slideshow__control {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.flat-card-slideshow__control--left {
+  left: 36px;
+}
+
+.flat-card-slideshow__control--right {
+  right: 36px;
+  transform: rotate(180deg);
+}
+
+.flat-card-slideshow__btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+}
+
+.flat-card-slideshow ul.peppermint-dots > li {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-align: left;
+  margin-left: 11px;
+}
+
+.flat-card-slideshow ul.peppermint-dots > li:first-child {
+  margin-left: 0;
+}
+
+
+.flat-card-slideshow ul.peppermint-dots > li > span {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  display: block;
+  position: static;
+  border-radius: 0;
+  border: 1px solid #D8D8D8;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+
+.flat-card-slideshow ul.peppermint-dots > li.peppermint-active-dot {
+  width: 60px;
+}
+
+.flat-card-slideshow ul.peppermint-dots > li.peppermint-active-dot > span {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #B8B8B8;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.flat-card-slideshow__zoom-btn {
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.2) url(../img/icon-zoom.svg) center center no-repeat;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  right: 10px;
+  bottom: 90px;
+  position: absolute;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4) url(../img/icon-zoom.svg) center center no-repeat;
+  }
+
+  &:focus {
+    background: rgba(0, 0, 0, 0.4) url(../img/icon-zoom.svg) center center no-repeat;
+    outline: none;
+  }
+}
+

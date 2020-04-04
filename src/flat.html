@@ -110,39 +110,37 @@
 
                     <div class="tabs__panels js-tabs__panels">
                         <section id="tab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
-                            <div class="slideshow js-slideshow slideshow--transition-fade slideshow--flat-layout" data-swipe="on">
+                            <div class="flat-card-slideshow">
+                                <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-layout-slideshow">
+                                    <figure class="flat-card-slideshow__item">
+                                        <img src="img/content/image%2042.png" alt="" class="flat-card-slideshow__slide-image">
+                                    </figure>
+                                    <figure class="flat-card-slideshow__item">
+                                        <img src="img/content/image%2056.png" alt="" class="flat-card-slideshow__slide-image">
+                                    </figure>
+                                </div>
 
-                                <ul class="slideshow__content">
-
-                                    <li class="slideshow__item js-slideshow__item" style="">
-                                        <img src="img/content/image%2042.png" alt="" class="slideshow__slide-image">
-                                    </li>
-
-                                    <li class="slideshow__item js-slideshow__item" style="">
-                                        <img src="img/content/image%2056.png" alt="" class="slideshow__slide-image">
-                                    </li>
-
-                                </ul>
-
-                                <ul>
-                                    <li class="slideshow__control js-slideshow__control">
-                                        <button class="reset slideshow__btn js-tab-focus">
+                                <ul class="flat-card-slideshow__arrows">
+                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-layout-slideshow-previous-btn">
                                             <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
                                         </button>
                                     </li>
 
-                                    <li class="slideshow__control js-slideshow__control">
-                                        <button class="reset slideshow__btn slideshow__btn--next js-tab-focus">
+                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-layout-slideshow-next-btn">
                                             <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
                                         </button>
                                     </li>
                                 </ul>
+
+                                <button class="flat-card-slideshow__zoom-btn js-flat-layout-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-layout-fullscreen"></button>
 
                                 <style>
-                                    .slideshow--flat-layout .slideshow__nav-item:nth-child(1) button {
+                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
                                         background-image: url('img/content/image 42.png');
                                     }
-                                    .slideshow--flat-layout .slideshow__nav-item:nth-child(2) button {
+                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
                                         background-image: url('img/content/image 56.png');
                                     }
                                 </style>
@@ -150,42 +148,44 @@
                         </section>
 
                         <section id="tab1Panel2" class="tabs__panel js-tabs__panel">
-                            <div class="slideshow js-slideshow slideshow--transition-fade slideshow--flat-interiors" data-swipe="on">
 
-                                <ul class="slideshow__content">
-                                    <li class="slideshow__item js-slideshow__item" style="">
-                                        <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="slideshow__slide-image">
-                                    </li>
-                                    <li class="slideshow__item js-slideshow__item" style="">
-                                        <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="slideshow__slide-image">
-                                    </li>
-                                    <li class="slideshow__item js-slideshow__item" style="">
-                                        <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="slideshow__slide-image">
-                                    </li>
-                                </ul>
+                            <div class="flat-card-slideshow">
+                                <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-interior-slideshow">
+                                    <figure class="flat-card-slideshow__item">
+                                        <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                    </figure>
+                                    <figure class="flat-card-slideshow__item">
+                                        <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                    </figure>
+                                    <figure class="flat-card-slideshow__item">
+                                        <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                    </figure>
+                                </div>
 
-                                <ul>
-                                    <li class="slideshow__control js-slideshow__control">
-                                        <button class="reset slideshow__btn js-tab-focus">
+                                <ul class="flat-card-slideshow__arrows">
+                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-interior-slideshow-previous-btn">
                                             <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
                                         </button>
                                     </li>
 
-                                    <li class="slideshow__control js-slideshow__control">
-                                        <button class="reset slideshow__btn slideshow__btn--next js-tab-focus">
+                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-interior-slideshow-next-btn">
                                             <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
                                         </button>
                                     </li>
                                 </ul>
+
+                                <button class="flat-card-slideshow__zoom-btn js-flat-interior-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-interior-fullscreen"></button>
 
                                 <style>
-                                    .slideshow--flat-interiors .slideshow__nav-item:nth-child(1) button {
+                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
                                         background-image: url('img/content/aw-creative-VGs8z60yT2c-unsplash.jpg');
                                     }
-                                    .slideshow--flat-interiors .slideshow__nav-item:nth-child(2) button {
+                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
                                         background-image: url('img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg');
                                     }
-                                    .slideshow--flat-interiors .slideshow__nav-item:nth-child(3) button {
+                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(3) > span {
                                         background-image: url('img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg');
                                     }
                                 </style>
@@ -198,7 +198,6 @@
                 <p class="object-description__price">
                     <span class="object-description__price-value">от 2 305 800 ₽</span>
                     <span class="object-description__price-square">52 468 ₽/м<sup>2</sup></span>
-<!--                    <span class="object-description__mortgage-payment">20 380 ₽/месяц в ипотеку</span>-->
                 </p>
                 <p class="object-description__bookmark">
                     <a href="#" class="icon-btn icon-btn--like">В&nbsp;избранное</a>
@@ -215,27 +214,27 @@
                             <td class="object-description__table-value">14 из 17</td>
                         </tr>
                         <tr class="object-description__table-row">
-                            <th class="object-description__table-heading">Общая площадь, м2:</th>
+                            <th class="object-description__table-heading">Общая площадь, м<sup>2</sup>:</th>
                             <td class="object-description__table-value">46</td>
                         </tr>
                         <tr class="object-description__table-row">
-                            <th class="object-description__table-heading">Жилая площадь, м2:</th>
+                            <th class="object-description__table-heading">Жилая площадь, м<sup>2</sup>:</th>
                             <td class="object-description__table-value">72</td>
                         </tr>
                         <tr class="object-description__table-row">
-                            <th class="object-description__table-heading">Кухня, м2:</th>
+                            <th class="object-description__table-heading">Кухня, м<sup>2</sup>:</th>
                             <td class="object-description__table-value">14</td>
                         </tr>
                         <tr class="object-description__table-row">
-                            <th class="object-description__table-heading">Гостиная, м2:</th>
+                            <th class="object-description__table-heading">Гостиная, м<sup>2</sup>:</th>
                             <td class="object-description__table-value">20</td>
                         </tr>
                         <tr class="object-description__table-row">
-                            <th class="object-description__table-heading">Спальня, м2:</th>
+                            <th class="object-description__table-heading">Спальня, м<sup>2</sup>:</th>
                             <td class="object-description__table-value">17,2</td>
                         </tr>
                         <tr class="object-description__table-row">
-                            <th class="object-description__table-heading">Ванная комната, м2:</th>
+                            <th class="object-description__table-heading">Ванная комната, м<sup>2</sup>:</th>
                             <td class="object-description__table-value">4</td>
                         </tr>
                     </tbody>
@@ -259,8 +258,6 @@
                         <a href="#" class="button button--large">Добавить в&nbsp;корзину</a>
                     </div>
                 </div>
-
-
 
                 <div class="object-description__text-content text-content">
                     <h3>Подробнее о квартире</h3>
@@ -487,7 +484,104 @@
         </div>
     </footer>
 
+    <div class="modal micromodal-slide" id="modal-flat-layout-fullscreen" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-flat-layout-fullscreen-content">
+                    <div class="flat-card-slideshow">
+                        <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-layout-fullscreen-slideshow">
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/image%2042.png" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/image%2056.png" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                        </div>
+
+                        <ul class="flat-card-slideshow__arrows">
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-layout-fullscreen-slideshow-previous-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-layout-fullscreen-slideshow-next-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <style>
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                background-image: url('img/content/image 42.png');
+                            }
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                background-image: url('img/content/image 56.png');
+                            }
+                        </style>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-flat-interior-fullscreen" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-flat-interior-fullscreen-content">
+                    <div class="flat-card-slideshow">
+                        <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-interior-fullscreen-slideshow">
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                        </div>
+
+                        <ul class="flat-card-slideshow__arrows">
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-interior-fullscreen-slideshow-previous-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-interior-fullscreen-slideshow-next-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <style>
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                background-image: url('img/content/aw-creative-VGs8z60yT2c-unsplash.jpg');
+                            }
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                background-image: url('img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg');
+                            }
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(3) > span {
+                                background-image: url('img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg');
+                            }
+                        </style>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
     <script src="js/micromodal.min.js"></script>
+    <script src="js/peppermint.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -35,6 +35,19 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 20;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: opacity 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.4;
+  }
 }
 
 .modal__content {

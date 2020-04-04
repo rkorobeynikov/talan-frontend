@@ -346,6 +346,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
             Util.toggleClass(this.panels[i], this.showClass, bool);
             this.triggers[i].setAttribute('aria-selected', bool);
             bool ? this.triggers[i].setAttribute('tabindex', '0') : this.triggers[i].setAttribute('tabindex', '-1');
+            window.dispatchEvent(new Event('resize'));
         }
     };
 
@@ -528,12 +529,134 @@ Math.easeInOutQuad = function (t, b, c, d) {
         })
     }
 
-    var slider = Peppermint(document.getElementById('peppermint'), {
-        slideshow: true,
-        slideshowInterval: 5000,
-        stopSlideshowAfterInteraction: true,
-        dots: true
-    });
+    // var flatCardSlideshow;
+    // var flatCardSlideshowEl = document.querySelector('.js-peppermint-flat-layout-slideshow');
+    // if (flatCardSlideshowEl) {
+    //     var flatCardSlideshow = Peppermint(flatCardSlideshowEl, {
+    //         slideshow: true,
+    //         slideshowInterval: 5000,
+    //         stopSlideshowAfterInteraction: true,
+    //         dots: true
+    //     });
+    // }
+
+    var flatLayoutSlideshow;
+    var flatLayoutSlideshowEl = document.querySelector('.js-peppermint-flat-layout-slideshow');
+    var flatLayoutSlideshowPreviousButtonEl = document.querySelector('.js-flat-layout-slideshow-previous-btn');
+    var flatLayoutSlideshowNextButtonEl = document.querySelector('.js-flat-layout-slideshow-next-btn');
+    var flatLayoutSlideshowZoomButtonEl = document.querySelector('.js-flat-layout-slideshow-zoom-btn');
+
+    if (flatLayoutSlideshowEl) {
+        flatLayoutSlideshow = Peppermint(flatLayoutSlideshowEl, {
+            dots: true
+        });
+    }
+
+    if (flatLayoutSlideshowEl && flatLayoutSlideshowPreviousButtonEl) {
+        flatLayoutSlideshowPreviousButtonEl.addEventListener('click', function () {
+            flatLayoutSlideshow.prev();
+        })
+    }
+
+    if (flatLayoutSlideshowEl && flatLayoutSlideshowNextButtonEl) {
+        flatLayoutSlideshowNextButtonEl.addEventListener('click', function () {
+            flatLayoutSlideshow.next();
+        })
+    }
+
+
+    // Flat layout fullscreen
+    var flatLayoutFullscreenSlideshow;
+    var flatLayoutFullscreenSlideshowEl = document.querySelector('.js-peppermint-flat-layout-fullscreen-slideshow');
+    var flatLayoutFullscreenSlideshowPreviousButtonEl = document.querySelector('.js-flat-layout-fullscreen-slideshow-previous-btn');
+    var flatLayoutFullscreenSlideshowNextButtonEl = document.querySelector('.js-flat-layout-fullscreen-slideshow-next-btn');
+
+    if (flatLayoutFullscreenSlideshowEl) {
+        flatLayoutFullscreenSlideshow = Peppermint(flatLayoutFullscreenSlideshowEl, {
+            dots: true
+        });
+    }
+
+    if (flatLayoutFullscreenSlideshowEl && flatLayoutFullscreenSlideshowPreviousButtonEl) {
+        flatLayoutFullscreenSlideshowPreviousButtonEl.addEventListener('click', function () {
+            flatLayoutFullscreenSlideshow.prev();
+        })
+    }
+
+    if (flatLayoutFullscreenSlideshowEl && flatLayoutFullscreenSlideshowNextButtonEl) {
+        flatLayoutFullscreenSlideshowNextButtonEl.addEventListener('click', function () {
+            flatLayoutFullscreenSlideshow.next();
+        })
+    }
+
+    if (flatLayoutSlideshowEl && flatLayoutSlideshowZoomButtonEl) {
+        flatLayoutSlideshowZoomButtonEl.addEventListener('click', function () {
+            window.dispatchEvent(new Event('resize'));
+            flatLayoutFullscreenSlideshow.slideTo(flatLayoutSlideshow.getCurrentPos());
+        })
+    }
+
+
+    // Flat interior slideshow
+
+
+    var flatInteriorSlideshow;
+    var flatInteriorSlideshowEl = document.querySelector('.js-peppermint-flat-interior-slideshow');
+    var flatInteriorSlideshowPreviousButtonEl = document.querySelector('.js-flat-interior-slideshow-previous-btn');
+    var flatInteriorSlideshowNextButtonEl = document.querySelector('.js-flat-interior-slideshow-next-btn');
+    var flatInteriorSlideshowZoomButtonEl = document.querySelector('.js-flat-interior-slideshow-zoom-btn');
+
+    if (flatInteriorSlideshowEl) {
+        flatInteriorSlideshow = Peppermint(flatInteriorSlideshowEl, {
+            dots: true
+        });
+    }
+
+    if (flatInteriorSlideshowEl && flatInteriorSlideshowPreviousButtonEl) {
+        flatInteriorSlideshowPreviousButtonEl.addEventListener('click', function () {
+            flatInteriorSlideshow.prev();
+        })
+    }
+
+    if (flatInteriorSlideshowEl && flatInteriorSlideshowNextButtonEl) {
+        flatInteriorSlideshowNextButtonEl.addEventListener('click', function () {
+            flatInteriorSlideshow.next();
+        })
+    }
+
+
+    // Flat layout fullscreen
+    var flatInteriorFullscreenSlideshow;
+    var flatInteriorFullscreenSlideshowEl = document.querySelector('.js-peppermint-flat-interior-fullscreen-slideshow');
+    var flatInteriorFullscreenSlideshowPreviousButtonEl = document.querySelector('.js-flat-interior-fullscreen-slideshow-previous-btn');
+    var flatInteriorFullscreenSlideshowNextButtonEl = document.querySelector('.js-flat-interior-fullscreen-slideshow-next-btn');
+
+    if (flatInteriorFullscreenSlideshowEl) {
+        flatInteriorFullscreenSlideshow = Peppermint(flatInteriorFullscreenSlideshowEl, {
+            dots: true
+        });
+    }
+
+    if (flatInteriorFullscreenSlideshowEl && flatInteriorFullscreenSlideshowPreviousButtonEl) {
+        flatInteriorFullscreenSlideshowPreviousButtonEl.addEventListener('click', function () {
+            flatInteriorFullscreenSlideshow.prev();
+        })
+    }
+
+    if (flatInteriorFullscreenSlideshowEl && flatInteriorFullscreenSlideshowNextButtonEl) {
+        flatInteriorFullscreenSlideshowNextButtonEl.addEventListener('click', function () {
+            flatInteriorFullscreenSlideshow.next();
+        })
+    }
+
+    if (flatInteriorSlideshowEl && flatInteriorSlideshowZoomButtonEl) {
+        flatInteriorSlideshowZoomButtonEl.addEventListener('click', function () {
+            window.dispatchEvent(new Event('resize'));
+            flatInteriorFullscreenSlideshow.slideTo(flatInteriorSlideshow.getCurrentPos());
+        })
+    }
+
+
 }());
 
 

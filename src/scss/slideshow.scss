@@ -56,11 +56,11 @@
   transition: width 0.3s ease-in-out;
 }
 
-.slideshow ul.peppermint-dots>li.peppermint-active-dot {
+.slideshow ul.peppermint-dots > li.peppermint-active-dot {
   width: 38px;
 }
 
-.slideshow ul.peppermint-dots>li.peppermint-active-dot>span {
+.slideshow ul.peppermint-dots > li.peppermint-active-dot > span {
   margin: 0;
   width: 38px;
   height: 4px;
@@ -68,7 +68,7 @@
   background: $color-green;
 }
 
-.slideshow.peppermint.peppermint-active .peppermint-slides+ul.peppermint-dots {
+.slideshow.peppermint.peppermint-active .peppermint-slides + ul.peppermint-dots {
   display: none;
 
   @media (min-width: $tablet-breakpoint) {
