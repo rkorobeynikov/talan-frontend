@@ -16,15 +16,41 @@
 }
 
 .js .flat-selector-section .tabs__controls a {
-  font-size: 34px;
   font-family: $heading-font;
   font-weight: 500;
-  text-decoration: underline;
+  font-size: 20px;
   background: transparent;
-  color: $color-green;
+  padding: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 34px;
+    text-decoration: underline;
+    background: transparent;
+    color: $color-green;
+  }
 }
 
 .js .flat-selector-section .tabs__controls .tabs__control--selected {
   color: #343434;
   text-decoration: none;
+}
+
+.js .flat-selector-section .flat-selector-section__layout-tab {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: inline-block;
+  }
+}
+
+.js .tabs__panel--selected.flat-selector-section__flat-chooser-tab-panel {
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.js .tabs__panel.flat-selector-section__unit-chooser-tab-panel {
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+  }
 }

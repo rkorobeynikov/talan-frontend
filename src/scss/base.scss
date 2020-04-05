@@ -101,30 +101,28 @@ input[type="radio"].visually-hidden {
 
 @mixin tab-btn() {
   display: inline-block;
-  height: 30px;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 500;
   background: #E9EFF5;
   border-radius: 15px;
   letter-spacing: 0.1px;
   color: #343434;
   cursor: pointer;
-  padding: 0 18px;
+  padding: 2px 18px 4px;
   user-select: none;
 }
 
 @mixin tab-btn-active() {
   display: inline-block;
-  height: 30px;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 500;
   background: $color-green;
   border-radius: 15px;
   letter-spacing: 0.1px;
   color: #ffffff;
   cursor: pointer;
-  padding: 0 18px;
+  padding: 2px 18px 4px;
   user-select: none;
 }

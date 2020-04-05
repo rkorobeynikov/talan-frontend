@@ -657,6 +657,11 @@ Math.easeInOutQuad = function (t, b, c, d) {
     }
 
 
+    var flatLayoutChooserMobileSlideshowEl = document.querySelector('.flat-layout-mobile-chooser__slideshow');
+    var flatLayoutChooserMobileSlideshow = Peppermint(flatLayoutChooserMobileSlideshowEl, {
+
+    })
+
 }());
 
 

@@ -187,12 +187,12 @@
 
                 <div class="tabs js-tabs">
                     <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
-                        <li><a href="#flat-choser" class="tabs__control--selected js-tab-focus">Выбор планировки</a></li>
-                        <li><a href="#unit-choser" class="js-tab-focus">Выбор секции</a></li>
+                        <li class="flat-selector-section__layout-tab"><a href="#flat-chooser" class="tabs__control--selected js-tab-focus">Выбор планировки</a></li>
+                        <li><a href="#unit-chooser" class="js-tab-focus">Выбор секции</a></li>
                     </ul>
 
                     <div class="tabs__panels js-tabs__panels">
-                        <section id="flat-choser" class="tabs__panel tabs__panel--selected js-tabs__panel">
+                        <section id="flat-chooser" class="tabs__panel tabs__panel--selected js-tabs__panel flat-selector-section__flat-chooser-tab-panel">
                             <div class="flat-selector">
                                 <header class="flat-selector__header">
                                     <button type="button" class="flat-selector__filter-btn" data-filter="all">Все</button>
@@ -354,7 +354,7 @@
                             </div>
                         </section>
 
-                        <section id="unit-choser" class="tabs__panel js-tabs__panel">
+                        <section id="unit-chooser" class="tabs__panel js-tabs__panel flat-selector-section__unit-chooser-tab-panel">
                             <div class="unit-selector">
                                 <img src="img/content/Rectangle%2058.jpg" alt="" class="unit-selector__image">
 
@@ -377,6 +377,7 @@
                                             <span class="unit-selector__tooltip-available-flats">4 свободно</span>
                                             <span>3 квартал 2020</span>
                                         </p>
+                                        <button type="button" class="unit-selector__tooltip-close" aria-label="Закрыть"></button>
                                     </div>
                                     <div class="unit-selector__tooltip" data-unit-tooltip="2" style="top: 10%;left: 45%">
                                         <h3 class="unit-selector__tooltip-title">Подъезд 2</h3>
@@ -390,12 +391,14 @@
                                             <span class="unit-selector__tooltip-available-flats">4 свободно</span>
                                             <span>3 квартал 2020</span>
                                         </p>
+                                        <button type="button" class="unit-selector__tooltip-close" aria-label="Закрыть"></button>
                                     </div>
                                 </div>
                             </div>
                         </section>
                         <script>
                             var units = document.querySelectorAll('.unit-selector__unit-path');
+                            var tooltipCloseBtns = document.querySelectorAll('.unit-selector__tooltip-close');
                             units.forEach(function (unit) {
                                 unit.addEventListener('click', function (event) {
                                     var tooltips = document.querySelectorAll('.unit-selector__tooltip');
@@ -405,7 +408,56 @@
                                     document.querySelector('.unit-selector__tooltip[data-unit-tooltip="' + event.target.getAttribute('data-unit-path') + '"]').classList.add('unit-selector__tooltip--visible');
                                 });
                             });
+                            tooltipCloseBtns.forEach(function (tooltipCloseBtn) {
+                                tooltipCloseBtn.addEventListener('click', function (event) {
+                                    var tooltips = document.querySelectorAll('.unit-selector__tooltip');
+                                    tooltips.forEach(function (tooltip) {
+                                        tooltip.classList.remove('unit-selector__tooltip--visible');
+                                    });
+                                });
+                            })
                         </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flat-selector-section__mobile-flat-layout-chooser flat-layout-mobile-chooser">
+                <h2>Выбор планировки</h2>
+                <div class="flat-layout-mobile-chooser__dropdown dropdown js-dropdown">
+                    <button type="button" aria-controls="flat-layout-mobile-chooser-dropdown" class="flat-layout-mobile-chooser__dropdown-btn dropdown__trigger">1-комнатные</button>
+                    <ul class="menu js-menu" id="flat-layout-mobile-chooser-dropdown">
+                        <li><a href="#" class="menu__item">Студии</a></li>
+                        <li><a href="#" class="menu__item">1-комнатные</a></li>
+                        <li><a href="#" class="menu__item">2-комнатные</a></li>
+                        <li><a href="#" class="menu__item">3-комнатные</a></li>
+                    </ul>
+                </div>
+                <div class="flat-layout-mobile-chooser__slideshows">
+                    <div class="flat-layout-mobile-chooser__slideshow-wrapper">
+                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                        </div>
+
                     </div>
                 </div>
             </div>

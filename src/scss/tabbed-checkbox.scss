@@ -7,7 +7,7 @@
 }
 
 .tabbed-checkbox__label--narrow {
-  padding: 0;
+  padding: 2px 0 4px;
   width: 41px;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 }
 
 .tabbed-checkbox__checkbox:checked + .tabbed-checkbox__label--narrow {
-  padding: 0;
+  padding: 2px 0 4px;
   width: 41px;
   text-align: center;
 }

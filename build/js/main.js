@@ -331,7 +331,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
         if(index >= this.listItems.length) index = 0;
         this.triggerTab(this.triggers[index]);
         this.triggers[index].focus();
-
     };
 
     Tab.prototype.triggerTab = function(tabTrigger, event) {
@@ -657,6 +656,11 @@ Math.easeInOutQuad = function (t, b, c, d) {
         })
     }
 
+
+    var flatLayoutChooserMobileSlideshowEl = document.querySelector('.flat-layout-mobile-chooser__slideshow');
+    var flatLayoutChooserMobileSlideshow = Peppermint(flatLayoutChooserMobileSlideshowEl, {
+
+    })
 
 }());
 
