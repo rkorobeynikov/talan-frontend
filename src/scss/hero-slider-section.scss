@@ -2,4 +2,60 @@
   max-width: 1400px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-slider-section__title {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+    font-size: 40px;
+    line-height: 1.2em;
+    font-weight: 500;
+    color: $color-white;
+    font-family: $heading-font;
+    max-width: 378px;
+    margin: 0;
+  }
+}
+
+.hero-slider-section__object-info {
+  padding: 0 12px;
+
+  @media (min-width: $tablet-breakpoint) {
+    position: absolute;
+    left: 30px;
+    bottom: 66px;
+  }
+}
+
+.hero-slider-section__facts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-slider-section__facts-list-item {
+  font-size: 11px;
+  color: $color-green;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-family: $heading-font;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-breakpoint) {
+    color: $color-white;
+  }
+}
+
+.hero-slider-section__action {
+  margin: 20px 0 0;
+
+  .button {
+    display: inline-block;
+    min-width: 195px;
+  }
 }

@@ -26,6 +26,7 @@
 .slideshow.peppermint.peppermint-active {
   width: 95%;
   overflow: visible;
+  margin: 0;
 
   @media (min-width: $tablet-breakpoint) {
     width: 100%;

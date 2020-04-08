@@ -36,12 +36,16 @@
 }
 
 .flat-selector-list__image {
-  flex: 0 0 145px;
+  flex: 0 0 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 15px;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex: 0 0 145px;
+  }
 }
 
 .flat-selector-list__img {
@@ -61,6 +65,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 12px;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 16px;
+  }
 }
 
 .flat-selector-list__info {

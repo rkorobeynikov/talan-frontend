@@ -1,9 +1,24 @@
 .flat-layout-mobile-chooser {
+  padding-top: 30px;
 
+  @media (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.flat-layout-mobile-chooser__title {
+  @include page-inner();
+  font-size: 20px;
+  line-height: 1.2em;
+  font-family: $heading-font;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .flat-layout-mobile-chooser__dropdown {
   text-align: center;
+  margin-top: 20px;
 }
 
 .flat-layout-mobile-chooser__dropdown-btn {
@@ -33,9 +48,24 @@
   line-height: 1.5em;
   color: $color-green;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
 }
 
 .flat-layout-mobile-chooser__description {
   font-size: 16px;
   line-height: 1.5em;
+  margin: 4px 0 0;
+}
+
+.flat-layout-mobile-chooser__slideshow.peppermint figure img {
+  box-shadow: none;
+}
+
+.flat-layout-mobile-chooser__slideshow-wrapper {
+  display: none;
+}
+
+.flat-layout-mobile-chooser__slideshow-wrapper--active {
+  display: block;
 }

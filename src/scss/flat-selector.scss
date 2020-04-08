@@ -1,9 +1,12 @@
 .flat-selector {
-  max-width: 74.26%;
   border-radius: $radius-medium;
   box-shadow: $object-shadow;
   background: $color-white;
   overflow: hidden;
+
+  @media (min-width: $desktop-breakpoint) {
+    max-width: 74.26%;
+  }
 }
 
 .flat-selector__header {

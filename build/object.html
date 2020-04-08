@@ -81,16 +81,28 @@
     </ol>
 
     <section class="hero-slider-section">
-        <div class="peppermint peppermint-inactive" id="peppermint">
-            <figure>
-                <img src="img/content/image 13.jpg" alt="">
+        <div class="peppermint peppermint-inactive slideshow js-object-hero-slideshow" id="peppermint">
+            <figure class="slideshow__item">
+                <img src="img/content/image 13.jpg" alt="" class="slideshow__image">
             </figure>
-            <figure>
-                <img src="img/content/hernan-lucio-gJFvHkUHdSI-unsplash.jpg" alt="">
+            <figure class="slideshow__item">
+                <img src="img/content/hernan-lucio-gJFvHkUHdSI-unsplash.jpg" alt="" class="slideshow__image">
             </figure>
-            <figure>
-                <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="">
+            <figure class="slideshow__item">
+                <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="" class="slideshow__image">
             </figure>
+        </div>
+
+        <div class="hero-slider-section__object-info">
+            <h3 class="hero-slider-section__title">ЖК «Я ЖИВУ! На Подлесной»</h3>
+            <ul class="hero-slider-section__facts-list">
+                <li class="hero-slider-section__facts-list-item">Общий процент готовности комплекса 86%</li>
+                <li class="hero-slider-section__facts-list-item">СДАЧА 1 СЕКЦИИ МАЙ 2020</li>
+                <li class="hero-slider-section__facts-list-item">123 КВАРТИРЫ В НАЛИЧИИ</li>
+            </ul>
+            <p class="hero-slider-section__action">
+                <a href="#" class="hero-slider-section__cta button button--small">ПОДОБРАТЬ КВАРТИРУ</a>
+            </p>
         </div>
 
     </section>
@@ -422,18 +434,43 @@
             </div>
 
             <div class="flat-selector-section__mobile-flat-layout-chooser flat-layout-mobile-chooser">
-                <h2>Выбор планировки</h2>
+                <h3 class="flat-layout-mobile-chooser__title">Выбор планировки</h3>
                 <div class="flat-layout-mobile-chooser__dropdown dropdown js-dropdown">
                     <button type="button" aria-controls="flat-layout-mobile-chooser-dropdown" class="flat-layout-mobile-chooser__dropdown-btn dropdown__trigger">1-комнатные</button>
                     <ul class="menu js-menu" id="flat-layout-mobile-chooser-dropdown">
-                        <li><a href="#" class="menu__item">Студии</a></li>
-                        <li><a href="#" class="menu__item">1-комнатные</a></li>
-                        <li><a href="#" class="menu__item">2-комнатные</a></li>
-                        <li><a href="#" class="menu__item">3-комнатные</a></li>
+                        <li><a href="#" class="menu__item" data-slideshow-target="studio">Студии</a></li>
+                        <li><a href="#" class="menu__item" data-slideshow-target="1room">1-комнатные</a></li>
+                        <li><a href="#" class="menu__item" data-slideshow-target="2room">2-комнатные</a></li>
+                        <li><a href="#" class="menu__item" data-slideshow-target="3room">3-комнатные</a></li>
                     </ul>
                 </div>
                 <div class="flat-layout-mobile-chooser__slideshows">
-                    <div class="flat-layout-mobile-chooser__slideshow-wrapper">
+                    <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="studio">
+                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="flat-layout-mobile-chooser__slideshow-wrapper flat-layout-mobile-chooser__slideshow-wrapper--active" data-slideshow-id="1room">
                         <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
                             <figure>
                                 <img src="img/content/image%2016.png" alt="">
@@ -457,7 +494,56 @@
                                 <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
                             </figure>
                         </div>
-
+                    </div>
+                    <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="2room">
+                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="3room">
+                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                            <figure>
+                                <img src="img/content/image%2016.png" alt="">
+                                <div>
+                                    <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
+                                </div>
+                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
