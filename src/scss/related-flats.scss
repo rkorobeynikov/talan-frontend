@@ -1,5 +1,5 @@
 .related-flats {
-
+  margin: 34px 0 0;
 }
 
 .related-flats__title {
@@ -14,12 +14,13 @@
 .related-flats__grid {
   display: flex;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 15px 0 0;
   list-style: none;
   flex-direction: column;
 
   @media (min-width: $tablet-breakpoint) {
     flex-wrap: wrap;
+    margin: 20px 0 0;
     justify-content: space-between;
     flex-direction: row;
   }

@@ -1,5 +1,6 @@
 .flat-layout-mobile-chooser {
   padding-top: 30px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-breakpoint) {
     display: none;
@@ -49,7 +50,7 @@
   color: $color-green;
   text-decoration: none;
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .flat-layout-mobile-chooser__description {
@@ -68,4 +69,24 @@
 
 .flat-layout-mobile-chooser__slideshow-wrapper--active {
   display: block;
+}
+
+.flat-layout-mobile-chooser__view-all-link {
+  color: $color-green;
+  font-size: 16px;
+  line-height: 1.9em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 24px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    background: url(../img/icon-arrow-right.svg);
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+
+  }
 }

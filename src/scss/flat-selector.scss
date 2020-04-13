@@ -10,7 +10,11 @@
 }
 
 .flat-selector__header {
-  padding: 27px 30px 20px;
+  padding: 20px 18px 18px;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 27px 30px 20px;
+  }
 }
 
 .flat-selector__filter-btn {
@@ -19,12 +23,17 @@
   padding: 0 16px;
   margin: 0 0 0 12px;
   border: none;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   height: 30px;
   line-height: 30px;
   color: $color-green;
   cursor: pointer;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 15px;
+
+  }
 }
 
 .flat-selector__filter-btn.mixitup-control-active {
@@ -36,7 +45,11 @@
 .flat-selector__body {
   display: flex;
   border-top: 1px solid #e2e2e2;
-  max-height: 600px;
+  max-height: 469px;
+
+  @media (min-width: $desktop-breakpoint) {
+    max-height: 600px;
+  }
 }
 
 .flat-selector__flats-grid {

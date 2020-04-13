@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 18px 20px 0;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -43,21 +44,21 @@
 }
 
 .filter-form__tabs-list {
-  margin-top: -4px;
+  margin-top: -7px;
 }
 
 .filter-form__title {
   font-size: 12px;
   font-weight: normal;
-  margin: 26px 0 0;
+  margin: 25px 0 0;
 }
 
 .filter-form__summary {
   border-top: 1px solid #E2E2E2;
-  padding: 16px 20px;
+  padding: 14px 20px 26px;
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  margin: 36px -20px 0;
+  margin: 23px -20px 0;
   width: 100%;
 }

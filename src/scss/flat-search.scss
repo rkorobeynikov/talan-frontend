@@ -7,13 +7,14 @@
   font-family: $heading-font;
   font-weight: 500;
   padding: 0;
-  margin: 40px 0 0;
+  margin: 9px 0 0;
   font-size: 20px;
   line-height: 1.2em;
 
   @media (min-width: $tablet-breakpoint) {
     font-size: 40px;
     line-height: 1.2em;
+    margin: 26px 0 0;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -25,11 +26,11 @@
 
 .flat-search__main {
   display: flex;
-  margin: 48px 0 0;
+  margin: -6px 0 0;
   flex-direction: column;
 
-
   @media (min-width: $tablet-breakpoint) {
+    margin: 42px 0 0;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -39,14 +40,63 @@
 
 .flat-search__filter {
   width: 100%;
+  display: block;
+  max-height: 0;
+  transition: max-height .5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+  opacity: 0;
 
   @media (min-width: $tablet-breakpoint) {
+    max-height: initial;
+    opacity: 1;
+    overflow: visible;
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: 22.79%;
-
   }
+}
+
+.flat-search__filter--mobile-opened {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 0 12px 20px;
+  margin: 0 -12px;
+}
+
+.flat-search__mobile-switcher {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.flat-search__mobile-switcher-btn {
+  font-size: 11px;
+  background: none;
+  appearance: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: $color-green;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    will-change: max-height;
+    color: transparentize($color-green, 0.3);
+  }
+}
+
+.flat-search__mobile-switcher-label {
+  font-size: 12px;
+  color: #343434;
+  font-weight: 500;
 }
 
 .flat-search__results {
@@ -67,6 +117,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-start;
+    margin-top: 59px;
   }
 
   @media (min-width: $desktop-breakpoint) {

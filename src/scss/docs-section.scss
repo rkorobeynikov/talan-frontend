@@ -4,6 +4,8 @@
   padding-bottom: 51px;
 
   @media (min-width: $tablet-breakpoint) {
+    padding-top: 61px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -19,6 +21,13 @@
 .docs-section__title {
   @include heading-3();
   color: #343434;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+  }
 }
 
 .docs-section__title-inner {

@@ -1,6 +1,10 @@
 .flat-selector-section {
   background: #f9f9f9;
-  padding: 67px 0 60px;
+  padding: 36px 0 30px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 67px 0 60px;
+  }
 }
 
 .flat-selector-section__inner {
@@ -12,7 +16,11 @@
 }
 
 .flat-selector-section .tabs__panels {
-  margin-top: 27px;
+  margin-top: 19px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 25px;
+  }
 }
 
 .js .flat-selector-section .tabs__controls a {
@@ -23,7 +31,7 @@
   padding: 0;
 
   @media (min-width: $tablet-breakpoint) {
-    font-size: 34px;
+    font-size: 30px;
     text-decoration: underline;
     background: transparent;
     color: $color-green;

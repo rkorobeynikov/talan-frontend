@@ -1,7 +1,11 @@
 .docs-list {
-  margin: 31px 0 0;
+  margin: 16px 0 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 25px 0 0;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     margin: 33px 0 0 29px;
@@ -9,14 +13,22 @@
 }
 
 .docs-list__item {
-  margin-top: 10px;
+  margin-top: 6px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 10px;
+  }
 }
 
 .docs-list__link {
   color: $color-green;
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none;
   font-weight: 500;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 15px;
+  }
 }
 
 .docs-list__link--external::after {

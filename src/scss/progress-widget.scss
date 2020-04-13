@@ -1,7 +1,7 @@
 .progress-widget {
   box-shadow: $object-shadow;
   border-radius: $radius-medium;
-  padding: 20px 16px 23px;
+  padding: 20px 16px 21px;
 
   @media (min-width: $tablet-breakpoint) {
     padding: 35px 30px 26px;
@@ -31,6 +31,7 @@
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  margin-top: 4px;
 }
 
 .progress-widget__dates {

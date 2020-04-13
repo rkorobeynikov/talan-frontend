@@ -8,17 +8,32 @@
 
 .about-object-section__title {
   @include heading-3();
-  margin-top: -88px;
+  margin-top: -82px;
+  color: #343434;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 30px;
+    margin-top: -61px;
+  }
 }
 
 .about-object-section__main {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-bottom: 60px;
+  }
 }
 
 .about-object-section__grid {
   width: 100%;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 3px;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     width: 74.26%;

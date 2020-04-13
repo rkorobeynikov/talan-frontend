@@ -1,6 +1,12 @@
 .object-pictures {
-  padding: 24px 20px 34px;
+  width: 100%;
+  max-width: 100%;
+  padding: 16px 15px 0;
   box-sizing: border-box;
   box-shadow: $object-shadow;
   border-radius: $radius-medium;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 24px 20px 34px;
+  }
 }

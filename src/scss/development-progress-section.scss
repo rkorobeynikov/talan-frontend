@@ -32,6 +32,10 @@
   margin-top: 22px;
 
   @media (min-width: $tablet-breakpoint) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
     margin-top: 32px;
   }
 }

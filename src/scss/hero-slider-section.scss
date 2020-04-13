@@ -5,6 +5,14 @@
   position: relative;
 }
 
+.hero-slider-section--object {
+  margin: 16px auto 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 0 auto;
+  }
+}
+
 .hero-slider-section__title {
   display: none;
 
@@ -33,7 +41,7 @@
 .hero-slider-section__facts-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0;
 }
 
 .hero-slider-section__facts-list-item {
@@ -44,7 +52,7 @@
   font-family: $heading-font;
   font-weight: 500;
   letter-spacing: 0.1em;
-  margin-top: 11px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-breakpoint) {
     color: $color-white;
@@ -55,7 +63,11 @@
   margin: 20px 0 0;
 
   .button {
-    display: inline-block;
     min-width: 195px;
+    display: block;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: inline-block;
+    }
   }
 }

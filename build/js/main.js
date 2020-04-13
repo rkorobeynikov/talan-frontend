@@ -687,6 +687,15 @@ Math.easeInOutQuad = function (t, b, c, d) {
     });
 
 
+    var flatSearchMobileSwitcher = document.querySelector('.flat-search__mobile-switcher-btn');
+    if (flatSearchMobileSwitcher) {
+        flatSearchMobileSwitcher.addEventListener('click', function (event) {
+            var flatSearchFilter = document.querySelector('.flat-search__filter');
+            if (flatSearchFilter) {
+                flatSearchFilter.classList.toggle('flat-search__filter--mobile-opened');
+            }
+        })
+    }
 }());
 
 
