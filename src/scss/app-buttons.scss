@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 12px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 10px;
+  }
 }
 
 .app-buttons__link {

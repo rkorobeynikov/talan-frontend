@@ -12,6 +12,7 @@
   @media (min-width: $tablet-breakpoint) {
     flex-wrap: wrap;
     overflow: initial;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -39,7 +40,7 @@
   }
 
   @media (min-width: $tablet-breakpoint) {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 2.6%;
     flex: 31.59% 0 0;
     min-width: 31.59%;
@@ -54,6 +55,7 @@
     margin-right: 0;
     flex: 22.14% 0 0;
     min-width: 22.14%;
+    margin-top: 40px;
   }
 }
 
@@ -75,6 +77,7 @@
 .flat-types-grid-mobile-title {
   @include heading-3();
   padding: 0 12px;
+  margin: 40px 0 0;
 
   @media (min-width: $tablet-breakpoint) {
     display: none;

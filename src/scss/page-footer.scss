@@ -1,12 +1,23 @@
 .page-footer {
-  margin-top: 61px;
+  margin-top: 20px;
   @include page-inner();
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 60px;
+  }
 }
 
 .page-footer__inner--has-border {
   border-top: 1px solid #dfdfdf;
-  padding-top: 40px;
+  padding-top: 28px;
 
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 29px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 40px;
+  }
 }
 
 .page-footer__menu {
@@ -64,7 +75,7 @@
 
 .page-footer__column--company,
 .page-footer__column--partners {
-  margin-top: 35px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 0;
@@ -78,7 +89,7 @@
   @media (min-width: $tablet-breakpoint) {
     width: 50%;
     order: initial;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -94,7 +105,7 @@
   @media (min-width: $tablet-breakpoint) {
     width: 50%;
     display: block;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -106,7 +117,7 @@
 .page-footer__address {
   font-size: 12px;
   font-weight: 500;
-  margin: 13px 0 0;
+  margin: 12px 0 -3px;
   display: flex;
 
   @media (min-width: $tablet-breakpoint) {
@@ -141,7 +152,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 2px;
     display: block;
   }
 }
@@ -160,7 +171,7 @@
 }
 
 .page-footer__cta-btn {
-  margin-top: 10px;
+  margin-top: 8px;
   width: 100%;
 
   @media (min-width: $tablet-breakpoint) {
@@ -181,7 +192,7 @@
 
 .page-footer__copy {
   display: flex;
-  margin-top: 56px;
+  margin-top: 25px;
   padding-bottom: 26px;
   flex-wrap: wrap;
 

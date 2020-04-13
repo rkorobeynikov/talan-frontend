@@ -1,28 +1,63 @@
 .real-estate-type-card {
   border-radius: $radius-medium;
   box-shadow: $object-shadow;
-  padding: 32px 33px 37px 99px;
+  padding: 17px 33px 20px 78px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-breakpoint) {
     height: 100%;
     box-sizing: border-box;
+    padding: 27px 10px 26px 82px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 32px 33px 37px 99px;
   }
 }
 
 .real-estate-type-card--commercial {
-  background: url(../img/icon-other-realty-commercial.svg) 30px 30px no-repeat;
+  background-image: url(../img/icon-other-realty-commercial.svg);
+  background-position: 13px 16px;
+
+  @media (min-width: $tablet-breakpoint) {
+    background-position: 16px 16px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    background-position: 30px 30px;
+  }
 }
 
 .real-estate-type-card--boxes {
-  background: url(../img/icon-other-realty-boxes.svg) 36px 20px no-repeat;
+  background-image: url(../img/icon-other-realty-boxes.svg);
+  background-position: 13px 16px;
+
+  @media (min-width: $tablet-breakpoint) {
+    background-position: 16px 22px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    background-position: 36px 20px;
+  }
 }
 
 .real-estate-type-card--parking {
-  background: url(../img/icon-other-realty-parking.svg) 33px 37px no-repeat;
+  background-image: url(../img/icon-other-realty-parking.svg);
+  background-position: 13px 16px;
+
+  @media (min-width: $tablet-breakpoint) {
+    background-position: 20px 11px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    background-position: 33px 37px;
+  }
 }
 
 .real-estate-type-card__title {
   @include heading-4();
+  font-size: 16px;
+  line-height: 1.2em;
 }
 
 .real-estate-type-card__description {
@@ -31,13 +66,32 @@
   line-height: 18px;
   color: #979797;
   margin: 17px 0 0;
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 7px 0 0;
+    display: block;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+  }
 }
 
 .real-estate-type-card__price {
-  margin: 17px 0 0;
+  margin: 11px 0 0;
   font-size: 18px;
   font-weight: 500;
   color: $color-black;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+    margin: 3px 0 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 18px;
+    margin: 17px 0 0;
+  }
 }
 
 .real-estate-type-card__price-value {

@@ -11,30 +11,41 @@
 }
 
 .object-card__info {
-  padding: 21px 30px 37px;
-  min-height: 268px;
+  padding: 12px 12px 17px;
+  min-height: 244px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 21px 16px 30px;
+    padding: 20px 16px 30px;
+    min-height: 222px;
   }
 }
 
 .object-card__title-wrapper {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 12px;
+  }
 }
 
 .object-card__radial-progress {
-  margin-left: 25px;
+  margin-left: 19px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: -10px;
+  }
 }
 
 .object-card__title {
   @include heading-4();
   color: $color-green;
   word-break: break-word;
+  font-size: 16px;
+  line-height: 1.2em;
 }
 
 .object-card__additional {
@@ -42,10 +53,14 @@
 }
 
 .object-card__deadline {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #979797;
   margin: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
 }
 
 .object-card__deadline-value {
@@ -56,13 +71,24 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-direction: column;
+  margin-top: 3px;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    margin-top: 9px;
+  }
 }
 
 .object-card__price {
   color: #343434;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0 10px 0 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 18px;
+  }
 }
 
 .object-card__price-value {
@@ -71,17 +97,37 @@
 }
 
 .object-card__warn-message {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #D95454;
-  margin: 0;
+  margin: 5px 0 0;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
 }
 
 .object-card__actions {
   display: flex;
-  margin: 26px 0 0;
+  margin: 17px 0 0;
+  flex-direction: column;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 24px 0 0;
+    flex-direction: row;
+  }
 }
 
 .object-card__action {
   flex: 1;
+  margin-top: 4px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 0;
+  }
 }
