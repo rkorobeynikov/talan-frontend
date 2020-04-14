@@ -7,6 +7,10 @@
   color: $color-green;
   text-decoration: none;
   letter-spacing: 0.1em;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }
 
 .header-phone__hours {

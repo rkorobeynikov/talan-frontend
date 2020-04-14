@@ -1,0 +1,14 @@
+.modal-progress {
+  padding: 0 4.8%;
+  max-width: 1010px;
+}
+
+.modal-progress__title {
+  @include heading-3();
+  color: #343434;
+}
+
+.modal-progress__widget {
+  margin-top: 40px;
+}
+

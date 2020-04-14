@@ -26,6 +26,10 @@
   text-decoration: none;
   font-weight: 500;
 
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
+
   @media (min-width: $tablet-breakpoint) {
     font-size: 15px;
   }

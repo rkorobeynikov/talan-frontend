@@ -57,6 +57,10 @@
   color: $color-green;
   font-weight: 500;
   text-decoration: none;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }
 
 .flat-selector-list__meta {

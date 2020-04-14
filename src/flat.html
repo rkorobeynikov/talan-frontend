@@ -101,96 +101,98 @@
             </div>
         </header>
         <main class="flat-overview__main">
-            <div class="flat-overview__pictures object-pictures">
-                <div class="tabs js-tabs">
-                    <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
-                        <li><a href="#tab1Panel1" class="tabs__control--selected js-tab-focus">Планировки</a></li>
-                        <li><a href="#tab1Panel2" class="js-tab-focus">Интерьеры</a></li>
-                    </ul>
+            <div class="flat-overview__pictures">
+                <div class="object-pictures">
+                    <div class="tabs js-tabs">
+                        <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
+                            <li><a href="#tab1Panel1" class="tabs__control--selected js-tab-focus">Планировки</a></li>
+                            <li><a href="#tab1Panel2" class="js-tab-focus">Интерьеры</a></li>
+                        </ul>
 
-                    <div class="tabs__panels js-tabs__panels">
-                        <section id="tab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
-                            <div class="flat-card-slideshow">
-                                <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-layout-slideshow">
-                                    <figure class="flat-card-slideshow__item">
-                                        <img src="img/content/image%2042.png" alt="" class="flat-card-slideshow__slide-image">
-                                    </figure>
-                                    <figure class="flat-card-slideshow__item">
-                                        <img src="img/content/image%2056.png" alt="" class="flat-card-slideshow__slide-image">
-                                    </figure>
+                        <div class="tabs__panels js-tabs__panels">
+                            <section id="tab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
+                                <div class="flat-card-slideshow">
+                                    <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-layout-slideshow">
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/image%2042.png" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/image%2056.png" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                    </div>
+
+                                    <ul class="flat-card-slideshow__arrows">
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-layout-slideshow-previous-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-layout-slideshow-next-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <button class="flat-card-slideshow__zoom-btn js-flat-layout-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-layout-fullscreen"></button>
+
+                                    <style>
+                                        .flat-card-slideshow .js-peppermint-flat-layout-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                            background-image: url('img/content/image 42.png');
+                                        }
+                                        .flat-card-slideshow .js-peppermint-flat-layout-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                            background-image: url('img/content/image 56.png');
+                                        }
+                                    </style>
                                 </div>
+                            </section>
 
-                                <ul class="flat-card-slideshow__arrows">
-                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
-                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-layout-slideshow-previous-btn">
-                                            <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
-                                        </button>
-                                    </li>
+                            <section id="tab1Panel2" class="tabs__panel js-tabs__panel">
 
-                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
-                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-layout-slideshow-next-btn">
-                                            <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
-                                        </button>
-                                    </li>
-                                </ul>
+                                <div class="flat-card-slideshow">
+                                    <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-interior-slideshow">
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                    </div>
 
-                                <button class="flat-card-slideshow__zoom-btn js-flat-layout-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-layout-fullscreen"></button>
+                                    <ul class="flat-card-slideshow__arrows">
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-interior-slideshow-previous-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
 
-                                <style>
-                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
-                                        background-image: url('img/content/image 42.png');
-                                    }
-                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
-                                        background-image: url('img/content/image 56.png');
-                                    }
-                                </style>
-                            </div>
-                        </section>
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-interior-slideshow-next-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+                                    </ul>
 
-                        <section id="tab1Panel2" class="tabs__panel js-tabs__panel">
+                                    <button class="flat-card-slideshow__zoom-btn js-flat-interior-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-interior-fullscreen"></button>
 
-                            <div class="flat-card-slideshow">
-                                <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-interior-slideshow">
-                                    <figure class="flat-card-slideshow__item">
-                                        <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
-                                    </figure>
-                                    <figure class="flat-card-slideshow__item">
-                                        <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
-                                    </figure>
-                                    <figure class="flat-card-slideshow__item">
-                                        <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
-                                    </figure>
+                                    <style>
+                                        .flat-card-slideshow .js-peppermint-flat-interior-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                            background-image: url('img/content/aw-creative-VGs8z60yT2c-unsplash.jpg');
+                                        }
+                                        .flat-card-slideshow .js-peppermint-flat-interior-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                            background-image: url('img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg');
+                                        }
+                                        .flat-card-slideshow .js-peppermint-flat-interior-slideshow ul.peppermint-dots > li:nth-child(3) > span {
+                                            background-image: url('img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg');
+                                        }
+                                    </style>
                                 </div>
-
-                                <ul class="flat-card-slideshow__arrows">
-                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
-                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-interior-slideshow-previous-btn">
-                                            <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
-                                        </button>
-                                    </li>
-
-                                    <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
-                                        <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-interior-slideshow-next-btn">
-                                            <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
-                                        </button>
-                                    </li>
-                                </ul>
-
-                                <button class="flat-card-slideshow__zoom-btn js-flat-interior-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-interior-fullscreen"></button>
-
-                                <style>
-                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
-                                        background-image: url('img/content/aw-creative-VGs8z60yT2c-unsplash.jpg');
-                                    }
-                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
-                                        background-image: url('img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg');
-                                    }
-                                    .flat-card-slideshow ul.peppermint-dots > li:nth-child(3) > span {
-                                        background-image: url('img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg');
-                                    }
-                                </style>
-                            </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -379,6 +381,7 @@
     <div class="callback-promo">
         <div class="callback-promo__inner">
             <div class="callback-promo__description">
+                <img src="img/call-center.png" alt="" class="callback-promo__image">
                 <h3 class="callback-promo__title">Нужна консультация?</h3>
                 <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
             </div>

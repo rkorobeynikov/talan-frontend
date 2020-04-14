@@ -145,6 +145,10 @@
 
 .object-description__mortgage-payment--link {
   color: $color-green;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }
 
 .object-description__mortgage-type-label {

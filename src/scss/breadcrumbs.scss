@@ -46,4 +46,8 @@
   text-decoration: none;
   display: inline-block;
   margin-right: 11px;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }

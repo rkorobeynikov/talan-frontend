@@ -31,7 +31,15 @@
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  margin-top: 4px;
+  margin-top: -3px;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-top: 4px;
+  }
 }
 
 .progress-widget__dates {

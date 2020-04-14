@@ -25,6 +25,10 @@
   text-decoration: none;
   white-space: nowrap;
   background: transparent;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .page-header__btn--profile {

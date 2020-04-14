@@ -28,6 +28,10 @@
   height: 15px;
   display: inline-block;
   padding: 5px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .footer-social__link--vk {

@@ -37,4 +37,8 @@
   letter-spacing: 0.14em;
   display: block;
   padding: 9px 0;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }
