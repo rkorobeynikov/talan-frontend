@@ -44,7 +44,8 @@
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 33.33%;
+    width: auto;
+    flex: 1;
     min-width: initial;
     padding-left: 0;
   }
