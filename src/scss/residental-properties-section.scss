@@ -39,6 +39,7 @@
   margin-top: 20px;
 
   @media (min-width: $tablet-breakpoint) {
+    @include page-inner();
     margin-top: 3px;
   }
 }

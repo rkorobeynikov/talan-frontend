@@ -10,8 +10,8 @@
 }
 
 .other-real-estate-section__title {
-  @include page-inner();
   @include heading-3();
+  @include page-inner();
 
   @media (min-width: $tablet-breakpoint) {
     font-size: 30px;

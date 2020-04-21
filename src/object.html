@@ -130,512 +130,515 @@
         </div>
     </div>
 
-    <div class="sticky-nav-container">
-        <div class="sticky-nav-container__inner">
-            <div class="sticky-nav-list"></div>
+
+    <div class="sticky-nav-wrapper">
+        <div class="sticky-nav-container">
+            <div class="sticky-nav-container__inner">
+                <div class="sticky-nav-list"></div>
+            </div>
+
+            <section class="about-object-section">
+                <div class="about-object-section__inner">
+                    <h2 id="about" class="about-object-section__title">О проекте</h2>
+                    <div class="about-object-section__main">
+                        <div class="about-object-section__grid features-grid">
+                            <div class="features-grid__row">
+                                <a href="#" class="features-grid__item features-grid__item--medium">
+                                    <img src="img/tile-architecture.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Архитектура</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="features-grid__item features-grid__item--medium">
+                                    <img src="img/tile-security.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Безопасность</h3>
+                                        <p class="features-grid__description">7 уровней безопасности для вас и ваших близких</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="features-grid__row">
+                                <a href="#" class="features-grid__item features-grid__item--narrow">
+                                    <img src="img/tile-yard.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Благоустройство</h3>
+                                    </div>
+                                </a>
+                                <div class="features-grid__group">
+                                    <a href="#" class="features-grid__item features-grid__item--wide">
+                                        <img src="img/tile-lobby.jpg" alt="">
+                                        <div class="features-grid__label">
+                                            <h3 class="features-grid__title">Стильное лобби</h3>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="features-grid__item features-grid__item--wide">
+                                        <img src="img/tile-landscaping.jpg" alt="">
+                                        <div class="features-grid__label">
+                                            <h3 class="features-grid__title">Озеленение</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="features-grid__row">
+                                <a href="#" class="features-grid__item features-grid__item--medium">
+                                    <img src="img/tile-flats.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Квартиры</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="features-grid__item features-grid__item--medium">
+                                    <img src="img/tile-smarthome.jpg" alt="">
+                                    <div class="features-grid__label">
+                                        <h3 class="features-grid__title">Умные технологии</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flat-selector-section">
+                <h2 id="choose-flat" class="flat-selector-section__title visually-hidden">Выбор квартиры</h2>
+                <div class="flat-selector-section__inner">
+
+                    <div class="tabs js-tabs">
+                        <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
+                            <li class="flat-selector-section__layout-tab"><a href="#flat-chooser" class="tabs__control--selected js-tab-focus">Выбор планировки</a></li>
+                            <li><a href="#unit-chooser" class="js-tab-focus">Выбор секции</a></li>
+                        </ul>
+
+                        <div class="tabs__panels js-tabs__panels">
+                            <section id="flat-chooser" class="tabs__panel tabs__panel--selected js-tabs__panel flat-selector-section__flat-chooser-tab-panel">
+                                <div class="flat-selector">
+                                    <header class="flat-selector__header">
+                                        <button type="button" class="flat-selector__filter-btn" data-filter="all">Все</button>
+                                        <button type="button" class="flat-selector__filter-btn" data-filter=".room1">1-комн.</button>
+                                        <button type="button" class="flat-selector__filter-btn" data-filter=".room15">1,5-комн.</button>
+                                    </header>
+                                    <div class="flat-selector__body">
+                                        <div class="flat-selector__flats-grid flat-selector-grid container" data-ref="container">
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room15">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1.5-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room15">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1.5-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                            <div class="flat-selector-grid__item mix room1">
+                                                <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
+                                                <div class="flat-selector-grid__title">1-комнатная</div>
+                                                <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
+                                            </div>
+                                        </div>
+                                        <div class="flat-selector__flats-list">
+                                            <h3 class="flat-selector__flats-list-title">В наличии 3 квартиры</h3>
+                                            <ul class="flat-selector-list">
+                                                <li class="flat-selector-list__item flat-selector-list__item--popular">
+                                                    <div class="flat-selector-list__image">
+                                                        <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
+                                                    </div>
+                                                    <div class="flat-selector-list__info">
+                                                        <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
+                                                        <ul class="flat-selector-list__meta">
+                                                            <li>4-комн.</li>
+                                                            <li>156 м<sup>2</sup></li>
+                                                            <li>4/14 этаж</li>
+                                                            <li>1 секция</li>
+                                                        </ul>
+                                                        <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
+                                                    </div>
+                                                </li>
+                                                <li class="flat-selector-list__item">
+                                                    <div class="flat-selector-list__image">
+                                                        <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
+                                                    </div>
+                                                    <div class="flat-selector-list__info">
+                                                        <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
+                                                        <ul class="flat-selector-list__meta">
+                                                            <li>4-комн.</li>
+                                                            <li>156 м<sup>2</sup></li>
+                                                            <li>4/14 этаж</li>
+                                                            <li>1 секция</li>
+                                                        </ul>
+                                                        <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
+                                                    </div>
+                                                </li>
+                                                <li class="flat-selector-list__item flat-selector-list__item--popular">
+                                                    <div class="flat-selector-list__image">
+                                                        <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
+                                                    </div>
+                                                    <div class="flat-selector-list__info">
+                                                        <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
+                                                        <ul class="flat-selector-list__meta">
+                                                            <li>4-комн.</li>
+                                                            <li>156 м<sup>2</sup></li>
+                                                            <li>4/14 этаж</li>
+                                                            <li>1 секция</li>
+                                                        </ul>
+                                                        <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="flat-selector__footer">
+                                                <a href="#" class="flat-selector__show-all-flats">Показать все квартиры в ЖК</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="unit-chooser" class="tabs__panel js-tabs__panel flat-selector-section__unit-chooser-tab-panel">
+                                <div class="unit-selector">
+                                    <img src="img/content/Rectangle%2058.jpg" alt="" class="unit-selector__image">
+
+                                    <svg width="1010" height="677" viewBox="0 0 1010 677" fill="none" xmlns="http://www.w3.org/2000/svg" class="unit-selector__paths">
+                                        <path data-unit-path="1" class="unit-selector__unit-path" d="M459 337.5L377.5 382L373.5 379.5L382.5 513L552 623.5L695 489L707 346.5L646 324L669 309L670.5 284.5L640 275L610 293V300.5L591.5 311V322L556 343V352L496.5 330L470.5 344.5L459 337.5Z" fill="#00CE2D" fill-opacity="0.33"/>
+                                        <path data-unit-path="2" class="unit-selector__unit-path" d="M286 189.5L196 218.5L223 396.5L227 427.5L367 507.5L371 506L381 512V482L374 380.5L385.5 374.5L386 381.5L453.5 344V337L457 335.5L459 337L456.5 243L380.5 219V212.5L372 210L371 197.5L347.5 190V189L342.5 187.5L340.5 188L336 186.5L334.5 184.5L327.5 182V184.5L311.5 189L312.5 197.5L286 189.5Z" fill="#E49922" fill-opacity="0.7"/>
+                                    </svg>
+
+
+                                    <div class="unit-selector__tooltips">
+                                        <div class="unit-selector__tooltip" data-unit-tooltip="1" style="top: 20%;left:50%;">
+                                            <h3 class="unit-selector__tooltip-title">Подъезд 1</h3>
+                                            <p class="unit-selector__tooltip-description">Квартиры с улучшеной предчистовой отделкой</p>
+                                            <ul class="unit-selector__tooltip-flats-list">
+                                                <li class="unit-selector__tooltip-flats-list-item"><span>1 комн.</span><span>от 2.7 млн</span></li>
+                                                <li class="unit-selector__tooltip-flats-list-item"><span>2 комн.</span><span>от 3.4 млн</span></li>
+                                                <li class="unit-selector__tooltip-flats-list-item"><span>3 комн.</span><span>от 5.6 млн</span></li>
+                                            </ul>
+                                            <p class="unit-selector__tooltip-footer">
+                                                <span class="unit-selector__tooltip-available-flats">4 свободно</span>
+                                                <span>3 квартал 2020</span>
+                                            </p>
+                                            <button type="button" class="unit-selector__tooltip-close" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="unit-selector__tooltip" data-unit-tooltip="2" style="top: 10%;left: 45%">
+                                            <h3 class="unit-selector__tooltip-title">Подъезд 2</h3>
+                                            <p class="unit-selector__tooltip-description">Квартиры с улучшеной предчистовой отделкой</p>
+                                            <ul class="unit-selector__tooltip-flats-list">
+                                                <li class="unit-selector__tooltip-flats-list-item"><span>1 комн.</span><span>от 2.7 млн</span></li>
+                                                <li class="unit-selector__tooltip-flats-list-item"><span>2 комн.</span><span>от 3.4 млн</span></li>
+                                                <li class="unit-selector__tooltip-flats-list-item"><span>3 комн.</span><span>от 5.6 млн</span></li>
+                                            </ul>
+                                            <p class="unit-selector__tooltip-footer">
+                                                <span class="unit-selector__tooltip-available-flats">4 свободно</span>
+                                                <span>3 квартал 2020</span>
+                                            </p>
+                                            <button type="button" class="unit-selector__tooltip-close" aria-label="Закрыть"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <script>
+                                var units = document.querySelectorAll('.unit-selector__unit-path');
+                                var tooltipCloseBtns = document.querySelectorAll('.unit-selector__tooltip-close');
+                                units.forEach(function (unit) {
+                                    unit.addEventListener('click', function (event) {
+                                        var tooltips = document.querySelectorAll('.unit-selector__tooltip');
+                                        tooltips.forEach(function (tooltip) {
+                                            tooltip.classList.remove('unit-selector__tooltip--visible');
+                                        });
+                                        document.querySelector('.unit-selector__tooltip[data-unit-tooltip="' + event.target.getAttribute('data-unit-path') + '"]').classList.add('unit-selector__tooltip--visible');
+                                    });
+                                });
+                                tooltipCloseBtns.forEach(function (tooltipCloseBtn) {
+                                    tooltipCloseBtn.addEventListener('click', function (event) {
+                                        var tooltips = document.querySelectorAll('.unit-selector__tooltip');
+                                        tooltips.forEach(function (tooltip) {
+                                            tooltip.classList.remove('unit-selector__tooltip--visible');
+                                        });
+                                    });
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flat-selector-section__mobile-flat-layout-chooser flat-layout-mobile-chooser">
+                    <h3 class="flat-layout-mobile-chooser__title">Выбор планировки</h3>
+                    <div class="flat-layout-mobile-chooser__dropdown dropdown js-dropdown">
+                        <button type="button" aria-controls="flat-layout-mobile-chooser-dropdown" class="flat-layout-mobile-chooser__dropdown-btn dropdown__trigger">1-комнатные</button>
+                        <ul class="menu js-menu" id="flat-layout-mobile-chooser-dropdown">
+                            <li><a href="#" class="menu__item" data-slideshow-target="studio">Студии</a></li>
+                            <li><a href="#" class="menu__item" data-slideshow-target="1room">1-комнатные</a></li>
+                            <li><a href="#" class="menu__item" data-slideshow-target="2room">2-комнатные</a></li>
+                            <li><a href="#" class="menu__item" data-slideshow-target="3room">3-комнатные</a></li>
+                        </ul>
+                    </div>
+                    <div class="flat-layout-mobile-chooser__slideshows">
+                        <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="studio">
+                            <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                            </div>
+                            <a href="#" class="flat-layout-mobile-chooser__view-all-link">Показать все квартиры в ЖК</a>
+                        </div>
+                        <div class="flat-layout-mobile-chooser__slideshow-wrapper flat-layout-mobile-chooser__slideshow-wrapper--active" data-slideshow-id="1room">
+                            <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="2room">
+                            <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="3room">
+                            <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/content/image%2016.png" alt="">
+                                    <div>
+                                        <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
+                                    </div>
+                                    <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promotions-section">
+                <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
+                <div class="promotions-section__list-wrapper">
+                    <ul class="promotions-list">
+                        <li class="promotions-list__item">
+                            <a href="#">
+                                <img src="img/content/image%2053.png" alt="" class="promotions-list__image">
+                            </a>
+                        </li>
+                        <li class="promotions-list__item">
+                            <a href="#">
+                                <img src="img/content/image%2054.png" alt="" class="promotions-list__image">
+                            </a>
+                        </li>
+                        <li class="promotions-list__item">
+                            <a href="#">
+                                <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                            </a>
+                        </li>
+                        <li class="promotions-list__item">
+                            <a href="#">
+                                <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="infrastructure-section">
+                <div class="infrastructure-section__inner">
+                    <h2 class="infrastructure-section__title" id="infrastructure">Инфраструктура</h2>
+                    <div class="infrastructure-section__zoom-image">
+                        <img src="img/content/image%2048-2.jpg" alt="" class="infrastructure-section__zoom-img">
+                        <button data-micromodal-trigger="modal-4" aria-label="Увеличить изображение" type="button" class="infrastructure-section__zoom-btn"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="development-progress-section">
+                <div class="development-progress-section__inner">
+                    <div class="development-progress-section__column">
+                        <h2 class="development-progress-section__title" id="progress">Ход строительства</h2>
+                        <div class="development-progress-section__progress-bar progress-widget">
+                            <div class="progress-widget__header">
+                                <h3 class="progress-widget__title">Общая готовность</h3>
+                                <a class="progress-widget__link" data-micromodal-trigger="modal-3">Узнать больше</a>
+                            </div>
+                            <div class="progress-widget__dates">
+                                <span class="progress-widget__date">Декабрь 2018</span>
+                                <span class="progress-widget__date">Май 2020</span>
+                            </div>
+                            <div class="progress-widget__progress-wrapper">
+                                <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                            </div>
+                            <div class="progress-widget__status">
+                                <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                            </div>
+                        </div>
+                        <ul class="development-progress-section__links-list images-list">
+                            <li class="images-list__item">
+                                <a href="#" class="images-list__link">
+                                    <img src="img/content/Rectangle%2040.jpg" alt="" class="images-list__img">
+                                    <div class="images-list__description">
+                                        <h4 class="images-list__title">Новости и фотографии строительства</h4>
+                                        <p class="images-list__label">Обновлено 04.12.19</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="images-list__item">
+                                <a href="#" class="images-list__link">
+                                    <img src="img/content/Rectangle%2041.jpg" alt="" class="images-list__img">
+                                    <div class="images-list__description">
+                                        <h4 class="images-list__title">Трансляция со стройки</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <section class="about-object-section">
-            <div class="about-object-section__inner">
-                <h2 id="about" class="about-object-section__title">О проекте</h2>
-                <div class="about-object-section__main">
-                    <div class="about-object-section__grid features-grid">
-                        <div class="features-grid__row">
-                            <a href="#" class="features-grid__item features-grid__item--medium">
-                                <img src="img/tile-architecture.jpg" alt="">
-                                <div class="features-grid__label">
-                                    <h3 class="features-grid__title">Архитектура</h3>
-                                </div>
-                            </a>
-                            <a href="#" class="features-grid__item features-grid__item--medium">
-                                <img src="img/tile-security.jpg" alt="">
-                                <div class="features-grid__label">
-                                    <h3 class="features-grid__title">Безопасность</h3>
-                                    <p class="features-grid__description">7 уровней безопасности для вас и ваших близких</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="features-grid__row">
-                            <a href="#" class="features-grid__item features-grid__item--narrow">
-                                <img src="img/tile-yard.jpg" alt="">
-                                <div class="features-grid__label">
-                                    <h3 class="features-grid__title">Благоустройство</h3>
-                                </div>
-                            </a>
-                            <div class="features-grid__group">
-                                <a href="#" class="features-grid__item features-grid__item--wide">
-                                    <img src="img/tile-lobby.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Стильное лобби</h3>
-                                    </div>
-                                </a>
-                                <a href="#" class="features-grid__item features-grid__item--wide">
-                                    <img src="img/tile-landscaping.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Озеленение</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="features-grid__row">
-                            <a href="#" class="features-grid__item features-grid__item--medium">
-                                <img src="img/tile-flats.jpg" alt="">
-                                <div class="features-grid__label">
-                                    <h3 class="features-grid__title">Квартиры</h3>
-                                </div>
-                            </a>
-                            <a href="#" class="features-grid__item features-grid__item--medium">
-                                <img src="img/tile-smarthome.jpg" alt="">
-                                <div class="features-grid__label">
-                                    <h3 class="features-grid__title">Умные технологии</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="flat-selector-section">
-            <h2 id="choose-flat" class="flat-selector-section__title visually-hidden">Выбор квартиры</h2>
-            <div class="flat-selector-section__inner">
-
-                <div class="tabs js-tabs">
-                    <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
-                        <li class="flat-selector-section__layout-tab"><a href="#flat-chooser" class="tabs__control--selected js-tab-focus">Выбор планировки</a></li>
-                        <li><a href="#unit-chooser" class="js-tab-focus">Выбор секции</a></li>
-                    </ul>
-
-                    <div class="tabs__panels js-tabs__panels">
-                        <section id="flat-chooser" class="tabs__panel tabs__panel--selected js-tabs__panel flat-selector-section__flat-chooser-tab-panel">
-                            <div class="flat-selector">
-                                <header class="flat-selector__header">
-                                    <button type="button" class="flat-selector__filter-btn" data-filter="all">Все</button>
-                                    <button type="button" class="flat-selector__filter-btn" data-filter=".room1">1-комн.</button>
-                                    <button type="button" class="flat-selector__filter-btn" data-filter=".room15">1,5-комн.</button>
-                                </header>
-                                <div class="flat-selector__body">
-                                    <div class="flat-selector__flats-grid flat-selector-grid container" data-ref="container">
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room15">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1.5-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room15">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1.5-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                        <div class="flat-selector-grid__item mix room1">
-                                            <img src="img/content/image%2016-2.png" alt="" width="53" class="flat-selector-grid__image">
-                                            <div class="flat-selector-grid__title">1-комнатная</div>
-                                            <div class="flat-selector-grid__square">43 м<sup>2</sup></div>
-                                        </div>
-                                    </div>
-                                    <div class="flat-selector__flats-list">
-                                        <h3 class="flat-selector__flats-list-title">В наличии 3 квартиры</h3>
-                                        <ul class="flat-selector-list">
-                                            <li class="flat-selector-list__item flat-selector-list__item--popular">
-                                                <div class="flat-selector-list__image">
-                                                    <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
-                                                </div>
-                                                <div class="flat-selector-list__info">
-                                                    <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
-                                                    <ul class="flat-selector-list__meta">
-                                                        <li>4-комн.</li>
-                                                        <li>156 м<sup>2</sup></li>
-                                                        <li>4/14 этаж</li>
-                                                        <li>1 секция</li>
-                                                    </ul>
-                                                    <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
-                                                </div>
-                                            </li>
-                                            <li class="flat-selector-list__item">
-                                                <div class="flat-selector-list__image">
-                                                    <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
-                                                </div>
-                                                <div class="flat-selector-list__info">
-                                                    <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
-                                                    <ul class="flat-selector-list__meta">
-                                                        <li>4-комн.</li>
-                                                        <li>156 м<sup>2</sup></li>
-                                                        <li>4/14 этаж</li>
-                                                        <li>1 секция</li>
-                                                    </ul>
-                                                    <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
-                                                </div>
-                                            </li>
-                                            <li class="flat-selector-list__item flat-selector-list__item--popular">
-                                                <div class="flat-selector-list__image">
-                                                    <img src="img/content/Bitmap-4.png" alt="" class="flat-selector-list__img">
-                                                </div>
-                                                <div class="flat-selector-list__info">
-                                                    <a href="#" class="flat-selector-list__title">4 500 000 ₽</a>
-                                                    <ul class="flat-selector-list__meta">
-                                                        <li>4-комн.</li>
-                                                        <li>156 м<sup>2</sup></li>
-                                                        <li>4/14 этаж</li>
-                                                        <li>1 секция</li>
-                                                    </ul>
-                                                    <button type="button" aria-label="Добавить в избранное" class="flat-selector-list__fav"></button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="flat-selector__footer">
-                                            <a href="#" class="flat-selector__show-all-flats">Показать все квартиры в ЖК</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section id="unit-chooser" class="tabs__panel js-tabs__panel flat-selector-section__unit-chooser-tab-panel">
-                            <div class="unit-selector">
-                                <img src="img/content/Rectangle%2058.jpg" alt="" class="unit-selector__image">
-
-                                <svg width="1010" height="677" viewBox="0 0 1010 677" fill="none" xmlns="http://www.w3.org/2000/svg" class="unit-selector__paths">
-                                    <path data-unit-path="1" class="unit-selector__unit-path" d="M459 337.5L377.5 382L373.5 379.5L382.5 513L552 623.5L695 489L707 346.5L646 324L669 309L670.5 284.5L640 275L610 293V300.5L591.5 311V322L556 343V352L496.5 330L470.5 344.5L459 337.5Z" fill="#00CE2D" fill-opacity="0.33"/>
-                                    <path data-unit-path="2" class="unit-selector__unit-path" d="M286 189.5L196 218.5L223 396.5L227 427.5L367 507.5L371 506L381 512V482L374 380.5L385.5 374.5L386 381.5L453.5 344V337L457 335.5L459 337L456.5 243L380.5 219V212.5L372 210L371 197.5L347.5 190V189L342.5 187.5L340.5 188L336 186.5L334.5 184.5L327.5 182V184.5L311.5 189L312.5 197.5L286 189.5Z" fill="#E49922" fill-opacity="0.7"/>
-                                </svg>
-
-
-                                <div class="unit-selector__tooltips">
-                                    <div class="unit-selector__tooltip" data-unit-tooltip="1" style="top: 20%;left:50%;">
-                                        <h3 class="unit-selector__tooltip-title">Подъезд 1</h3>
-                                        <p class="unit-selector__tooltip-description">Квартиры с улучшеной предчистовой отделкой</p>
-                                        <ul class="unit-selector__tooltip-flats-list">
-                                            <li class="unit-selector__tooltip-flats-list-item"><span>1 комн.</span><span>от 2.7 млн</span></li>
-                                            <li class="unit-selector__tooltip-flats-list-item"><span>2 комн.</span><span>от 3.4 млн</span></li>
-                                            <li class="unit-selector__tooltip-flats-list-item"><span>3 комн.</span><span>от 5.6 млн</span></li>
-                                        </ul>
-                                        <p class="unit-selector__tooltip-footer">
-                                            <span class="unit-selector__tooltip-available-flats">4 свободно</span>
-                                            <span>3 квартал 2020</span>
-                                        </p>
-                                        <button type="button" class="unit-selector__tooltip-close" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="unit-selector__tooltip" data-unit-tooltip="2" style="top: 10%;left: 45%">
-                                        <h3 class="unit-selector__tooltip-title">Подъезд 2</h3>
-                                        <p class="unit-selector__tooltip-description">Квартиры с улучшеной предчистовой отделкой</p>
-                                        <ul class="unit-selector__tooltip-flats-list">
-                                            <li class="unit-selector__tooltip-flats-list-item"><span>1 комн.</span><span>от 2.7 млн</span></li>
-                                            <li class="unit-selector__tooltip-flats-list-item"><span>2 комн.</span><span>от 3.4 млн</span></li>
-                                            <li class="unit-selector__tooltip-flats-list-item"><span>3 комн.</span><span>от 5.6 млн</span></li>
-                                        </ul>
-                                        <p class="unit-selector__tooltip-footer">
-                                            <span class="unit-selector__tooltip-available-flats">4 свободно</span>
-                                            <span>3 квартал 2020</span>
-                                        </p>
-                                        <button type="button" class="unit-selector__tooltip-close" aria-label="Закрыть"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <script>
-                            var units = document.querySelectorAll('.unit-selector__unit-path');
-                            var tooltipCloseBtns = document.querySelectorAll('.unit-selector__tooltip-close');
-                            units.forEach(function (unit) {
-                                unit.addEventListener('click', function (event) {
-                                    var tooltips = document.querySelectorAll('.unit-selector__tooltip');
-                                    tooltips.forEach(function (tooltip) {
-                                        tooltip.classList.remove('unit-selector__tooltip--visible');
-                                    });
-                                    document.querySelector('.unit-selector__tooltip[data-unit-tooltip="' + event.target.getAttribute('data-unit-path') + '"]').classList.add('unit-selector__tooltip--visible');
-                                });
-                            });
-                            tooltipCloseBtns.forEach(function (tooltipCloseBtn) {
-                                tooltipCloseBtn.addEventListener('click', function (event) {
-                                    var tooltips = document.querySelectorAll('.unit-selector__tooltip');
-                                    tooltips.forEach(function (tooltip) {
-                                        tooltip.classList.remove('unit-selector__tooltip--visible');
-                                    });
-                                });
-                            })
-                        </script>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flat-selector-section__mobile-flat-layout-chooser flat-layout-mobile-chooser">
-                <h3 class="flat-layout-mobile-chooser__title">Выбор планировки</h3>
-                <div class="flat-layout-mobile-chooser__dropdown dropdown js-dropdown">
-                    <button type="button" aria-controls="flat-layout-mobile-chooser-dropdown" class="flat-layout-mobile-chooser__dropdown-btn dropdown__trigger">1-комнатные</button>
-                    <ul class="menu js-menu" id="flat-layout-mobile-chooser-dropdown">
-                        <li><a href="#" class="menu__item" data-slideshow-target="studio">Студии</a></li>
-                        <li><a href="#" class="menu__item" data-slideshow-target="1room">1-комнатные</a></li>
-                        <li><a href="#" class="menu__item" data-slideshow-target="2room">2-комнатные</a></li>
-                        <li><a href="#" class="menu__item" data-slideshow-target="3room">3-комнатные</a></li>
-                    </ul>
-                </div>
-                <div class="flat-layout-mobile-chooser__slideshows">
-                    <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="studio">
-                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">Студия 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                        </div>
-                        <a href="#" class="flat-layout-mobile-chooser__view-all-link">Показать все квартиры в ЖК</a>
-                    </div>
-                    <div class="flat-layout-mobile-chooser__slideshow-wrapper flat-layout-mobile-chooser__slideshow-wrapper--active" data-slideshow-id="1room">
-                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">1-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="2room">
-                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">2-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="flat-layout-mobile-chooser__slideshow-wrapper" data-slideshow-id="3room">
-                        <div class="flat-layout-mobile-chooser__slideshow peppermint peppermint-inactive">
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                            <figure>
-                                <img src="img/content/image%2016.png" alt="">
-                                <div>
-                                    <a class="flat-layout-mobile-chooser__link" href="#">3-комнатная 43 м<sup>2</sup></a>
-                                </div>
-                                <p class="flat-layout-mobile-chooser__description">В наличии 3 квартиры</p>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="promotions-section">
-            <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
-            <div class="promotions-section__list-wrapper">
-                <ul class="promotions-list">
-                    <li class="promotions-list__item">
-                        <a href="#">
-                            <img src="img/content/image%2053.png" alt="" class="promotions-list__image">
-                        </a>
-                    </li>
-                    <li class="promotions-list__item">
-                        <a href="#">
-                            <img src="img/content/image%2054.png" alt="" class="promotions-list__image">
-                        </a>
-                    </li>
-                    <li class="promotions-list__item">
-                        <a href="#">
-                            <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
-                        </a>
-                    </li>
-                    <li class="promotions-list__item">
-                        <a href="#">
-                            <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="infrastructure-section">
-            <div class="infrastructure-section__inner">
-                <h2 class="infrastructure-section__title" id="infrastructure">Инфраструктура</h2>
-                <div class="infrastructure-section__zoom-image">
-                    <img src="img/content/image%2048-2.jpg" alt="" class="infrastructure-section__zoom-img">
-                    <button data-micromodal-trigger="modal-4" aria-label="Увеличить изображение" type="button" class="infrastructure-section__zoom-btn"></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="development-progress-section">
-            <div class="development-progress-section__inner">
-                <div class="development-progress-section__column">
-                    <h2 class="development-progress-section__title" id="progress">Ход строительства</h2>
-                    <div class="development-progress-section__progress-bar progress-widget">
-                        <div class="progress-widget__header">
-                            <h3 class="progress-widget__title">Общая готовность</h3>
-                            <a class="progress-widget__link" data-micromodal-trigger="modal-3">Узнать больше</a>
-                        </div>
-                        <div class="progress-widget__dates">
-                            <span class="progress-widget__date">Декабрь 2018</span>
-                            <span class="progress-widget__date">Май 2020</span>
-                        </div>
-                        <div class="progress-widget__progress-wrapper">
-                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
-                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
-                        </div>
-                        <div class="progress-widget__status">
-                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
-                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
-                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
-                        </div>
-                    </div>
-                    <ul class="development-progress-section__links-list images-list">
-                        <li class="images-list__item">
-                            <a href="#" class="images-list__link">
-                                <img src="img/content/Rectangle%2040.jpg" alt="" class="images-list__img">
-                                <div class="images-list__description">
-                                    <h4 class="images-list__title">Новости и фотографии строительства</h4>
-                                    <p class="images-list__label">Обновлено 04.12.19</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="images-list__item">
-                            <a href="#" class="images-list__link">
-                                <img src="img/content/Rectangle%2041.jpg" alt="" class="images-list__img">
-                                <div class="images-list__description">
-                                    <h4 class="images-list__title">Трансляция со стройки</h4>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
         <section class="docs-section">
             <div class="docs-section__inner">
@@ -647,7 +650,6 @@
                 </ul>
             </div>
         </section>
-
     </div>
 
     <footer class="page-footer">
@@ -1034,7 +1036,7 @@
     <script src="js/main.js"></script>
     <script>
 
-            const content = document.querySelector('.sticky-nav-container');
+            const content = document.querySelector('.sticky-nav-wrapper');
             scrollnav.init(content, {
                 debug: false,
                 insertTarget: document.querySelector('.sticky-nav-list'),

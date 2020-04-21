@@ -7,7 +7,8 @@
   scroll-snap-type: x mandatory;
 
   @media (min-width: $tablet-breakpoint) {
-    margin: 13px 0 0;
+    @include page-inner();
+    margin: 13px auto 0;
     padding: 0 20px;
     overflow: initial;
     flex-wrap: wrap;
