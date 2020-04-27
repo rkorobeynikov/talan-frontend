@@ -62,6 +62,10 @@
   overflow: hidden;
 }
 
+.progress-widget__header + .progress-widget__progress-wrapper {
+  margin-top: 27px;
+}
+
 .progress-widget__progress {
   appearance: none;
   border: none;
