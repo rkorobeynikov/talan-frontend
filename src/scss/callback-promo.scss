@@ -38,6 +38,11 @@
   }
 }
 
+.callback-promo__success {
+  width: 100%;
+  text-align: center;
+}
+
 .callback-promo__inner--question {
   padding: 52px 53px 36px 48px;
   align-items: flex-start;
@@ -119,6 +124,14 @@
     font-size: 12px;
     line-height: 18px;
     margin-top: 8px;
+  }
+}
+
+.callback-promo__paragraph--success {
+  margin: 10px 0 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin: 13px 0 0;
   }
 }
 

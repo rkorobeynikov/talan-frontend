@@ -130,6 +130,15 @@
         </div>
     </div>
 
+    <div class="callback-promo callback-promo--object">
+        <div class="callback-promo__inner">
+            <div class="callback-promo__success">
+                <p class="callback-promo__title">Заявка отправлена!</p>
+                <p class="callback-promo__paragraph callback-promo__paragraph--success">Спасибо за уделенное внимание, наши специалисты обработают заявку и свяжутся с вами в самое ближйшее время. Ожидайте звонка.</p>
+            </div>
+        </div>
+    </div>
+
 
     <div class="sticky-nav-wrapper">
         <div class="sticky-nav-container">
@@ -750,6 +759,8 @@
     <button data-micromodal-trigger="modal-2">modal-2</button>
     <button data-micromodal-trigger="modal-3">modal-3</button>
     <button data-micromodal-trigger="modal-5">modal-5</button>
+    <button data-micromodal-trigger="modal-6">modal-6</button>
+    <button data-micromodal-trigger="modal-7">modal-7</button>
 
 
     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
@@ -1017,6 +1028,57 @@
                                 <textarea id="question-form-body" placeholder="Ваш вопрос" class="input input--textarea callback-promo__textarea"></textarea>
                                 <button type="submit" class="button button--small button--dark">Задать вопрос</button>
                             </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-6-content">
+                    <div class="form-mobile">
+                        <h2 class="form-mobile__title">Заявка на звонок</h2>
+                        <p class="form-mobile__description">Оставьте заявку на звонок и наши специалисты свяжутся с вами в самое ближайшее время.</p>
+                        <form class="form-mobile__form">
+                            <p class="form-mobile__form-row">
+                                <input type="text" class="input input--bordered" placeholder="Имя">
+                            </p>
+                            <p class="form-mobile__form-row">
+                                <input type="text" class="input input--bordered" placeholder="Телефон">
+                            </p>
+                            <p class="form-mobile__form-row form-mobile__form-row--submit">
+                                <button type="submit" class="button button--small">Отправить заявку</button>
+                            </p>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-7" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-7-content">
+                    <div class="form-mobile">
+                        <h2 class="form-mobile__title">Заявка отправлена</h2>
+                        <div class="form-mobile__success">
+                            <div class="form-mobile__image">
+                                <img src="img/call-center@2x.png" alt="" class="form-mobile__img">
+                            </div>
+                            <div class="form-mobile__success-info">
+                                <p class="form-mobile__description form-mobile__description--success">«Перезвоню вам в самое ближайшее время»</p>
+                                <p class="form-mobile__contacts">Менеджер по продажам<br>Анна Корнеева<br>+7 905 875 64 32</p>
+                            </div>
                         </div>
                     </div>
                 </main>

@@ -27,3 +27,12 @@
 .input--shadowed::placeholder {
   color: #C4C4C4;
 }
+
+.input--bordered {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e1e1e1;
+}
+
+.input--bordered::placeholder {
+  color: #B6B6B6;
+}
