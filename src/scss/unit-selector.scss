@@ -29,8 +29,12 @@
   height: 100%;
 }
 
+.unit-selector__unit-path {
+  opacity: 0;
+}
+
 .unit-selector__unit-path:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .unit-selector__tooltip {
