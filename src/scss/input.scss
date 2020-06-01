@@ -1,4 +1,4 @@
-.input {
+.tln-input {
   appearance: none;
   background: $color-white;
   height: 34px;
@@ -10,29 +10,29 @@
   box-sizing: border-box;
 }
 
-.input--textarea {
+.tln-input--textarea {
   height: 80px;
   resize: vertical;
   padding-top: 9px;
 }
 
-.input::placeholder {
+.tln-input::placeholder {
   color: #B2C4A9;
 }
 
-.input--shadowed {
+.tln-input--shadowed {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.input--shadowed::placeholder {
+.tln-input--shadowed::placeholder {
   color: #C4C4C4;
 }
 
-.input--bordered {
+.tln-input--bordered {
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
   border: 1px solid #e1e1e1;
 }
 
-.input--bordered::placeholder {
+.tln-input--bordered::placeholder {
   color: #B6B6B6;
 }

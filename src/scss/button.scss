@@ -1,4 +1,4 @@
-.button {
+.tln-button {
   display: block;
   appearance: none;
   background: $color-green;
@@ -22,17 +22,17 @@
   }
 }
 
-.button--dark {
+.tln-button--dark {
   background: $color-green-dark;
 }
 
-.button--white {
+.tln-button--white {
   background: $color-white;
   color: $color-green;
   border: 2px solid $color-green;
 }
 
-.button--shadow {
+.tln-button--shadow {
   background: $color-white;
   color: $color-green;
   box-shadow: 0 2px 10px rgba(186, 189, 191, 0.42);
@@ -41,17 +41,17 @@
   letter-spacing: 0.1em;
 }
 
-.button--small {
+.tln-button--small {
   font-size: 10px;
   padding: 11px 15px 8px;
 }
 
-.button--large {
+.tln-button--large {
   font-size: 16px;
   padding: 12px 15px;
 }
 
-.button--ghost-small {
+.tln-button--ghost-small {
   font-size: 10px;
   background: none;
   color: $color-green;
