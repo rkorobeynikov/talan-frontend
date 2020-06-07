@@ -23,6 +23,15 @@
   overflow: hidden;
 }
 
+.slideshow__overlay-gradient {
+  width: calc(100% - 40px);
+  background: linear-gradient(to bottom, #fff0, #000);
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  border-radius: $radius-medium;
+}
+
 .slideshow.peppermint.peppermint-active {
   width: 95%;
   overflow: visible;
