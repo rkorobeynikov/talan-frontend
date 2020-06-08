@@ -67,7 +67,7 @@ gulp.task("webp", function() {
 });
 
 gulp.task("css", function() {
-    return gulp.src("src/scss/style.scss")
+    return gulp.src(["src/scss/style.scss", "src/scss/navigation.scss"])
         .pipe(plumber())
         .pipe(sourcemap.init())
         .pipe(sass())
@@ -75,7 +75,9 @@ gulp.task("css", function() {
             autoprefixer()
         ]))
         .pipe(csso())
-        .pipe(rename("style.min.css"))
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(sourcemap.write("."))
         .pipe(gulp.dest("build/css"))
         .pipe(server.stream());
