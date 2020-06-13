@@ -15,6 +15,7 @@
   border-radius: $radius-medium;
   position: relative;
   margin-top: 15px;
+  transform: translate3d(0, 0, 0);
 
   &:first-child {
     margin-top: 0;
@@ -47,6 +48,23 @@
   }
 }
 
+.images-list__link {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 64.06%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+  }
+}
+
 .images-list__img {
   display: block;
   width: 100%;
@@ -60,6 +78,7 @@
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  z-index: 1;
 
   @media (min-width: $tablet-breakpoint) {
     padding: 0 20px 19px;
