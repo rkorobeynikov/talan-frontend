@@ -7,6 +7,14 @@
     justify-content: space-between;
     flex-direction: row;
   }
+
+  iframe {
+    max-width: 100%;
+
+    @media (min-width: $tablet-breakpoint) {
+      max-width: initial;
+    }
+  }
 }
 
 .promotion-modal-layout__image {
