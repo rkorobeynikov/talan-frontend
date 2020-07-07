@@ -28,3 +28,51 @@
   display: block;
   width: 100%;
 }
+
+.news-photos-card__peppermint.peppermint figure img {
+  box-shadow: none;
+}
+
+.news-photos-card__peppermint ul.peppermint-dots > li {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.news-photos-card__peppermint ul.peppermint-dots > li:first-child {
+  margin-left: 0;
+}
+
+.news-photos-card__peppermint ul.peppermint-dots > li > span {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  display: block;
+  position: static;
+  border-radius: 0;
+  border: 1px solid #D8D8D8;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+
+.news-photos-card__peppermint ul.peppermint-dots > li.peppermint-active-dot {
+  width: 60px;
+}
+
+.news-photos-card__peppermint ul.peppermint-dots > li.peppermint-active-dot > span {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #B8B8B8;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}

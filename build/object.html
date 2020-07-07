@@ -760,7 +760,7 @@
 
     <button data-micromodal-trigger="modal-1">modal-1</button>
     <button data-micromodal-trigger="modal-2">modal-2</button>
-    <button data-micromodal-trigger="modal-3">modal-3</button>
+    <button data-micromodal-trigger="modal_news">modal_news</button>
     <button data-micromodal-trigger="modal-5">modal-5</button>
     <button data-micromodal-trigger="modal-6">modal-6</button>
     <button data-micromodal-trigger="modal-7">modal-7</button>
@@ -893,7 +893,7 @@
         </div>
     </div>
 
-    <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+    <div class="modal micromodal-slide" id="modal_news" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-3-title">
                 <header class="modal__header">
@@ -927,7 +927,29 @@
                                             </div>
                                         </div>
                                         <div class="news-photos-card__images">
-                                            <img src="img/content/Rectangle%2048.jpg" alt="" class="news-photos-card__large-img">
+                                            <div class="news-photos-card__peppermint peppermint peppermint-inactive news-photos-card__slider">
+                                                <figure>
+                                                    <img src="img/content/Rectangle%2048.jpg" alt="" class="news-photos-card__large-img">
+                                                </figure>
+                                                <figure>
+                                                    <img src="img/content/image%2029.jpg" alt="" class="news-photos-card__large-img">
+                                                </figure>
+                                                <figure>
+                                                    <img src="img/content/image%2030.jpg" alt="" class="news-photos-card__large-img">
+                                                </figure>
+                                            </div>
+
+                                            <style>
+                                                #tab1Panel1 ul.peppermint-dots > li:nth-child(1) > span {
+                                                    background-image: url('img/content/Rectangle%2048.jpg');
+                                                }
+                                                #tab1Panel1 ul.peppermint-dots > li:nth-child(2) > span {
+                                                    background-image: url('img/content/image%2029.jpg');
+                                                }
+                                                #tab1Panel1 ul.peppermint-dots > li:nth-child(3) > span {
+                                                    background-image: url('img/content/image%2030.jpg');
+                                                }
+                                            </style>
                                         </div>
                                     </div>
                                 </section>
@@ -942,7 +964,29 @@
                                             </div>
                                         </div>
                                         <div class="news-photos-card__images">
-                                            <img src="img/content/Rectangle%2048.jpg" alt="" class="news-photos-card__large-img">
+                                            <div class="news-photos-card__peppermint peppermint peppermint-inactive news-photos-card__slider">
+                                                <figure>
+                                                    <img src="img/content/image%207.jpg" alt="" class="news-photos-card__large-img">
+                                                </figure>
+                                                <figure>
+                                                    <img src="img/content/image%208.jpg" alt="" class="news-photos-card__large-img">
+                                                </figure>
+                                                <figure>
+                                                    <img src="img/content/image%209.jpg" alt="" class="news-photos-card__large-img">
+                                                </figure>
+                                            </div>
+
+                                            <style>
+                                                #tab1Panel2 ul.peppermint-dots > li:nth-child(1) > span {
+                                                    background-image: url('img/content/image%207.jpg');
+                                                }
+                                                #tab1Panel2 ul.peppermint-dots > li:nth-child(2) > span {
+                                                    background-image: url('img/content/image%208.jpg');
+                                                }
+                                                #tab1Panel2 ul.peppermint-dots > li:nth-child(3) > span {
+                                                    background-image: url('img/content/image%209.jpg');
+                                                }
+                                            </style>
                                         </div>
                                     </div>
                                 </section>
