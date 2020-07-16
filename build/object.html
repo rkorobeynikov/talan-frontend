@@ -129,6 +129,11 @@
                     <input type="text" id="callback-form-phone" placeholder="Телефон" class="tln-input">
                 </div>
                 <button type="submit" class="tln-button tln-button--small tln-button--dark">Заказать звонок</button>
+                <div class="callback-promo__consent">
+                    <input type="checkbox" id="callback-form-consent" class="callback-promo__checkbox">
+                    <label for="callback-form-consent" class="callback-promo__custom-checkbox"></label>
+                    <span class="callback-promo__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</span>
+                </div>
             </form>
         </div>
     </div>
@@ -766,6 +771,8 @@
     <button data-micromodal-trigger="modal-7">modal-7</button>
     <button data-micromodal-trigger="modal-request">modal-request</button>
     <button data-micromodal-trigger="modal-request-2">modal-request-2</button>
+    <button data-micromodal-trigger="modal-login">modal-login</button>
+    <button data-micromodal-trigger="modal-login-confirmation">modal-login-confirmation</button>
 
 
     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
@@ -1155,7 +1162,7 @@
                             <p class="form-request__form-row">
                                 <input type="text" class="tln-input tln-input--bordered" placeholder="Телефон">
                             </p>
-                            <p class="form-request__form-row form-mobile__form-row--consent">
+                            <p class="form-request__form-row form-request__form-row--consent">
                                 <input type="checkbox" class="form-request__checkbox" id="form-request-consent-1">
                                 <label class="form-request__custom-checkbox" for="form-request-consent-1"></label>
                                 <span class="form-request__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с <a href="#">условиями политики</a> ознакомлен</span>
@@ -1187,13 +1194,69 @@
                             <p class="form-request__form-row">
                                 <input type="text" class="tln-input tln-input--bordered" placeholder="Телефон">
                             </p>
-                            <p class="form-request__form-row form-mobile__form-row--consent">
+                            <p class="form-request__form-row form-request__form-row--consent">
                                 <input type="checkbox" class="form-request__checkbox" id="form-request-consent-2">
                                 <label class="form-request__custom-checkbox" for="form-request-consent-2"></label>
                                 <span class="form-request__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с <a href="#">условиями политики</a> ознакомлен</span>
                             </p>
                             <div class="form-request__form-row form-request__form-row--submit">
                                 <button type="submit" class="tln-button tln-button--small">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-login" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close=""></button>
+                </header>
+                <main class="modal__content" id="modal-login-content">
+                    <div class="form-login">
+                        <h2 class="form-login__title">Вход в корзину</h2>
+                        <p class="form-login__description">Для входа в корзину необходимо авторизоваться. Введите номер имя и номер телефона.</p>
+                        <div class="form-login__form">
+                            <p class="form-login__form-row">
+                                <input type="text" class="tln-input tln-input--bordered" placeholder="Имя">
+                            </p>
+                            <p class="form-login__form-row">
+                                <input type="text" class="tln-input tln-input--bordered" placeholder="Телефон">
+                            </p>
+                            <p class="form-login__form-row form-login__form-row--consent">
+                                <input type="checkbox" class="form-login__checkbox" id="form-login-consent">
+                                <label class="form-login__custom-checkbox" for="form-login-consent"></label>
+                                <span class="form-login__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с <a href="#">условиями политики</a> ознакомлен</span>
+                            </p>
+                            <div class="form-login__form-row form-login__form-row--submit">
+                                <button type="submit" class="tln-button tln-button--small">Отправить смс с кодом</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-login-confirmation" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close=""></button>
+                </header>
+                <main class="modal__content" id="modal-login-confirmation-content">
+                    <div class="form-login">
+                        <h2 class="form-login__title">Вход в корзину</h2>
+                        <p class="form-login__description">Мы отправили смс на указанный вами номер. Введите его в поле ниже.</p>
+                        <div class="form-login__form">
+                            <p class="form-login__form-row">
+                                <input type="text" class="tln-input tln-input--bordered" placeholder="СМС-код">
+                            </p>
+                            <div class="form-login__form-row form-login__form-row--submit">
+                                <button type="submit" class="tln-button tln-button--small">Войти</button>
                             </div>
                         </div>
                     </div>

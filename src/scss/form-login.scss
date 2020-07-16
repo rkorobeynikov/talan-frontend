@@ -1,9 +1,8 @@
-.form-request {
+.form-login {
   padding: 28px 20px 0 60px;
 }
 
-
-.form-request__title {
+.form-login__title {
   font-family: $heading-font;
   font-size: 24px;
   line-height: 1.2em;
@@ -22,18 +21,18 @@
   }
 }
 
-.form-request__description {
+.form-login__description {
   font-size: 16px;
   line-height: 1.5em;
-  margin: 30px 0 0;
+  margin: 21px 0 0;
 }
 
-.form-request__form {
+.form-login__form {
   max-width: 334px;
-  margin-top: 30px;
+  margin-top: 21px;
 }
 
-.form-request__form-row {
+.form-login__form-row {
   margin: 20px 0 0;
 
   &:first-child {
@@ -41,20 +40,20 @@
   }
 }
 
-.form-request__form-row--consent {
+.form-login__form-row--consent {
   margin: 22px 0 0;
   position: relative;
 }
 
-.form-request__form-row--submit {
-  margin-top: 18px;
+.form-login__form-row--submit {
+  margin-top: 36px;
 
   .tln-button {
     width: 100%;
   }
 }
 
-.form-request__custom-checkbox {
+.form-login__custom-checkbox {
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -67,17 +66,17 @@
   box-sizing: border-box;
 }
 
-.form-request__checkbox {
+.form-login__checkbox {
   display: none;
 }
 
-.form-request__checkbox:checked + .form-request__custom-checkbox {
+.form-login__checkbox:checked + .form-login__custom-checkbox {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5l4 3L10.5 1' stroke='%2345A56B' stroke-width='2'/%3E%3C/svg%3E");
 }
 
-.form-request__checkbox-label {
+.form-login__checkbox-label {
   font-size: 10px;
   line-height: 1.4em;
   padding-left: 22px;

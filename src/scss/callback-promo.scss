@@ -154,12 +154,14 @@
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     margin-top: 26px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-breakpoint) {
     flex: 56.8% 0 0;
     max-width: 56.8%;
     flex-direction: row;
+    margin-top: 0;
   }
 }
 
@@ -186,7 +188,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     margin-top: 0;
-    width: 35.76%;
+    width: 30.76%;
     padding-right: 30px;
   }
 }
@@ -199,7 +201,42 @@
   padding: 0;
 }
 
-
 .callback-promo__textarea {
   margin-top: 24px;
+}
+
+.callback-promo__consent {
+  width: 100%;
+  position: relative;
+  margin-top: 17px;
+}
+
+.callback-promo__checkbox {
+  display: none;
+}
+
+.callback-promo__checkbox:checked + .callback-promo__custom-checkbox {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5l4 3L10.5 1' stroke='%2345A56B' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.callback-promo__custom-checkbox {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 5px;
+  background: $color-white;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.callback-promo__checkbox-label {
+  font-size: 10px;
+  line-height: 1.4em;
+  padding-left: 22px;
+  display: block;
 }
