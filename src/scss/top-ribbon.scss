@@ -1,0 +1,28 @@
+.top-ribbon {
+  background: linear-gradient(270deg, #d7e8f4 0%, #d1eddc 100%);
+  text-align: center;
+}
+
+.top-ribbon__link {
+  display: block;
+  padding: 13px 10px 11px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #545454;
+  text-decoration: none;
+}
+
+.top-ribbon__link-arrow-holder {
+  position: relative;
+}
+
+.top-ribbon__link-arrow-holder::after {
+  content: '';
+  display: inline-block;
+  background: url('../img/icon-arrow-ribbon.svg');
+  width: 8px;
+  height: 13px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
