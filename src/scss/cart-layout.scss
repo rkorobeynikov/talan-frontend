@@ -1,0 +1,18 @@
+.cart-layout {
+  @include page-inner();
+  margin-top: 30px;
+}
+
+.cart-layout__body {
+  max-width: 894px;
+  margin: 0 auto;
+}
+
+.cart-layout__header {
+  display: flex;
+}
+
+.cart-layout__title {
+  @include heading-3();
+  font-size: 20px;
+}

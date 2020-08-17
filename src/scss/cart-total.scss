@@ -1,0 +1,22 @@
+.cart-total {
+  border-top: 1px solid #d8d8d8;
+  padding: 24px 0 0;
+  display: flex;
+  margin: 40px 0 0;
+}
+
+.cart-total__label {
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-right: auto;
+}
+
+.cart-total__value {
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.4em;
+
+}
