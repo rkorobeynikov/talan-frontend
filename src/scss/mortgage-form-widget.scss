@@ -1,0 +1,58 @@
+.mortgage-form-widget {
+  padding: 30px 24px 30px 30px;
+  border: 1px solid #d8d8d8;
+  border-radius: $radius-medium;
+  margin: 30px 0 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.mortgage-form-widget__large-checkbox-wrapper {
+  position: relative;
+}
+
+.mortgage-form-widget__large-custom-checkbox {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.mortgage-form-widget__large-checkbox {
+  display: none;
+}
+
+.mortgage-form-widget__large-checkbox:checked + .mortgage-form-widget__large-custom-checkbox {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5l4 3L10.5 1' stroke='%2345A56B' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.mortgage-form-widget__large-checkbox-label {
+  font-size: 22px;
+  line-height: 1.09em;
+  padding-left: 47px;
+  font-weight: 500;
+  display: block;
+}
+
+.mortgage-form-widget__title {
+  font-size: 22px;
+  line-height: 1.09em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.mortgage-form-widget__input-label {
+  font-size: 12px;
+  line-height: 2em;
+  color: #343434;
+}

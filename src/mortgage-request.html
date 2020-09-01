@@ -91,19 +91,24 @@
     <div class="cart-layout__body">
         <form action="">
             <fieldset class="mortgage-form-widget">
-
+                <div class="mortgage-form-widget__large-checkbox-wrapper">
+                    <input type="checkbox" class="mortgage-form-widget__large-checkbox" id="checkbox-1">
+                    <label class="mortgage-form-widget__large-custom-checkbox" for="checkbox-1"></label>
+                    <span class="mortgage-form-widget__large-checkbox-label">У меня уже есть предварительное одобрение банка на эту квартиру</span>
+                </div>
             </fieldset>
+
             <fieldset class="mortgage-form-widget">
                 <h3 class="mortgage-form-widget__title">Предварительный расчет</h3>
 
                 <div class="advance-payment-form">
                     <div class="advance-payment-form__column">
                         <label for="creditterm">Срок, мес:</label>
-                        <input type="text" id="creditterm">
+                        <input type="text" id="creditterm" class="tln-input tln-input--light-border">
                     </div>
                     <div class="advance-payment-form__column">
                         <label for="initialfee">Первоначальный взнос, ₽:</label>
-                        <input type="text" id="initialfee">
+                        <input type="text" id="initialfee" class="tln-input tln-input--light-border">
                     </div>
                     <div class="advance-payment-form__column">
                         <span>Ставка:</span>
@@ -122,17 +127,17 @@
             <fieldset class="mortgage-form-widget">
                 <h3 class="mortgage-form-widget__title">Персональные данные</h3>
 
-                <label for="lastname">Фамилия:</label>
-                <input type="text" id="lastname">
+                <label for="lastname" class="mortgage-form-widget__input-label">Фамилия:</label>
+                <input type="text" id="lastname" class="tln-input tln-input--light-border">
 
-                <label for="firstname">Имя:</label>
-                <input type="text" id="firstname">
+                <label for="firstname" class="mortgage-form-widget__input-label">Имя:</label>
+                <input type="text" id="firstname" class="tln-input tln-input--light-border">
 
-                <label for="givenname">Отчество:</label>
-                <input type="text" id="givenname">
+                <label for="givenname" class="mortgage-form-widget__input-label">Отчество:</label>
+                <input type="text" id="givenname" class="tln-input tln-input--light-border">
 
-                <label for="birthday">Дата рождения:</label>
-                <input type="date" id="birthday">
+                <label for="birthday" class="mortgage-form-widget__input-label">Дата рождения:</label>
+                <input type="date" id="birthday" class="tln-input tln-input--light-border">
 
             </fieldset>
 

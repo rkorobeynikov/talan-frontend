@@ -1,0 +1,74 @@
+.blog-widgets-card {
+  padding: 20px 26px 24px 30px;
+  border-radius: $radius-medium;
+  min-height: 242px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.blog-widgets-card--news {
+  background: #d1eddc;
+}
+
+.blog-widgets-card--magazine {
+  background: #d7e8f4;
+}
+
+.blog-widgets-card--invest {
+  background: #fef1dc;
+}
+
+.blog-widgets-card__label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.blog-widgets-card__link {
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #343434;
+  display: block;
+  margin: 14px 0 0;
+}
+
+.blog-widgets-card__description {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin: 15px 0 22px;
+}
+
+.blog-widgets-card__view-all-link {
+  font-size: 10px;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  font-family: $heading-font;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.blog-widgets-card__label--news,
+.blog-widgets-card__description--news,
+.blog-widgets-card__view-all-link--news {
+  color: #749A83;
+}
+
+.blog-widgets-card__label--magazine,
+.blog-widgets-card__description--magazine,
+.blog-widgets-card__view-all-link--magazine {
+  color: #6F8DA3;
+}
+
+.blog-widgets-card__label--invest,
+.blog-widgets-card__description--invest,
+.blog-widgets-card__view-all-link--invest {
+  color: #AF966E;
+}
