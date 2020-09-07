@@ -103,46 +103,56 @@
 
                 <div class="advance-payment-form">
                     <div class="advance-payment-form__column">
-                        <label for="creditterm">Срок, мес:</label>
+                        <label class="mortgage-form-widget__input-label" for="creditterm">Срок, мес:</label>
                         <input type="text" id="creditterm" class="tln-input tln-input--light-border">
                     </div>
                     <div class="advance-payment-form__column">
-                        <label for="initialfee">Первоначальный взнос, ₽:</label>
+                        <label class="mortgage-form-widget__input-label" for="initialfee">Первоначальный взнос, ₽:</label>
                         <input type="text" id="initialfee" class="tln-input tln-input--light-border">
                     </div>
                     <div class="advance-payment-form__column">
-                        <span>Ставка:</span>
+                        <span class="mortgage-form-widget__input-label">Ставка:</span>
                         <output>9,60%</output>
                     </div>
                     <div class="advance-payment-form__column">
-                        <span>Ежемесячный платеж, ₽:</span>
+                        <span class="mortgage-form-widget__input-label">Ежемесячный платеж, ₽:</span>
                         <output>12 565</output>
                     </div>
                 </div>
-
-
-
             </fieldset>
 
             <fieldset class="mortgage-form-widget">
                 <h3 class="mortgage-form-widget__title">Персональные данные</h3>
 
-                <label for="lastname" class="mortgage-form-widget__input-label">Фамилия:</label>
-                <input type="text" id="lastname" class="tln-input tln-input--light-border">
-
-                <label for="firstname" class="mortgage-form-widget__input-label">Имя:</label>
-                <input type="text" id="firstname" class="tln-input tln-input--light-border">
-
-                <label for="givenname" class="mortgage-form-widget__input-label">Отчество:</label>
-                <input type="text" id="givenname" class="tln-input tln-input--light-border">
-
-                <label for="birthday" class="mortgage-form-widget__input-label">Дата рождения:</label>
-                <input type="date" id="birthday" class="tln-input tln-input--light-border">
-
+                <div class="personal-data-form">
+                    <div class="personal-data-form__column">
+                        <label for="lastname" class="mortgage-form-widget__input-label">Фамилия:</label>
+                        <input type="text" id="lastname" class="tln-input tln-input--light-border">
+                    </div>
+                    <div class="personal-data-form__column">
+                        <label for="firstname" class="mortgage-form-widget__input-label">Имя:</label>
+                        <input type="text" id="firstname" class="tln-input tln-input--light-border">
+                    </div>
+                    <div class="personal-data-form__column">
+                        <label for="givenname" class="mortgage-form-widget__input-label">Отчество:</label>
+                        <input type="text" id="givenname" class="tln-input tln-input--light-border">
+                    </div>
+                    <div class="personal-data-form__column">
+                        <label for="birthday" class="mortgage-form-widget__input-label">Дата рождения:</label>
+                        <input type="date" id="birthday" class="tln-input tln-input--light-border">
+                    </div>
+                </div>
             </fieldset>
 
             <fieldset class="mortgage-form-widget">
-                <h3 class="mortgage-form-widget__title">Паспортные данные</h3>
+                <button class="mortgage-form-widget__title-button" type="button">
+                    <span class="mortgage-form-widget__title-button-flex-wrapper">
+                        <span class="mortgage-form-widget__title mortgage-form-widget__title--link">Паспортные данные</span>
+                        <span class="mortgage-form-widget__title-label mortgage-form-widget__title-label--expand">Развернуть</span>
+                        <span class="mortgage-form-widget__title-label mortgage-form-widget__title-label--collapse">Свернуть</span>
+                    </span>
+                </button>
+
 
             </fieldset>
 

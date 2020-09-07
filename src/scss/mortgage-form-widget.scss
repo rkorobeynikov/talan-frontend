@@ -48,11 +48,39 @@
   font-size: 22px;
   line-height: 1.09em;
   font-weight: 500;
-  margin: 0;
+  margin: 0 auto 0 0;
+}
+
+.mortgage-form-widget__title--link {
+  color: $color-green;
 }
 
 .mortgage-form-widget__input-label {
   font-size: 12px;
   line-height: 2em;
   color: #343434;
+}
+
+.mortgage-form-widget__title-button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.mortgage-form-widget__title-button-flex-wrapper {
+  display: flex;
+}
+
+.mortgage-form-widget__title-label {
+  color: $color-green;
+}
+
+.mortgage-form-widget__title-label--expand {
+  
+}
+
+.mortgage-form-widget__title-label--collapse {
+  display: none;
 }

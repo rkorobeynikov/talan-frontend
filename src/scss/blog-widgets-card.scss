@@ -1,7 +1,7 @@
 .blog-widgets-card {
-  padding: 20px 26px 24px 30px;
+  padding: 19px 26px 21px 30px;
   border-radius: $radius-medium;
-  min-height: 242px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -39,9 +39,9 @@
 
 .blog-widgets-card__description {
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.35em;
   font-weight: 500;
-  margin: 15px 0 22px;
+  margin: 10px 0 16px;
 }
 
 .blog-widgets-card__view-all-link {
