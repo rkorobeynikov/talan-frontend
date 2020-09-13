@@ -1024,6 +1024,29 @@ Math.easeInOutQuad = function (t, b, c, d) {
     function registerModalCallbacks() {
 
     }
+
+    var mortgageFormCollapseBtns = document.querySelectorAll('.mortgage-form-widget__title-button');
+    if (mortgageFormCollapseBtns && mortgageFormCollapseBtns.length > 0) {
+        mortgageFormCollapseBtns.forEach(function (item) {
+            item.addEventListener('click', function (event) {
+                if (event.currentTarget.classList.contains('mortgage-form-widget__title-button--expand')) {
+                    event.currentTarget.classList.add('mortgage-form-widget__title-button--collapse');
+                    event.currentTarget.classList.remove('mortgage-form-widget__title-button--expand');
+                }
+                else {
+                    event.currentTarget.classList.add('mortgage-form-widget__title-button--expand');
+                    event.currentTarget.classList.remove('mortgage-form-widget__title-button--collapse');
+                }
+
+                if (event.currentTarget.nextElementSibling.classList.contains('mortgage-form-widget__contents--expanded')) {
+                    event.currentTarget.nextElementSibling.classList.remove('mortgage-form-widget__contents--expanded');
+                }
+                else {
+                    event.currentTarget.nextElementSibling.classList.add('mortgage-form-widget__contents--expanded');
+                }
+            })
+        });
+    }
 }());
 
 

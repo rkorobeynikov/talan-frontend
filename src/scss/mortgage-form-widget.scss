@@ -9,6 +9,14 @@
   }
 }
 
+.mortgage-form-widget__contents {
+  display: none;
+}
+
+.mortgage-form-widget__contents--expanded {
+  display: block;
+}
+
 .mortgage-form-widget__large-checkbox-wrapper {
   position: relative;
 }
@@ -53,12 +61,25 @@
 
 .mortgage-form-widget__title--link {
   color: $color-green;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }
 
 .mortgage-form-widget__input-label {
   font-size: 12px;
   line-height: 2em;
   color: #343434;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.mortgage-form-widget__number-bold {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 500;
+  display: block;
 }
 
 .mortgage-form-widget__title-button {
@@ -66,7 +87,17 @@
   background: none;
   border: none;
   outline: none;
+  padding: 0;
   width: 100%;
+  cursor: pointer;
+}
+
+.mortgage-form-widget__title-button--expand .mortgage-form-widget__title-label--expand {
+  display: block;
+}
+
+.mortgage-form-widget__title-button--collapse .mortgage-form-widget__title-label--collapse {
+  display: block;
 }
 
 .mortgage-form-widget__title-button-flex-wrapper {
@@ -75,12 +106,45 @@
 
 .mortgage-form-widget__title-label {
   color: $color-green;
+
+  &:hover {
+    color: transparentize($color-green, 0.3);
+  }
 }
 
 .mortgage-form-widget__title-label--expand {
-  
+  display: none;
 }
 
 .mortgage-form-widget__title-label--collapse {
   display: none;
+}
+
+.mortgage-form-widget__submit {
+  margin: 30px 0 0;
+}
+
+.mortgage-form-widget__submit-btn {
+  display: block;
+  appearance: none;
+  background: $color-green;
+  color: $color-white;
+  font-size: 16px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+  font-family: $heading-font;
+  padding: 13px 15px 11px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.5em;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

@@ -1,8 +1,43 @@
 .advance-payment-form {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $form-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 
 .advance-payment-form__column {
+  margin: 28px 0 0 0;
 
+  @media (min-width: $form-breakpoint) {
+    margin: 28px 0 0 30px;
+  }
+
+  &:first-child {
+    margin: 28px 0 0;
+
+    @media (min-width: $form-breakpoint) {
+      margin: 28px 0 0;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $form-breakpoint) {
+      width: 10%;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $form-breakpoint) {
+      width: 25%;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $form-breakpoint) {
+      margin-left: 20%;
+    }
+  }
 }
