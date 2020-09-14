@@ -123,28 +123,3 @@
 .mortgage-form-widget__submit {
   margin: 30px 0 0;
 }
-
-.mortgage-form-widget__submit-btn {
-  display: block;
-  appearance: none;
-  background: $color-green;
-  color: $color-white;
-  font-size: 16px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  border-radius: 12px;
-  border: none;
-  font-weight: 500;
-  font-family: $heading-font;
-  padding: 13px 15px 11px;
-  width: 100%;
-  cursor: pointer;
-  text-decoration: none;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 1.5em;
-
-  &:hover {
-    opacity: 0.7;
-  }
-}
