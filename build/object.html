@@ -784,74 +784,177 @@
                 <main class="modal__content">
                     <div class="modal-progress">
                         <h2 id="modal-progress-title" class="modal-progress__title">Готовность объекта</h2>
-                        <div class="progress-widget modal-progress__widget">
-                            <div class="progress-widget__header">
-                                <h3 class="progress-widget__title">Общая готовность</h3>
-                            </div>
-                            <div class="progress-widget__progress-wrapper">
-                                <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
-                                <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
-                            </div>
-                            <div class="progress-widget__status">
-                                <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
-                                <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
-                                <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
-                            </div>
-                        </div>
-                        <div class="progress-widget modal-progress__widget">
-                            <div class="progress-widget__header">
-                                <h3 class="progress-widget__title">Устройство свайных фундаментов</h3>
-                            </div>
-                            <div class="progress-widget__progress-wrapper">
-                                <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
-                                <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
-                            </div>
-                            <div class="progress-widget__status">
-                                <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
-                                <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
-                                <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
-                            </div>
-                        </div>
-                        <div class="progress-widget modal-progress__widget">
-                            <div class="progress-widget__header">
-                                <h3 class="progress-widget__title">Устройство монолитных ростверков</h3>
-                            </div>
-                            <div class="progress-widget__progress-wrapper">
-                                <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
-                                <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
-                            </div>
-                            <div class="progress-widget__status">
-                                <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
-                                <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
-                                <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
-                            </div>
-                        </div>
-                        <div class="progress-widget modal-progress__widget">
-                            <div class="progress-widget__header">
-                                <h3 class="progress-widget__title">Устройство пристенного дренажа</h3>
-                            </div>
-                            <div class="progress-widget__progress-wrapper">
-                                <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
-                                <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
-                            </div>
-                            <div class="progress-widget__status">
-                                <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
-                                <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
-                                <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
-                            </div>
-                        </div>
-                        <div class="progress-widget modal-progress__widget">
-                            <div class="progress-widget__header">
-                                <h3 class="progress-widget__title">Монтаж металлоконструкций</h3>
-                            </div>
-                            <div class="progress-widget__progress-wrapper">
-                                <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
-                                <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
-                            </div>
-                            <div class="progress-widget__status">
-                                <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
-                                <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
-                                <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+
+                        <div class="news-photos-card__tabs tabs js-tabs">
+                            <ul class="tabs__controls js-tabs__controls">
+                                <li><a href="#progresstab1Panel1" class="tabs__control--selected js-tab-focus">1 очередь</a></li>
+                                <li><a href="#progresstab1Panel2" class="js-tab-focus">2 очередь</a></li>
+                                <li><a href="#progresstab1Panel3" class="js-tab-focus">3 очередь</a></li>
+                            </ul>
+
+                            <div class="tabs__panels js-tabs__panels">
+                                <section id="progresstab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Общая готовность</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Устройство свайных фундаментов</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Устройство монолитных ростверков</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Устройство пристенного дренажа</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Монтаж металлоконструкций</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="progresstab1Panel2" class="tabs__panel js-tabs__panel">
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Общая готовность</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="21" max="100">Готово 21%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="24" max="100">План 24%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 21%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 24%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Устройство свайных фундаментов</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Устройство монолитных ростверков</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Устройство пристенного дренажа</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Монтаж металлоконструкций</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="79" max="100">Готово 79%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="79" max="100">План 79%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 79%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="progresstab1Panel3" class="tabs__panel js-tabs__panel">
+                                    <div class="progress-widget modal-progress__widget">
+                                        <div class="progress-widget__header">
+                                            <h3 class="progress-widget__title">Общая готовность</h3>
+                                        </div>
+                                        <div class="progress-widget__progress-wrapper">
+                                            <progress class="progress-widget__progress progress-widget__progress--actual" value="21" max="100">Готово 21%</progress>
+                                            <progress class="progress-widget__progress progress-widget__progress--planned" value="24" max="100">План 24%</progress>
+                                        </div>
+                                        <div class="progress-widget__status">
+                                            <span aria-hidden="true" class="progress-widget__status-actual">Готово 21%</span>
+                                            <span aria-hidden="true" class="progress-widget__status-planned">План 24%</span>
+                                            <span aria-hidden="true" class="progress-widget__complete-label">100%</span>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
