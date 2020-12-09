@@ -16,6 +16,10 @@
   }
 
   &:hover {
-    color: transparentize($color-green, 0.3);
+    color: $color-green-hover;
+  }
+
+  &:hover::after {
+    background: $color-green-hover;
   }
 }

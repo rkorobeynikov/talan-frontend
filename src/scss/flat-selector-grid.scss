@@ -4,7 +4,6 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .flat-selector-grid__item {
@@ -16,6 +15,8 @@
   justify-content: center;
   cursor: pointer;
   font-size: 12px;
+  outline: 1px solid transparentize($color-green-hover, 1);
+  transition: outline-color 0.1s ease-in-out;
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 16px;
@@ -23,7 +24,7 @@
 }
 
 .flat-selector-grid__item:hover {
-  background: #f5f5f5;
+  outline: 1px solid $color-green-hover;
 }
 
 .flat-selector-grid__image {
