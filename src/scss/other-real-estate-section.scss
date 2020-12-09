@@ -14,6 +14,7 @@
   @include page-inner();
 
   @media (min-width: $tablet-breakpoint) {
+    text-indent: 30px;
     font-size: 30px;
   }
 }

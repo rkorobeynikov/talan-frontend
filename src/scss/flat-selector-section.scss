@@ -52,6 +52,10 @@
 
   @media (min-width: $tablet-breakpoint) {
     display: inline-block;
+
+    &:first-child {
+      padding-left: 30px;
+    }
   }
 }
 

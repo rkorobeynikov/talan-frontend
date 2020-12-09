@@ -239,4 +239,13 @@
   line-height: 1.4em;
   padding-left: 22px;
   display: block;
+
+  a {
+    color: $color-white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

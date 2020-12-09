@@ -29,10 +29,10 @@
   line-height: 30px;
   color: $color-green;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 15px;
-
   }
 }
 
@@ -56,6 +56,15 @@
   flex: 0 0 50%;
   overflow-y: auto;
   padding: 1px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #E2E2E2;
+    border-radius: 30px;
+  }
 }
 
 .flat-selector__flats-list-title {
@@ -69,6 +78,7 @@
   border-left: 1px solid #e2e2e2;
   display: flex;
   flex-direction: column;
+  margin-left: 4px;
 }
 
 .flat-selector__footer {

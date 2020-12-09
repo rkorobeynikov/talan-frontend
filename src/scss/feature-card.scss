@@ -24,6 +24,7 @@
   word-break: break-word;
 
   @media (min-width: $tablet-breakpoint) {
+    padding-left: 30px;
     font-size: 30px;
   }
 }

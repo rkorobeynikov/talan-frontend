@@ -25,6 +25,7 @@
   @include heading-3();
 
   @media (min-width: $tablet-breakpoint) {
+    padding-left: 30px;
     font-size: 30px;
     line-height: 1.2em;
   }
