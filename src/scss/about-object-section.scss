@@ -16,6 +16,10 @@
     margin-top: -61px;
     padding-left: 30px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: -191px;
+  }
 }
 
 .about-object-section__main {

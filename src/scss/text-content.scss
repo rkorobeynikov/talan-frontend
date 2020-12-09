@@ -9,6 +9,10 @@
   h3 {
     @include heading-3();
     font-size: 24px;
+
+    @media (min-width: $tablet-breakpoint) {
+      font-size: 24px;
+    }
   }
 
   ul {

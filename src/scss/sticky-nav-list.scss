@@ -3,6 +3,7 @@
   margin: 20px 0 0;
   width: 22.79%;
   box-sizing: border-box;
+  pointer-events: auto;
 }
 
 .sticky-nav-list .scroll-nav {
@@ -34,6 +35,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-family: $heading-font;
+  font-weight: 700;
   letter-spacing: 0.14em;
   display: block;
   padding: 9px 0;
