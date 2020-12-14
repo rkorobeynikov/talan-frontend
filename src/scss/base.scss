@@ -64,7 +64,7 @@ input[type="radio"].visually-hidden {
 
 @mixin heading-1() {
   font-family: $heading-font;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 60px;
   line-height: 1.2em;
   margin: 0;
@@ -72,7 +72,7 @@ input[type="radio"].visually-hidden {
 
 @mixin heading-2() {
   font-family: $heading-font;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 48px;
   line-height: 1.2em;
   margin: 0;
@@ -80,7 +80,7 @@ input[type="radio"].visually-hidden {
 
 @mixin heading-3() {
   font-family: $heading-font;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2em;
   margin: 0;

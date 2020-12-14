@@ -602,10 +602,48 @@
 
             <section class="infrastructure-section">
                 <div class="infrastructure-section__inner">
-                    <h2 class="infrastructure-section__title" id="infrastructure">Инфраструктура</h2>
-                    <div class="infrastructure-section__zoom-image">
-                        <img src="img/content/image%2048-2.jpg" alt="" class="infrastructure-section__zoom-img">
-                        <button data-micromodal-trigger="modal-4" aria-label="Увеличить изображение" type="button" class="infrastructure-section__zoom-btn"></button>
+                    <div class="infrastructure-section__column">
+                        <div class="infrastructure-section__header">
+                            <h2 class="infrastructure-section__title" id="infrastructure">Инфраструктура</h2>
+                            <button type="button" class="infrastructure-section__show-map-btn">Показать на карте</button>
+                        </div>
+                        <div class="infrastructure-section__description text-content">
+                            <p>Рядом с «Бусиновским парком» есть всё, что нужно для комфортной жизни. Для прогулок и спорта на свежем воздухе отлично подойдут Химкинский лесопарк и уютные небольшие парки «Ангарские пруды», «Вагоноремонт» и «Грачёвский». Недалеко от жилого квартала открыт фитнес-центр, а в 15 минутах езды работают спортивная школа Москомспорта №76 и школа современного танца. Также в 15 минутах на автомобиле расположены торговые центры «Метрополис», «Водный» и «Речной».</p>
+                        </div>
+
+                        <div class="infrastructure-section__slider" id="infrastructure-slider">
+                            <div class="infrastructure-section__slide">
+                                <div class="infrastructure-section__slide-inner">
+                                    <img src="img/content/Rectangle%20155.jpg" alt="">
+                                    <h3 class="infrastructure-section__slide-title">Школа №82</h3>
+                                    <span class="infrastructure-section__slide-distance">15 мин</span>
+                                </div>
+                            </div>
+
+                            <div class="infrastructure-section__slide">
+                                <div class="infrastructure-section__slide-inner">
+                                    <img src="img/content/Rectangle%20156.jpg" alt="">
+                                    <h3 class="infrastructure-section__slide-title">ТРК «Талисман»</h3>
+                                    <span class="infrastructure-section__slide-distance">3 мин</span>
+                                </div>
+                            </div>
+
+                            <div class="infrastructure-section__slide">
+                                <div class="infrastructure-section__slide-inner">
+                                    <img src="img/content/Rectangle%20157.jpg" alt="">
+                                    <h3 class="infrastructure-section__slide-title">Почтовое отделение</h3>
+                                    <span class="infrastructure-section__slide-distance">22 мин</span>
+                                </div>
+                            </div>
+                            <div class="infrastructure-section__slide">
+                                <div class="infrastructure-section__slide-inner">
+                                    <img src="img/content/Rectangle%20157.jpg" alt="">
+                                    <h3 class="infrastructure-section__slide-title">Почтовое отделение</h3>
+                                    <span class="infrastructure-section__slide-distance">22 мин</span>
+                                </div>
+                            </div>
+                            <div class="infrastructure-section__slide"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1377,6 +1415,7 @@
     <script src="js/micromodal.min.js"></script>
     <script src="js/scrollnav.min.umd.js"></script>
     <script src="js/peppermint.min.js"></script>
+    <script src="js/siema.min.js"></script>
     <script src="js/main.js"></script>
     <script>
 
@@ -1387,6 +1426,13 @@
                 insertLocation: 'append'
             });
 
+    </script>
+    <script>
+        new Siema({
+            selector: '#infrastructure-slider',
+            easing: 'ease-out',
+            perPage: 3
+        });
     </script>
 </body>
 </html>

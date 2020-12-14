@@ -16,6 +16,45 @@
   }
 }
 
+.infrastructure-section__column {
+  @media (min-width: $tablet-breakpoint) {
+    width: 100%;
+    overflow: initial;
+    margin: 23px 0 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 74.26%;
+    margin: 30px 0 0;
+  }
+}
+
+.infrastructure-section__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infrastructure-section__show-map-btn {
+  color: $color-green;
+  appearance: none;
+  border: none;
+  padding: 0 0 0 24px;
+  background: transparent url("../img/icon-map-pointer.svg") 0 center no-repeat;
+  font-weight: 700;
+  font-family: $heading-font;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  margin: 20px 0 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-green-hover;
+  }
+}
+
 .infrastructure-section__title {
   @include heading-3();
   color: #343434;
@@ -32,49 +71,70 @@
   }
 }
 
-.infrastructure-section__zoom-image {
-  margin-top: 21px;
+.infrastructure-section__description {
+  max-width: 880px;
+}
+
+.infrastructure-section__slider {
+  margin: 30px 0 0;
   position: relative;
-  width: auto;
-  overflow-x: scroll;
-  margin-left: -12px;
-  margin-right: -12px;
 
-  @media (min-width: $tablet-breakpoint) {
-    width: 100%;
-    overflow: initial;
-    margin: 23px 0 0;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    width: 74.26%;
-    margin: 30px 0 0;
-  }
-}
-
-.infrastructure-section__zoom-img {
-  display: block;
-  height: 80vh;
-
-  @media (min-width: $tablet-breakpoint) {
-    height: auto;
-    width: 100%;
-    border-radius: $radius-medium;
-  }
-}
-
-.infrastructure-section__zoom-btn {
-  display: none;
-
-  @media (min-width: $tablet-breakpoint) {
+  &::after {
+    content: "";
     display: block;
-    width: 64px;
-    height: 64px;
-    bottom: 3px;
-    right: 5px;
+    width: 228px;
+    background: linear-gradient(270deg, #F9F9F9 64.14%, rgba(249, 249, 249, 0) 100%);
+    height: 100%;
     position: absolute;
-    background: url(../img/icon-zoom.svg) center center no-repeat;
-    border: none;
-    cursor: pointer;
+    right: 0;
+    user-select: none;
   }
+}
+
+.infrastructure-section__slide {
+  padding-right: 20px;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.infrastructure-section__slide-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    height: 29%;
+  }
+}
+
+.infrastructure-section__slide-title {
+  position: absolute;
+  left: 20px;
+  bottom: 21px;
+  font-size: 24px;
+  font-weight: 500;
+  color: $color-white;
+  margin: 0;
+  font-family: $heading-font;
+}
+
+.infrastructure-section__slide-distance {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  border-radius: 10px;
+  padding: 0 8px 0 25px;
+  background: $color-white url("../img/man-running.svg") 6px 4px no-repeat;
+  line-height: 20px;
+  font-size: 12px;
 }

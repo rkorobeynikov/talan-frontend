@@ -18,7 +18,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 20px 16px 30px;
+    padding: 20px 19px 30px 30px;
     min-height: 222px;
   }
 }
@@ -46,6 +46,7 @@
   word-break: break-word;
   font-size: 16px;
   line-height: 1.2em;
+  min-height: 38px;
 }
 
 .object-card__additional {
@@ -57,6 +58,19 @@
   font-weight: 500;
   color: #979797;
   margin: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
+}
+
+.object-card__dates {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  color: #979797;
+  margin: 13px 0 0;
 
   @media (min-width: $tablet-breakpoint) {
     font-size: 14px;
