@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
 <body>
 
@@ -611,7 +613,7 @@
                             <p>Рядом с «Бусиновским парком» есть всё, что нужно для комфортной жизни. Для прогулок и спорта на свежем воздухе отлично подойдут Химкинский лесопарк и уютные небольшие парки «Ангарские пруды», «Вагоноремонт» и «Грачёвский». Недалеко от жилого квартала открыт фитнес-центр, а в 15 минутах езды работают спортивная школа Москомспорта №76 и школа современного танца. Также в 15 минутах на автомобиле расположены торговые центры «Метрополис», «Водный» и «Речной».</p>
                         </div>
 
-                        <div class="infrastructure-section__slider" id="infrastructure-slider">
+                        <div class="infrastructure-section__slider infrastructure-section__slider--has-empty-slide" id="infrastructure-slider">
                             <div class="infrastructure-section__slide">
                                 <div class="infrastructure-section__slide-inner">
                                     <img src="img/content/Rectangle%20155.jpg" alt="">
@@ -642,6 +644,8 @@
                                     <span class="infrastructure-section__slide-distance">22 мин</span>
                                 </div>
                             </div>
+
+                            <!-- Всегда нужен последний пустой слайд-->
                             <div class="infrastructure-section__slide"></div>
                         </div>
                     </div>
@@ -1428,12 +1432,25 @@
 
     </script>
     <script>
-        new Siema({
+        var infrastructureSlider = new Siema({
             selector: '#infrastructure-slider',
             easing: 'ease-out',
-            perPage: 3
+            perPage: {
+                500: 2,
+                1100: 3
+            }
         });
+        window.addEventListener('resize', function (event) {
+            if (window.innerWidth < 500 && document.querySelector('#infrastructure-slider').classList.contains('infrastructure-section__slider--has-empty-slide')) {
+                infrastructureSlider.remove(document.querySelectorAll('.infrastructure-section__slider > div > div').length - 1);
+                document.querySelector('#infrastructure-slider').classList.remove('infrastructure-section__slider--has-empty-slide');
+            }
+            if (window.innerWidth >= 500 && !document.querySelector('#infrastructure-slider').classList.contains('infrastructure-section__slider--has-empty-slide')) {
+                infrastructureSlider.append(document.createElement('div'));
+                document.querySelector('#infrastructure-slider').classList.add('infrastructure-section__slider--has-empty-slide');
+            }
+        });
+        window.dispatchEvent(new Event('resize'));
     </script>
-
 </body>
 </html>

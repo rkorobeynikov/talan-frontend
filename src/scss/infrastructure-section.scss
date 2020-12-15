@@ -32,6 +32,11 @@
 .infrastructure-section__header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 .infrastructure-section__show-map-btn {
@@ -49,6 +54,7 @@
   display: inline-block;
   margin: 20px 0 0;
   cursor: pointer;
+  text-align: left;
 
   &:hover {
     color: $color-green-hover;
@@ -81,13 +87,21 @@
 
   &::after {
     content: "";
-    display: block;
     width: 228px;
     background: linear-gradient(270deg, #F9F9F9 64.14%, rgba(249, 249, 249, 0) 100%);
     height: 100%;
     position: absolute;
-    right: 0;
+    right: -110px;
     user-select: none;
+    display: none;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      right: 0;
+    }
   }
 }
 
@@ -97,6 +111,7 @@
   img {
     display: block;
     max-width: 100%;
+    width: 100%;
   }
 }
 
