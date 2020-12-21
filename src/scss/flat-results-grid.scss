@@ -22,17 +22,22 @@
   margin-top: 10px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 48.62%;
+    width: 48.51%;
     margin-top: 20px;
+    margin-left: 2.97%;
+
+    &:nth-child(2n+1) {
+      margin-left: 0;
+    }
   }
 
-  @media (min-width: $desktop-breakpoint) {
-    width: 30.69%;
-    margin-top: 40px;
-    margin-left: 3.965%;
-  }
+  //@media (min-width: $desktop-breakpoint) {
+  //  width: 30.69%;
+  //  margin-top: 40px;
+  //  margin-left: 3.965%;
+  //}
 }
 
 .flat-results-grid__item:nth-child(3n+1) {
-  margin-left: 0;
+  //margin-left: 0;
 }

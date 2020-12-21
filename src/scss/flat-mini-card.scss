@@ -3,7 +3,6 @@
   box-shadow: $object-shadow;
   display: flex;
   position: relative;
-  padding: 23px 20px 11px;
 }
 
 .flat-mini-card--new {
@@ -17,8 +16,8 @@
     font-weight: bold;
     display: block;
     position: absolute;
-    top: 14px;
-    left: 14px;
+    top: 18px;
+    left: 16px;
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -31,8 +30,8 @@
     content: '';
     display: block;
     position: absolute;
-    top: 14px;
-    left: 7px;
+    top: 18px;
+    left: 16px;
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -45,27 +44,30 @@
 }
 
 .flat-mini-card__image {
-  width: 96px;
-  display: inline-block;
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: $radius-medium;
+  overflow: hidden;
 }
 
 .flat-mini-card__img {
   width: 100%;
-
 }
 
 .flat-mini-card__description {
-  margin-left: 20px;
-  flex: 1;
-
-  @media (min-width: $tablet-breakpoint) {
-    margin-left: 28px;
-  }
+  width: 50%;
+  max-width: 50%;
+  border-left: 1px solid #CFCFCF;
+  padding: 29px 19px 30px;
+  box-sizing: border-box;
 }
 
 .flat-mini-card__price {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -75,21 +77,19 @@
 }
 
 .flat-mini-card__list {
-  margin: 10px 0 0;
+  margin: 9px 0 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   font-size: 13px;
-}
-
-.flat-mini-card__list-item {
-  width: 50%;
+  flex-direction: column;
 }
 
 .flat-mini-card__object {
   font-size: 13px;
-  margin: 0;
+  margin: 3px 0 0;
+  line-height: 16px;
   color: #909DA8;
 }
 

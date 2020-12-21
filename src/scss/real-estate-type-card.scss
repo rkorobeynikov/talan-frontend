@@ -4,6 +4,10 @@
   padding: 17px 33px 20px 78px;
   background-repeat: no-repeat;
 
+  &:hover {
+    background-color: #f3f3f3;
+  }
+
   @media (min-width: $tablet-breakpoint) {
     height: 100%;
     box-sizing: border-box;
