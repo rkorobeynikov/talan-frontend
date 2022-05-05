@@ -6,4 +6,21 @@
   }
 }
 
+.blog-widgets-section__header {
+  @include page-inner();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-widgets-section__title {
+  @include heading-3();
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-left: 30px;
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+}
+
 

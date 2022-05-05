@@ -1,0 +1,50 @@
+.object-preview {
+  @include page-inner();
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+
+.object-preview__image {
+  margin-left: -12px;
+  margin-right: -12px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
+    width: 74%;
+    max-width: 74%;
+    padding-right: 41px;
+  }
+
+}
+
+.object-preview__image img {
+  max-width: 100%;
+  display: block;
+
+  @media (min-width: $desktop-breakpoint) {
+    border-radius: $radius-medium;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.object-preview__form {
+  padding-top: 34px;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 0;
+    width: 26%;
+  }
+}

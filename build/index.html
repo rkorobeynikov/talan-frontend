@@ -74,20 +74,44 @@
         </div>
     </header>
 
-    <section class="hero-slider-section">
-        <div class="peppermint peppermint-inactive slideshow js-home-hero-slideshow" id="peppermint">
-            <figure class="slideshow__item">
-                <img src="img/content/image 13.jpg" alt="" class="slideshow__image">
-            </figure>
-            <figure class="slideshow__item">
-                <img src="img/content/hernan-lucio-gJFvHkUHdSI-unsplash.jpg" alt="" class="slideshow__image">
-            </figure>
-            <figure class="slideshow__item">
-                <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="" class="slideshow__image">
-            </figure>
+    <div class="hero-grid">
+        <div class="hero-grid__item">
+            <a href="#">
+                <img src="img/content/hero-grid-example-1.png" alt="">
+            </a>
         </div>
+        <div class="hero-grid__item">
+            <a href="#">
+                <img src="img/content/hero-grid-example-2.png" alt="">
+            </a>
+        </div>
+        <div class="hero-grid__item">
+            <a href="#">
+                <img src="img/content/hero-grid-example-3.png" alt="">
+            </a>
+        </div>
+        <div class="hero-grid__item">
+            <div class="hero-grid__banner">
+                <p class="hero-grid__banner-text">Уникальные форматы квартир</p>
+                <a href="#" class="hero-grid__banner-link">Узнать больше</a>
+            </div>
+        </div>
+    </div>
 
-    </section>
+<!--    <section class="hero-slider-section">-->
+<!--        <div class="peppermint peppermint-inactive slideshow js-home-hero-slideshow" id="peppermint">-->
+<!--            <figure class="slideshow__item">-->
+<!--                <img src="img/content/image 13.jpg" alt="" class="slideshow__image">-->
+<!--            </figure>-->
+<!--            <figure class="slideshow__item">-->
+<!--                <img src="img/content/hernan-lucio-gJFvHkUHdSI-unsplash.jpg" alt="" class="slideshow__image">-->
+<!--            </figure>-->
+<!--            <figure class="slideshow__item">-->
+<!--                <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="" class="slideshow__image">-->
+<!--            </figure>-->
+<!--        </div>-->
+
+<!--    </section>-->
 
     <section>
         <h3 class="flat-types-grid-mobile-title">Квартиры в&nbsp;продаже</h3>
@@ -265,30 +289,28 @@
 
 <section class="blog-widgets-section">
     <div class="blog-widgets-section__inner">
+        <header class="blog-widgets-section__header">
+            <h3 class="blog-widgets-section__title">Новости компании</h3>
+            <a href="#" class="blog-widgets-section__link link-underlined">Все новости</a>
+        </header>
         <ul class="blog-widgets-list">
             <li class="blog-widgets-list__item">
-                <div class="blog-widgets-card blog-widgets-card--news">
-                    <span class="blog-widgets-card__label blog-widgets-card__label--news">Новости</span>
-                    <a class="blog-widgets-card__link" href="#">Получено положительное заключение экспертизы по проекту будущего дома «Талан» в районе Холмогорова в Ижевске</a>
-                    <p class="blog-widgets-card__description blog-widgets-card__description--news">Высокая доходность, оптимальный объем вложений, персональный инвестиционный период</p>
-                    <a class="blog-widgets-card__view-all-link blog-widgets-card__view-all-link--news" href="#">Все новости</a>
-                </div>
+                <a href="#" class="blog-widgets-card blog-widgets-card--green">
+                    <span class="blog-widgets-card__link">Мэр Хабаровска проинспектировал ход работ ЖК «Амурский Квартал»</span>
+                    <span class="blog-widgets-card__date">22.03.2022</span>
+                </a>
             </li>
-            <li class="blog-widgets-list__item blog-widgets-list__item--magazine">
-                <div class="blog-widgets-card blog-widgets-card--magazine">
-                    <span class="blog-widgets-card__label blog-widgets-card__label--magazine">Талан.Журнал</span>
-                    <a class="blog-widgets-card__link" href="#">Обмен опытом: чем планировки немецких квартир отличаются от российских</a>
-                    <p class="blog-widgets-card__description blog-widgets-card__description--magazine">Высокая доходность, оптимальный объем вложений, персональный инвестиционный период</p>
-                    <a class="blog-widgets-card__view-all-link blog-widgets-card__view-all-link--magazine" href="#">Все статьи</a>
-                </div>
+            <li class="blog-widgets-list__item">
+                <a href="#" class="blog-widgets-card blog-widgets-card--blue">
+                    <span class="blog-widgets-card__link">Новые процентные ставки</span>
+                    <span class="blog-widgets-card__date">12.03.2022</span>
+                </a>
             </li>
-            <li class="blog-widgets-list__item blog-widgets-list__item--invest">
-                <div class="blog-widgets-card blog-widgets-card--invest">
-                    <span class="blog-widgets-card__label blog-widgets-card__label--invest">Талан.Инвест</span>
-                    <a class="blog-widgets-card__link" href="#">Инвестируйте в проекты Талан по всей России</a>
-                    <p class="blog-widgets-card__description blog-widgets-card__description--invest">Высокая доходность, оптимальный объем вложений, персональный инвестиционный период</p>
-                    <a class="blog-widgets-card__view-all-link blog-widgets-card__view-all-link--invest" href="#">Все новости</a>
-                </div>
+            <li class="blog-widgets-list__item">
+                <a href="#" class="blog-widgets-card blog-widgets-card--yellow">
+                    <span class="blog-widgets-card__link">22 апреля — для держателей первого облигационного выпуска «Талан» знаменательный день</span>
+                    <span class="blog-widgets-card__date">04.03.2022</span>
+                </a>
             </li>
         </ul>
     </div>

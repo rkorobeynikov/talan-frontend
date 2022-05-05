@@ -8,10 +8,10 @@
 }
 
 .callback-promo--object {
-  margin-top: 40px;
+  padding: 0;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-top: 20px;
+    height: 100%;
   }
 }
 
@@ -34,7 +34,6 @@
     padding: 19px 40px;
     flex-direction: row;
     align-items: center;
-
   }
 }
 
@@ -46,6 +45,18 @@
 .callback-promo__inner--question {
   padding: 52px 53px 36px 48px;
   align-items: flex-start;
+}
+
+.callback-promo__inner--vertical {
+  flex-direction: column;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 19px 26px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
 }
 
 .callback-promo__description {
@@ -71,6 +82,14 @@
   flex: 33.07% 0 0;
   box-sizing: content-box;
   padding-top: 6px;
+}
+
+.callback-promo__description--vertical {
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 0;
+    margin-right: 0;
+    flex-basis: auto;
+  }
 }
 
 .callback-promo__image {
@@ -101,6 +120,12 @@
 .callback-promo__description--question .callback-promo__image {
   top: -13px;
   margin-top: 0;
+}
+
+.callback-promo__description--vertical .callback-promo__image {
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
 }
 
 .callback-promo__title {
@@ -165,6 +190,12 @@
   }
 }
 
+.callback-promo__form--vertical button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
 .callback-promo__form--question {
   flex: 1;
   flex-wrap: wrap;
@@ -172,6 +203,17 @@
   button {
     margin-top: 24px;
     width: 62.2%;
+  }
+}
+
+.callback-promo__form--vertical {
+  flex-direction: column;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: column;
+    flex-basis: auto;
+    max-width: 100%;
+    margin-top: 21px;
   }
 }
 
@@ -190,6 +232,16 @@
     margin-top: 0;
     width: 30.76%;
     padding-right: 30px;
+  }
+}
+
+.callback-promo__input--full {
+  margin-top: 18px;
+  width: 100%;
+  padding-right: 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 30px;
   }
 }
 
@@ -248,4 +300,29 @@
       text-decoration: none;
     }
   }
+}
+
+.callback-promo__manager {
+  display: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 48px 0 0;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+  }
+}
+
+.callback-promo__manager-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 21px;
+
+}
+
+.callback-promo__manager-info {
+  font-size: 14px;
+  line-height: 1.28em;
+  color: $color-white;
+  margin: 0;
 }

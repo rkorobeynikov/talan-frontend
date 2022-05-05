@@ -1,0 +1,73 @@
+.object-intro {
+  @include page-inner();
+  padding-top: 10px;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 19px;
+  }
+}
+
+.object-intro__title {
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 48px;
+  }
+}
+
+.object-intro__description {
+  text-align: center;
+  max-width: 882px;
+  margin: 12px auto 0;
+  font-size: 12px;
+  line-height: 1.67em;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 30px auto 0;
+
+  }
+}
+
+.object-intro__status {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1.67em;
+  text-align: center;
+  margin: 23px 0 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 16px;
+    margin: 12px 0 0;
+  }
+}
+
+.object-intro__status-link {
+  color: $color-green;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-green-hover;
+  }
+
+  &::after {
+    content: '';
+    width: 7px;
+    height: 10px;
+    background: url(../img/icon-arrow-green-right.svg) no-repeat 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 2px 10px;
+  }
+}
