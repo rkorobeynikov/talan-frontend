@@ -9,8 +9,10 @@
   flex-direction: row;
   overflow: scroll;
   scroll-snap-type: x mandatory;
+  max-height: 600px;
 
   @media (min-width: $desktop-breakpoint) {
+    overflow: initial;
     display: grid;
     max-height: 900px;
     gap: 40px;
@@ -31,7 +33,6 @@
   right: 0;
   z-index: 3;
   margin-right: 12px;
-  max-height: 270px;
 
   @media (min-width: $desktop-breakpoint) {
     position: static;
@@ -49,7 +50,6 @@
   margin-right: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
-  max-height: 250px;
 
   @media (min-width: $desktop-breakpoint) {
     position: static;
@@ -68,7 +68,6 @@
   z-index: 1;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-height: 230px;
 
   @media (min-width: $desktop-breakpoint) {
     position: static;
