@@ -8,8 +8,9 @@
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  scroll-snap-type: x mandatory;
-  max-height: 600px;
+  //scroll-snap-type: x mandatory;
+  max-height: 500px;
+  max-width: 800px;
 
   @media (min-width: $desktop-breakpoint) {
     overflow: initial;
@@ -25,6 +26,11 @@
   border-radius: $radius-medium;
   overflow: hidden;
   scroll-snap-align: start;
+
+  a {
+    display: block;
+    height: 100%;
+  }
 }
 
 .hero-grid__item:first-child {
@@ -82,6 +88,7 @@
 .hero-grid__item img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: $radius-medium;
