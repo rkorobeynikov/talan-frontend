@@ -5,7 +5,7 @@
 }
 
 .hero-grid__grid {
-  display: flex;
+  display: none;
   flex-direction: row;
   overflow: scroll;
   //scroll-snap-type: x mandatory;
@@ -19,7 +19,7 @@
     max-height: 900px;
     gap: 40px;
     grid-template-rows: auto auto auto;
-    grid-template-columns: 65.66% auto;
+    grid-template-columns: 66.29% auto;
   }
 }
 

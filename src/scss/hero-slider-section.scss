@@ -3,6 +3,10 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
 }
 
 .hero-slider-section--object {
