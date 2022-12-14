@@ -1,0 +1,68 @@
+.flat-search-form {
+  background: #F2F7FB;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius-large;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+  }
+}
+
+.flat-search-form .input-range {
+  margin-top: 11px;
+}
+
+.flat-search-form .input-range__item {
+  max-width: none;
+}
+
+.flat-search-form .input-range__input {
+  height: 40px;
+}
+
+.flat-search-form__item {
+
+  @media (min-width: $desktop-breakpoint) {
+    border-left: 1px solid #c0cdd7;
+    flex: 1;
+  }
+}
+
+.flat-search-form__item--rooms {
+  padding: 16px 20px 10px;
+  border-left: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 16px 32px 30px;
+  }
+}
+
+.flat-search-form__item--price {
+  padding: 16px 20px 30px 20px;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 16px 26px 30px 46px;
+  }
+}
+
+.flat-search-form__item--submit {
+  padding: 20px 20px 30px 20px;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 50px 20px 30px 81px;
+  }
+}
+
+.flat-search-form__item--submit .tln-button {
+  min-width: 280px;
+}
+
+
+.flat-search-form__title {
+  font-size: 14px;
+  line-height: 1.7em;
+  font-weight: normal;
+  margin: 0;
+}
+

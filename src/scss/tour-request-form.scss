@@ -1,0 +1,81 @@
+.tour-request-form {
+  background: #d1eddc;
+  padding: 56px 32px 64px;
+  border-radius: $radius-large;
+}
+
+.tour-request-form__title {
+  font-family: $heading-font;
+  font-size: 32px;
+  line-height: 1.25em;
+  color: #749a83;
+  margin: 0;
+}
+
+.tour-request-form__paragraph {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 24px 0 0;
+}
+
+.tour-request-form__form {
+  margin: 32px 0 0;
+}
+
+.tour-request-form__form-row {
+  margin: 24px 0 0;
+}
+
+.tour-request-form__form-row:first-child {
+  margin: 0;
+}
+
+.tour-request-form__button {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  padding: 6px 10px 6px;
+}
+
+.tour-request-form__checkbox {
+  display: none;
+}
+
+.tour-request-form__checkbox:checked + .tour-request-form__checkbox-label::before {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5l4 3L10.5 1' stroke='%2345A56B' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.tour-request-form__checkbox-label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 5px;
+  background: $color-white;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.tour-request-form__checkbox-label {
+  font-size: 12px;
+  line-height: 1.25em;
+  padding-left: 24px;
+  display: block;
+  position: relative;
+  margin-top: -3px;
+  cursor: pointer;
+
+  a {
+    color: $color-white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

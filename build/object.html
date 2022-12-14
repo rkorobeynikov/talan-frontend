@@ -97,43 +97,97 @@
             <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="">
         </div>
         <div class="object-preview__form">
-            <div class="callback-promo callback-promo--object">
-                <div class="callback-promo__inner callback-promo__inner--vertical">
-                    <div class="callback-promo__description callback-promo__description--vertical">
-                        <img src="img/call-center.png" alt="" class="callback-promo__image">
-                        <h3 class="callback-promo__title">Нужна консультация?</h3>
-                        <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
-                    </div>
-                    <form action="" class="callback-promo__form callback-promo__form--vertical">
-                        <div class="callback-promo__input callback-promo__input--full">
-                            <label for="callback-form-name" class="visually-hidden">Имя</label>
-                            <input type="text" id="callback-form-name" placeholder="Имя" class="tln-input">
-                        </div>
-                        <div class="callback-promo__input callback-promo__input--full">
-                            <label for="callback-form-phone" class="visually-hidden">Телефон</label>
-                            <input type="text" id="callback-form-phone" placeholder="Телефон" class="tln-input">
-                        </div>
-                        <button type="submit" class="tln-button tln-button--small tln-button--dark">Заказать звонок</button>
-                        <div class="callback-promo__consent">
-                            <input type="checkbox" id="callback-form-consent" class="callback-promo__checkbox">
-                            <label for="callback-form-consent" class="callback-promo__custom-checkbox"></label>
-                            <span class="callback-promo__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</span>
-                        </div>
-                    </form>
-                    <div class="callback-promo__manager">
-                        <img src="img/call-center.png" alt="" class="callback-promo__manager-image">
-                        <p class="callback-promo__manager-info">Ваш менеджер<br> Владислав Сученков</p>
-                    </div>
-                </div>
+            <div class="tour-request-form">
+                <h2 class="tour-request-form__title">Запишитесь на экскурсию</h2>
+                <p class="tour-request-form__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос.</p>
+                <form class="tour-request-form__form">
+                    <p class="tour-request-form__form-row">
+                        <input type="text" placeholder="Имя" class="tln-input">
+                    </p>
+                    <p class="tour-request-form__form-row">
+                        <input type="tel" placeholder="Телефон" class="tln-input">
+                    </p>
+                    <p class="tour-request-form__form-row">
+                        <input type="checkbox" id="tour-request-form-consent" class="tour-request-form__checkbox">
+                        <label for="tour-request-form-consent" class="tour-request-form__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</label>
+                    </p>
+                    <p class="tour-request-form__form-row">
+                        <button type="submit" class="tln-button tln-button--outline tour-request-form__button">Записаться</button>
+                    </p>
+                </form>
             </div>
+        </div>
+    </section>
 
-            <div class="callback-promo callback-promo--object" style="display: none">
-                <div class="callback-promo__inner">
-                    <div class="callback-promo__success">
-                        <p class="callback-promo__title">Заявка отправлена!</p>
-                        <p class="callback-promo__paragraph callback-promo__paragraph--success">Спасибо за уделенное внимание, наши специалисты обработают заявку и свяжутся с вами в самое ближйшее время. Ожидайте звонка.</p>
+    <section class="flat-search-form-section">
+        <div class="flat-search-form-section__inner">
+            <div class="flat-search-form">
+                <div class="flat-search-form__item flat-search-form__item--rooms">
+                    <h3 class="flat-search-form__title">Количество комнат:</h3>
+                    <ul class="tabs-list">
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label">С</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">1</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">2</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">2+</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">3</span>
+                            </label>
+                        </li>
+                        <li class="tabs-list__item">
+                            <label class="tabbed-checkbox">
+                                <input class="tabbed-checkbox__checkbox visually-hidden" type="checkbox">
+                                <span class="tabbed-checkbox__label tabbed-checkbox__label--narrow">3+</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flat-search-form__item flat-search-form__item--price">
+                    <h3 class="flat-search-form__title">Цена, ₽: </h3>
+                    <div class="input-range">
+                        <div class="input-range__item">
+                            <input id="price-from" type="text" class="tln-input tln-input--shadowed input-range__input" placeholder="От 2 350 000">
+                            <input type="range" class="input-range__range-slider slider-progress">
+                        </div>
+                        <div class="input-range__item">
+                            <label for="price-to" class="visually-hidden">До</label>
+                            <input id="price-to" type="text" class="tln-input tln-input--shadowed input-range__input" placeholder="До 5 350 000">
+                            <input type="range" class="input-range__range-slider slider-progress">
+                        </div>
                     </div>
                 </div>
+                <div class="flat-search-form__item flat-search-form__item--submit">
+                    <button type="submit" class="tln-button">Показать <span id="flat-search-form-current-number">13</span> квартир</button>
+                </div>
+                <script>
+                    for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+                        e.style.setProperty('--value', e.value);
+                        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+                        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+                        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+                    }
+                </script>
             </div>
         </div>
     </section>
@@ -144,6 +198,176 @@
             <div class="sticky-nav-container__inner">
                 <div class="sticky-nav-list"></div>
             </div>
+
+
+            <section class="promotions-section">
+                <div class="promotions-section__inner">
+                    <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
+                    <div class="promotions-section__list-wrapper">
+                        <div class="promotions-section__large-item">
+                            <img src="img/content/telegram-cloud-photo-size-2-5452011883767906726-x%201.jpg" alt="">
+                        </div>
+                        <ul class="promotions-list">
+                            <li class="promotions-list__item">
+                                <a href="#">
+                                    <img src="img/content/image%2053.png" alt="" class="promotions-list__image">
+                                </a>
+                            </li>
+                            <li class="promotions-list__item">
+                                <a href="#">
+                                    <img src="img/content/image%2054.png" alt="" class="promotions-list__image">
+                                </a>
+                            </li>
+                            <li class="promotions-list__item">
+                                <a href="#">
+                                    <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                                </a>
+                            </li>
+                            <li class="promotions-list__item">
+                                <a href="#">
+                                    <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                                </a>
+                            </li>
+                            <li class="promotions-list__item">
+                                <a href="#">
+                                    <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                                </a>
+                            </li>
+                            <li class="promotions-list__item">
+                                <a href="#">
+                                    <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-object-text-section">
+                <div class="about-object-text-section__inner">
+                    <h2 class="about-object-text-section__title">Современный проект</h2>
+                    <div class="about-object-text-section__content text-content">
+                        <p>Березовая роща — это открытое общедоступное городское парковое пространство площадью более 9 гектаров. Горожане также называют это место «Козьим парком».</p>
+                        <p>Парк расположен в районе «Культбаза» между устьем реки Карлутки и улицей Авангардной. В парке проводятся праздничные гулянья, спортивные соревнования. Зимой здесь можно покататься на тюбингах, коньках, лыжах, квадроциклах.</p>
+                        <p>Администрация города Ижевска включила территорию Березовой рощи в планы благоустройства по программе «Формирование комфортной городской среды». Сейчас по заказу Администрации разрабатывает проект благоустройства территории.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photos-grid-section">
+                <div class="photos-grid-section__inner">
+                    <h2 class="photos-grid-section__title">Квартиры со вторым светом и потолком 6 метров</h2>
+                    <div class="photos-grid">
+                        <div class="photos-grid__item">
+                            <img src="img/content/image%2090.jpg" alt="">
+                        </div>
+                        <div class="photos-grid__item">
+                            <img src="img/content/image%2049.jpg" alt="">
+                        </div>
+                        <div class="photos-grid__item">
+                            <img src="img/content/image%2050.jpg" alt="">
+                        </div>
+                        <div class="photos-grid__item">
+                            <img src="img/content/image%2020.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="object-slider-section">
+                <div class="object-slider-section__inner">
+                    <div class="object-slider-section__slider">
+                        <div class="peppermint peppermint--inactive object-slider-section__peppermint js-peppermint-object-slider">
+                            <figure class="object-slider-section__item">
+                                <img src="img/content/Rectangle%2048.jpg" alt="" class="object-slider-section__slide-image">
+                            </figure>
+                            <figure class="object-slider-section__item">
+                                <img src="img/content/Rectangle%2058.jpg" alt="" class="object-slider-section__slide-image">
+                            </figure>
+                        </div>
+
+                        <ul class="object-slider-section__arrows">
+                            <li class="object-slider-section__control object-slider-section__control--left">
+                                <button class="object-slider-section__btn object-slider-section__btn--left js-object-slider-section-slideshow-previous-btn">
+                                    <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6156 20.5519C10.0744 21.1482 9.17269 21.1496 8.63004 20.5548L0.38673 11.5141C0.134549 11.2372 8.85456e-07 10.8716 9.17942e-07 10.5C9.50357e-07 10.1292 0.133575 9.76285 0.387273 9.48526L8.62995 0.445572C8.89415 0.155983 9.25279 -1.52746e-07 9.6217 -1.20495e-07C9.99174 -8.81446e-08 10.3515 0.15691 10.6159 0.448278C11.129 1.01409 11.1279 1.90951 10.6135 2.47376L3.29493 10.5L10.6132 18.5261C11.1276 19.0904 11.1288 19.9861 10.6156 20.5519Z" fill="#45A56B"></path></svg>
+                                </button>
+                            </li>
+
+                            <li class="object-slider-section__control object-slider-section__control--right">
+                                <button class="object-slider-section__btn object-slider-section_btn--right js-object-slider-section-slideshow-next-btn">
+                                    <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6156 20.5519C10.0744 21.1482 9.17269 21.1496 8.63004 20.5548L0.38673 11.5141C0.134549 11.2372 8.85456e-07 10.8716 9.17942e-07 10.5C9.50357e-07 10.1292 0.133575 9.76285 0.387273 9.48526L8.62995 0.445572C8.89415 0.155983 9.25279 -1.52746e-07 9.6217 -1.20495e-07C9.99174 -8.81446e-08 10.3515 0.15691 10.6159 0.448278C11.129 1.01409 11.1279 1.90951 10.6135 2.47376L3.29493 10.5L10.6132 18.5261C11.1276 19.0904 11.1288 19.9861 10.6156 20.5519Z" fill="#45A56B"></path></svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <style>
+                        .object-slider-section__peppermint ul.peppermint-dots > li:nth-child(1) > span {
+                            background-image: url('img/content/Rectangle 48.jpg');
+                        }
+                        .object-slider-section__peppermint ul.peppermint-dots > li:nth-child(2) > span {
+                            background-image: url('img/content/Rectangle 58.jpg');
+                        }
+                    </style>
+                </div>
+            </section>
+
+            <section class="object-text-section">
+                <div class="object-text-section__inner">
+                    <h2 class="object-text-section__title">Семейная квартирография</h2>
+                    <div class="object-text-section__row">
+                        <div class="object-text-section__column">
+                            <img src="img/content/image%2090.jpg" alt="">
+                        </div>
+                        <div class="object-text-section__column text-content">
+                            <p><a href="#">Квартирография</a> включает в себя минимум небольших квартир, которые зачастую приобретают для сдачи в аренду. А это значит, что ваши соседи — это люди, которые приобрели квартиру для личного проживания.</p>
+                            <p>Когда дом свой, все по-другому: соседи бережно относятся к общему имуществу, стремятся к уважительному и добрососедскому отношению друг другу, готовы помогать. Здесь все свои.</p>
+                        </div>
+                    </div>
+                    <div class="object-text-section__row">
+                        <div class="object-text-section__column text-content">
+                            <p>Двор закрыт от машин и предназначен для жителей. Доступ на территории ограничен магнитным ключом. Двор устроен как зелёный парк
+                                с разнообразными функциями — для детей, спорта
+                                и отдыха. Обустроен большой спортивный корт
+                                для игры в баскетбол с мягким покрытием. Рядом расположены уличные тренажёры. На детской площадке, оборудованной игровыми модулями,
+                                есть лазалки, скалодром, качели, лабиринты, пружинки, батут и песочница. Для спокойного отдыха предусмотрены беседки-перголы.</p>
+                        </div>
+                        <div class="object-text-section__column text-content">
+                            <p>Места для отдыха и детских игр сделаны из натурального дерева: зимой они не промерзают,
+                                а летом не накаляются от жары. Безопасность
+                                во дворе контролируют камеры видеонаблюдения
+                                и охрана. Во дворе высажено 40 видов растений: уже взрослые высокие деревья — липы, березы, яблони, ели, кустарники — сирень, дикая роза, горная сосна, кизильник, цветы и злаковые травы. Между зонами активности и в центре двора уложен газон. Растения отличаются по высоте и плотности, цветут в разное время года, чтобы двор всегда выглядел разнообразным.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tour-request-form-section">
+                <div class="tour-request-form-section__inner">
+                    <div class="tour-request-form-section__content">
+                        <div class="tour-request-form">
+                            <h2 class="tour-request-form__title">Запишитесь на экскурсию</h2>
+                            <p class="tour-request-form__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос.</p>
+                            <form class="tour-request-form__form">
+                                <p class="tour-request-form__form-row">
+                                    <input type="text" placeholder="Имя" class="tln-input">
+                                </p>
+                                <p class="tour-request-form__form-row">
+                                    <input type="tel" placeholder="Телефон" class="tln-input">
+                                </p>
+                                <p class="tour-request-form__form-row">
+                                    <input type="checkbox" id="tour-request-form-consent" class="tour-request-form__checkbox">
+                                    <label for="tour-request-form-consent" class="tour-request-form__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</label>
+                                </p>
+                                <p class="tour-request-form__form-row">
+                                    <button type="submit" class="tln-button tln-button--outline tour-request-form__button">Записаться</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             <section class="about-object-section">
                 <div class="about-object-section__inner">
@@ -563,33 +787,7 @@
                 </div>
             </section>
 
-            <section class="promotions-section">
-                <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
-                <div class="promotions-section__list-wrapper">
-                    <ul class="promotions-list">
-                        <li class="promotions-list__item">
-                            <a href="#">
-                                <img src="img/content/image%2053.png" alt="" class="promotions-list__image">
-                            </a>
-                        </li>
-                        <li class="promotions-list__item">
-                            <a href="#">
-                                <img src="img/content/image%2054.png" alt="" class="promotions-list__image">
-                            </a>
-                        </li>
-                        <li class="promotions-list__item">
-                            <a href="#">
-                                <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
-                            </a>
-                        </li>
-                        <li class="promotions-list__item">
-                            <a href="#">
-                                <img src="img/content/image%2055.png" alt="" class="promotions-list__image">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+
 
             <section class="infrastructure-section">
                 <div class="infrastructure-section__inner">

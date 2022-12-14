@@ -1,34 +1,31 @@
 .promotions-list {
   display: flex;
   margin: 20px 0 0;
-  padding: 0 0 30px;
+  padding: 0;
   list-style: none;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  flex: 1;
+  flex-wrap: wrap;
+
 
   @media (min-width: $tablet-breakpoint) {
-    flex-wrap: wrap;
-    overflow: initial;
-    margin: 3px 0 0;
-    padding: 0;
+
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 74.26%;
     margin: 0;
+    align-content: flex-start;
   }
 }
 
 .promotions-list__item {
-  width: calc(100% - 120px);
-  min-width: calc(100% - 120px);
-  margin-left: 3px;
-  padding-left: 12px;
+  width: calc(50% - 8px);
+  min-width: calc(50% - 8px);
+  margin-left: 16px;
+  padding-left: 0;
   box-sizing: border-box;
-  scroll-snap-align: start;
   border-radius: $radius-medium;
 
-  &:first-child {
+  &:nth-child(2n+1) {
     margin-left: 0;
   }
 
@@ -41,25 +38,15 @@
   }
 
   @media (min-width: $tablet-breakpoint) {
-    width: 31.5%;
-    min-width: initial;
-    margin-left: 2.74%;
-    margin-top: 20px;
+    margin-top: 17px;
     padding-left: 0;
 
-    &:nth-child(3n+1) {
-      margin-left: 0;
+    &:first-child {
+      margin-top: 0;
     }
-  }
 
-  @media (min-width: $desktop-breakpoint) {
-    width: 30.69%;
-    min-width: initial;
-    margin-left: 3.96%;
-    margin-top: 30px;
-
-    &:nth-child(3n+1) {
-      margin-left: 0;
+    &:nth-child(2) {
+      margin-top: 0;
     }
   }
 }

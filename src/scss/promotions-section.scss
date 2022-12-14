@@ -9,16 +9,17 @@
   }
 }
 
-.promotions-section__title {
+.promotions-section__inner {
   @include page-inner();
+}
+
+.promotions-section__title {
   @include heading-3();
   color: #343434;
-  max-width: 210px;
 
   @media (min-width: $tablet-breakpoint) {
     font-size: 30px;
     line-height: 1.2em;
-    @include page-inner();
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -29,12 +30,33 @@
 
 .promotions-section__title-inner {
   @media (min-width: $desktop-breakpoint) {
-    padding-left: 30px;
+
   }
 }
 
 .promotions-section__list-wrapper {
+
   @media (min-width: $tablet-breakpoint) {
-    @include page-inner();
+    display: flex;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 74.26%;
+  }
+}
+
+.promotions-section__large-item {
+  margin-right: 24px;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 67%;
   }
 }

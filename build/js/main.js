@@ -1047,6 +1047,30 @@ Math.easeInOutQuad = function (t, b, c, d) {
             })
         });
     }
+
+    var objectSlider = document.querySelector('.js-peppermint-object-slider');
+    if (objectSlider) {
+        var objectSliderPeppermint = Peppermint(objectSlider, {
+            slideshow: false,
+            dots: true
+        });
+
+    }
+
+    var objectSliderPrevBtnEl = document.querySelector('.js-object-slider-section-slideshow-previous-btn');
+    var objectSliderNextBtnEl = document.querySelector('.js-object-slider-section-slideshow-next-btn');
+
+    if (objectSliderPeppermint && objectSliderPrevBtnEl) {
+        objectSliderPrevBtnEl.addEventListener('click', function () {
+            objectSliderPeppermint.prev();
+        })
+    }
+
+    if (objectSliderPeppermint && objectSliderNextBtnEl) {
+        objectSliderNextBtnEl.addEventListener('click', function () {
+            objectSliderPeppermint.next();
+        })
+    }
 }());
 
 
