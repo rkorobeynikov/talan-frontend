@@ -1,10 +1,9 @@
 .promotions-section {
   padding-top: 6px;
-  background: #F9F9F9;
+  padding-bottom: 48px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding-top: 61px;
-    padding-bottom: 60px;
+    padding-top: 0;
     background: #ffffff;
   }
 }
@@ -16,15 +15,18 @@
 .promotions-section__title {
   @include heading-3();
   color: #343434;
+  margin-top: -82px;
 
   @media (min-width: $tablet-breakpoint) {
     font-size: 30px;
     line-height: 1.2em;
+    margin-top: -61px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 40px;
     line-height: 1.2em;
+    margin-top: -191px;
   }
 }
 
@@ -35,18 +37,18 @@
 }
 
 .promotions-section__list-wrapper {
+  margin-top: 32px;
 
   @media (min-width: $tablet-breakpoint) {
     display: flex;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    width: 74.26%;
+    width: 65.88%;
   }
 }
 
 .promotions-section__large-item {
-  margin-right: 24px;
 
   img {
     max-width: 100%;
@@ -58,5 +60,6 @@
 
   @media (min-width: $tablet-breakpoint) {
     width: 67%;
+    margin-right: 24px;
   }
 }

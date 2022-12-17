@@ -1,5 +1,5 @@
 .object-text-section {
-
+  margin: 48px 0 0;
 }
 
 .object-text-section__inner {
@@ -27,9 +27,9 @@
   margin-top: 24px;
 
   @media (min-width: $desktop-breakpoint) {
-    width: 74.26%;
+    width: 65.88%;
     flex-direction: row;
-    margin-top: 32px;
+    margin-top: 36px;
   }
 }
 

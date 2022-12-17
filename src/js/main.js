@@ -1071,6 +1071,17 @@ Math.easeInOutQuad = function (t, b, c, d) {
             objectSliderPeppermint.next();
         })
     }
+
+
+    var objectPreviewSlider = document.querySelector('.js-peppermint-object-preview-slider');
+    if (objectPreviewSlider) {
+        var objectPreviewSliderPeppermint = Peppermint(objectPreviewSlider, {
+            slideshow: true,
+            dots: true,
+            slideshowInterval: 5000,
+        });
+
+    }
 }());
 
 

@@ -22,15 +22,16 @@
 
   @media (min-width: $desktop-breakpoint) {
     margin: 0;
-    width: 74%;
-    max-width: 74%;
-    padding-right: 41px;
+    width: 74.41%;
+    max-width: 74.41%;
+    padding-right: 32px;
   }
 
 }
 
 .object-preview__image img {
   max-width: 100%;
+  width: 100%;
   display: block;
 
   @media (min-width: $desktop-breakpoint) {
@@ -47,4 +48,74 @@
     padding-top: 0;
     width: 26%;
   }
+}
+
+.object-preview .peppermint-slides {
+  padding: 0;
+}
+
+.object-preview .peppermint.peppermint-active .peppermint-slides + ul.peppermint-dots {
+  margin: 0;
+  bottom: 16px;
+  position: absolute;
+  width: calc(100% - 38px);
+  left: 19px;
+  display: flex;
+}
+
+.object-preview ul.peppermint-dots > li {
+  flex: 1;
+  padding: 0;
+  margin: 0 5px;
+  height: 4px;
+}
+
+.object-preview ul.peppermint-dots > li > span {
+  width: 100%;
+  background: $color-green;
+  height: 4px;
+  border-radius: 2px;
+  position: static;
+  margin: 0;
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+.object-preview ul.peppermint-dots > li.peppermint-active-dot > span {
+  margin: 0;
+  width: 100%;
+  height: 4px;
+  border: none;
+  background: #ffffff;
+  position: relative;
+}
+
+.object-preview ul.peppermint-dots > li.peppermint-active-dot ~ li > span {
+  background: #ffffff;
+}
+
+
+.object-preview ul.peppermint-dots > li > span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background: $color-green;
+  border-radius: 2px;
+  width: 0;
+  height: 4px;
+}
+
+.object-preview ul.peppermint-dots > li.peppermint-active-dot > span::before {
+  width: 100%;
+  transition: width 5s linear;
+}
+
+
+.object-preview .peppermint.peppermint-active {
+  margin-bottom: 0;
+  overflow: hidden;
+  border-radius: 24px;
 }

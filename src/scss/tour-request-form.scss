@@ -2,6 +2,58 @@
   background: #d1eddc;
   padding: 56px 32px 64px;
   border-radius: $radius-large;
+
+  @media (min-width: $desktop-breakpoint) {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.tour-request-form--image {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 32px;
+  }
+}
+
+.tour-request-form__person {
+  margin-right: 29px;
+  margin-top: -16px;
+}
+
+.tour-request-form__person-label {
+  font-size: 12px;
+  line-height: 1.33em;
+  font-style: italic;
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-breakpoint) {
+    text-align: center;
+  }
+}
+
+.tour-request-form__column-wrapper {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    max-width: 566px;
+  }
+}
+
+.tour-request-form__column {
+  margin: 17px 0 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
+    flex: 1;
+  }
 }
 
 .tour-request-form__title {
@@ -18,8 +70,16 @@
   margin: 24px 0 0;
 }
 
+.tour-request-form__paragraph--closer {
+  margin: 16px 0 0;
+}
+
 .tour-request-form__form {
   margin: 32px 0 0;
+}
+
+.tour-request-form__form--image {
+  margin: 16px 0 0;
 }
 
 .tour-request-form__form-row {
@@ -30,11 +90,18 @@
   margin: 0;
 }
 
+.tour-request-form__form-row--closer {
+  margin: 17px 0 0;
+}
+
 .tour-request-form__button {
   display: block;
-  width: 100%;
   font-size: 12px;
-  padding: 6px 10px 6px;
+  padding: 6px 86px 6px;
+}
+
+.tour-request-form__button--wide {
+  width: 100%;
 }
 
 .tour-request-form__checkbox {

@@ -94,7 +94,19 @@
 
     <section class="object-preview">
         <div class="object-preview__image">
-            <img src="img/content/andreas-ronningen-8RMP683VW-o-unsplash.jpg" alt="">
+            <div class="object-preview__slider">
+                <div class="peppermint peppermint--inactive object-preview__peppermint js-peppermint-object-preview-slider">
+                    <figure class="object-preview__item">
+                        <img src="https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/slider/10.jpg" alt="">
+                    </figure>
+                    <figure class="object-preview__item">
+                        <img src="https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/slider/11.jpg" alt="" class="object-slider-section__slide-image">
+                    </figure>
+                    <figure class="object-preview__item">
+                        <img src="https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/slider/12.jpg" alt="" class="object-slider-section__slide-image">
+                    </figure>
+                </div>
+            </div>
         </div>
         <div class="object-preview__form">
             <div class="tour-request-form">
@@ -112,7 +124,7 @@
                         <label for="tour-request-form-consent" class="tour-request-form__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</label>
                     </p>
                     <p class="tour-request-form__form-row">
-                        <button type="submit" class="tln-button tln-button--outline tour-request-form__button">Записаться</button>
+                        <button type="submit" class="tln-button tln-button--outline tour-request-form__button tour-request-form__button--wide">Записаться</button>
                     </p>
                 </form>
             </div>
@@ -199,13 +211,14 @@
                 <div class="sticky-nav-list"></div>
             </div>
 
-
             <section class="promotions-section">
                 <div class="promotions-section__inner">
                     <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
                     <div class="promotions-section__list-wrapper">
                         <div class="promotions-section__large-item">
-                            <img src="img/content/telegram-cloud-photo-size-2-5452011883767906726-x%201.jpg" alt="">
+                            <a href="#">
+                                <img src="img/content/telegram-cloud-photo-size-2-5452011883767906726-x%201.jpg" alt="">
+                            </a>
                         </div>
                         <ul class="promotions-list">
                             <li class="promotions-list__item">
@@ -279,10 +292,13 @@
                     <div class="object-slider-section__slider">
                         <div class="peppermint peppermint--inactive object-slider-section__peppermint js-peppermint-object-slider">
                             <figure class="object-slider-section__item">
-                                <img src="img/content/Rectangle%2048.jpg" alt="" class="object-slider-section__slide-image">
+                                <img src="https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/about/pr61.jpg" alt="" class="object-slider-section__slide-image">
                             </figure>
                             <figure class="object-slider-section__item">
-                                <img src="img/content/Rectangle%2058.jpg" alt="" class="object-slider-section__slide-image">
+                                <img src="https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/about/pr51.jpg" alt="" class="object-slider-section__slide-image">
+                            </figure>
+                            <figure class="object-slider-section__item">
+                                <img src="https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/about/pr31.jpg" alt="" class="object-slider-section__slide-image">
                             </figure>
                         </div>
 
@@ -303,10 +319,13 @@
 
                     <style>
                         .object-slider-section__peppermint ul.peppermint-dots > li:nth-child(1) > span {
-                            background-image: url('img/content/Rectangle 48.jpg');
+                            background-image: url('https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/about/pr61.jpg');
                         }
                         .object-slider-section__peppermint ul.peppermint-dots > li:nth-child(2) > span {
-                            background-image: url('img/content/Rectangle 58.jpg');
+                            background-image: url('https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/about/pr51.jpg');
+                        }
+                        .object-slider-section__peppermint ul.peppermint-dots > li:nth-child(3) > span {
+                            background-image: url('https://ижевск.талан.рф/files/izhevsk/apartment_complexes/shishkina/about/pr31.jpg');
                         }
                     </style>
                 </div>
@@ -345,85 +364,36 @@
             <section class="tour-request-form-section">
                 <div class="tour-request-form-section__inner">
                     <div class="tour-request-form-section__content">
-                        <div class="tour-request-form">
-                            <h2 class="tour-request-form__title">Запишитесь на экскурсию</h2>
-                            <p class="tour-request-form__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос.</p>
-                            <form class="tour-request-form__form">
-                                <p class="tour-request-form__form-row">
-                                    <input type="text" placeholder="Имя" class="tln-input">
-                                </p>
-                                <p class="tour-request-form__form-row">
-                                    <input type="tel" placeholder="Телефон" class="tln-input">
-                                </p>
-                                <p class="tour-request-form__form-row">
-                                    <input type="checkbox" id="tour-request-form-consent" class="tour-request-form__checkbox">
-                                    <label for="tour-request-form-consent" class="tour-request-form__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</label>
-                                </p>
-                                <p class="tour-request-form__form-row">
-                                    <button type="submit" class="tln-button tln-button--outline tour-request-form__button">Записаться</button>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="about-object-section">
-                <div class="about-object-section__inner">
-                    <h2 id="about" class="about-object-section__title">О проекте</h2>
-                    <div class="about-object-section__main">
-                        <div class="about-object-section__grid features-grid">
-                            <div class="features-grid__row">
-                                <a href="#" class="features-grid__item features-grid__item--medium">
-                                    <img src="img/tile-architecture.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Архитектура</h3>
-                                    </div>
-                                </a>
-                                <a href="#" class="features-grid__item features-grid__item--medium">
-                                    <img src="img/tile-security.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Безопасность</h3>
-                                        <p class="features-grid__description">7 уровней безопасности для вас и ваших близких</p>
-                                    </div>
-                                </a>
+                        
+                        <div class="tour-request-form tour-request-form--image">
+                            <div class="tour-request-form__person">
+                                <img src="img/vladislav-suchenkov.png" alt="Владислав Сученков" class="tour-request-form__person-img" width="172" height="146">
+                                <span class="tour-request-form__person-label">Ваш менеджер Владислав&nbsp;Сученков</span>
                             </div>
-                            <div class="features-grid__row">
-                                <a href="#" class="features-grid__item features-grid__item--narrow">
-                                    <img src="img/tile-yard.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Благоустройство</h3>
-                                    </div>
-                                </a>
-                                <div class="features-grid__group">
-                                    <a href="#" class="features-grid__item features-grid__item--wide">
-                                        <img src="img/tile-lobby.jpg" alt="">
-                                        <div class="features-grid__label">
-                                            <h3 class="features-grid__title">Стильное лобби</h3>
+                            <div class="tour-request-form__content">
+                                <h2 class="tour-request-form__title">Запишитесь на экскурсию</h2>
+                                <p class="tour-request-form__paragraph tour-request-form__paragraph--closer">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос.</p>
+                                <form class="tour-request-form__form tour-request-form__form--image">
+                                    <div class="tour-request-form__column-wrapper">
+                                        <div class="tour-request-form__column">
+                                            <p class="tour-request-form__form-row">
+                                                <input type="text" placeholder="Имя" class="tln-input">
+                                            </p>
                                         </div>
-                                    </a>
-                                    <a href="#" class="features-grid__item features-grid__item--wide">
-                                        <img src="img/tile-landscaping.jpg" alt="">
-                                        <div class="features-grid__label">
-                                            <h3 class="features-grid__title">Озеленение</h3>
+                                        <div class="tour-request-form__column">
+                                            <p class="tour-request-form__form-row">
+                                                <input type="tel" placeholder="Телефон" class="tln-input">
+                                            </p>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="features-grid__row">
-                                <a href="#" class="features-grid__item features-grid__item--medium">
-                                    <img src="img/tile-flats.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Квартиры</h3>
                                     </div>
-                                </a>
-                                <a href="#" class="features-grid__item features-grid__item--medium">
-                                    <img src="img/tile-smarthome.jpg" alt="">
-                                    <div class="features-grid__label">
-                                        <h3 class="features-grid__title">Умные технологии</h3>
-                                    </div>
-                                </a>
+                                    <p class="tour-request-form__form-row tour-request-form__form-row--closer">
+                                        <input type="checkbox" id="tour-request-form-consent" class="tour-request-form__checkbox">
+                                        <label for="tour-request-form-consent" class="tour-request-form__checkbox-label">Даю согласие на обработку моих персональных данных, с условиями полтики ознакомлен</label>
+                                    </p>
+                                    <p class="tour-request-form__form-row tour-request-form__form-row--closer">
+                                        <button type="submit" class="tln-button tour-request-form__button">Записаться</button>
+                                    </p>
+                                </form>
                             </div>
                         </div>
                     </div>

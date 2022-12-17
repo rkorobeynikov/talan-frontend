@@ -1,5 +1,5 @@
 .object-slider-section {
-
+  margin: 32px 0 0;
 }
 
 .object-slider-section__inner {
@@ -10,7 +10,8 @@
 
 .object-slider-section__slider {
   @media (min-width: $desktop-breakpoint) {
-    width: 74.26%;
+    width: 65.88%;
+
     position: relative;
   }
 }
@@ -20,6 +21,8 @@
 
 .object-slider-section__arrows {
   list-style: none;
+  height: 0;
+  margin: 0;
 }
 
 .object-slider-section__control {
@@ -60,6 +63,7 @@
 .object-slider-section__peppermint ul.peppermint-dots > li {
   width: 84px;
   height: 84px;
+  padding: 0 8px;
 }
 
 .object-slider-section__peppermint ul.peppermint-dots > li > span {
@@ -79,4 +83,24 @@
   background-size: cover;
 }
 
+.object-slider-section__peppermint.peppermint figure img {
+  border-radius: $radius-large;
+  box-shadow: none;
+}
 
+.object-slider-section__peppermint .peppermint-slides {
+  padding: 0;
+}
+
+.object-slider-section__peppermint.peppermint.peppermint-active {
+  margin-bottom: 53px;
+}
+
+.object-slider-section__peppermint.peppermint.peppermint-active .peppermint-slides+ul.peppermint-dots {
+  margin: 22px 0 0;
+}
+
+.object-slider-section__peppermint.peppermint.peppermint-active .peppermint-slides {
+  border-radius: $radius-large;
+  overflow: hidden;
+}

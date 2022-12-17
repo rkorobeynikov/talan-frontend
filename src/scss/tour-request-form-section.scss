@@ -1,8 +1,16 @@
+.tour-request-form-section {
+  margin-top: 52px;
+  margin-bottom: 80px;
+}
+
 .tour-request-form-section__inner {
   @include page-inner();
 }
 
 .tour-request-form-section__content {
-  width: 74.26%;
+  @media (min-width: $desktop-breakpoint) {
+    width: 65.88%;
+  }
+
 
 }

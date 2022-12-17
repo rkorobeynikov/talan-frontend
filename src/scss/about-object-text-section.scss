@@ -16,5 +16,8 @@
 }
 
 .about-object-text-section__content {
-  width: 74.26%;
+  @media (min-width: $desktop-breakpoint) {
+    width: 65.88%;
+    margin-top: 32px;
+  }
 }

@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin: 32px 0 0;
+  margin: 37px 0 0;
 
   @media (min-width: $desktop-breakpoint) {
-    width: 74.26%;
+    width: 65.88%;
   }
 }
 
@@ -22,12 +22,12 @@
 
 .photos-grid__item:nth-child(3) {
   @media (min-width: $tablet-breakpoint) {
-    width: calc(35% - 8px);
+    width: 35.2%;
   }
 }
 
 .photos-grid__item:nth-child(4) {
   @media (min-width: $tablet-breakpoint) {
-    width: calc(65% - 8px);
+    width: 61.9%;
   }
 }
