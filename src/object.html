@@ -213,7 +213,7 @@
 
             <section class="promotions-section">
                 <div class="promotions-section__inner">
-                    <h2 class="promotions-section__title" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
+                    <h2 class="promotions-section__title excluded-from-nav" id="promotions"><span class="promotions-section__title-inner">Акции и спецпредложения</span></h2>
                     <div class="promotions-section__list-wrapper">
                         <div class="promotions-section__large-item">
                             <a href="#">
@@ -269,7 +269,7 @@
 
             <section class="photos-grid-section">
                 <div class="photos-grid-section__inner">
-                    <h2 class="photos-grid-section__title">Квартиры со вторым светом и потолком 6 метров</h2>
+                    <h2 id="photos-grid-title--subsection" class="photos-grid-section__title">Квартиры со вторым светом и потолком 6 метров</h2>
                     <div class="photos-grid">
                         <div class="photos-grid__item">
                             <img src="img/content/image%2090.jpg" alt="">
@@ -1582,6 +1582,7 @@
 
             const content = document.querySelector('.sticky-nav-wrapper');
             scrollnav.init(content, {
+                sections: 'h2:not(.excluded-from-nav)',
                 debug: false,
                 insertTarget: document.querySelector('.sticky-nav-list'),
                 insertLocation: 'append'
