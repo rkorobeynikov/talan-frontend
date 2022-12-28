@@ -39,6 +39,7 @@ input[type=range].input-range__range-slider {
   bottom: -8px;
   background: transparent;
   cursor: ew-resize;
+  width: calc(100% - 24px);
 }
 
 input[type=range].input-range__range-slider.slider-progress {
