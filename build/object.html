@@ -180,12 +180,12 @@
                     <div class="input-range">
                         <div class="input-range__item">
                             <input id="price-from" type="text" class="tln-input tln-input--shadowed input-range__input" placeholder="От 2 350 000">
-                            <input type="range" class="input-range__range-slider slider-progress">
+                            <input type="range" class="input-range__range-slider slider-progress" data-input-id="price-from" min="2350000" max="5350000" step="100000">
                         </div>
                         <div class="input-range__item">
                             <label for="price-to" class="visually-hidden">До</label>
                             <input id="price-to" type="text" class="tln-input tln-input--shadowed input-range__input" placeholder="До 5 350 000">
-                            <input type="range" class="input-range__range-slider slider-progress">
+                            <input type="range" class="input-range__range-slider slider-progress" data-input-id="price-to" min="2350000" max="5350000" step="100000">
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,10 @@
                         e.style.setProperty('--value', e.value);
                         e.style.setProperty('--min', e.min == '' ? '0' : e.min);
                         e.style.setProperty('--max', e.max == '' ? '100' : e.max);
-                        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+                        e.addEventListener('input', () => {
+                            e.style.setProperty('--value', e.value);
+                            document.querySelector(`#${e.getAttribute('data-input-id')}`).value = e.value;
+                        });
                     }
                 </script>
             </div>
